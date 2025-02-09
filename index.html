@@ -30,6 +30,87 @@
       <!-- font awesome css -->
       <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
       <style>
+         /* review section start*/
+
+.rev-section{
+    margin: auto;
+    padding: 0 1rem;
+    
+  }
+  
+  .title{
+    font-size: 2.5rem;
+    padding-left: 5%;
+    text-transform: uppercase;
+    color: rgb(50, 50, 50);
+    margin-bottom: .5rem;
+  }
+  .note{
+    font-size: 1.1rem;
+    color: rgb(150, 150, 150);
+    font-style: italic;
+    font-color: red;
+    
+  
+  }
+  
+  .reviews{
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  .review{
+    margin: 0 1rem;
+    min-width: 300px;
+    flex: 1;
+  }
+  
+  .head-review{
+    margin: 1.75rem auto;
+    width: 150px;
+    height: 150px;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
+  }
+  
+  .body-review{
+    background-color: rgb(238, 238, 238);
+    padding: 2.5rem;
+    box-shadow: 2px 2px 10px 3px rgb(225, 225, 225);
+  }
+  .name-review{
+    font-size: 1.5rem;
+    color: rgb(50, 50, 50);
+    margin-bottom: .25rem;
+  }
+  .place-review{
+    color: red;
+    font-style: italic;
+  }
+  .rating{
+    color: rgb(253, 180, 42);
+    margin: 1rem 0;
+  }
+  .desc-review{
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    color: rgb(150, 150, 150);
+  }
+  
+  @media (max-width: 678px){
+    .review{
+      margin-top: 1.5rem;
+    }
+  }
+
+/* review section end*/
          /* Full-page overlay */
          .loading-overlay {
            position: fixed;
@@ -90,7 +171,7 @@
       <div class="header_section">
          <div id="nav" style="padding-left: 2%;">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-               <div class="logo"><h1 style="color:white; padding-left:20px !important;">Dinkar Prasad </h1></div>
+               <div class="logo"><h1 style="color:red; padding-left:10px !important;">Dinkar Prasad </h1></div>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
                </button>
@@ -135,15 +216,15 @@
                               <div class="row">
                                  <div class="col-md-6">
                                     <div class="banner_taital_main">
-                                       <h1 class="banner_taital">I'm Java developer</h1>
-                                       <h2>A Java developer fresh out of college is typically skilled in core Java concepts such as object-oriented programming, data structures, and algorithms. They have experience working with Java frameworks like Spring and Hibernate, and may be familiar with tools such as Maven or Git. While they might not have extensive professional experience, they are eager to learn, collaborate, and contribute to software development projects, focusing on writing clean, efficient code and developing web or desktop applications. They're also likely to be familiar with basic database operations, unit testing, and version control systems.</h2>
+                                       <h1 data-animation="fadeInUp" data-delay=".6s" class="banner_taital" style="animation-delay: 0.6s;" >I'm Java developer</h1>
+                                       <h3 data-animation="fadeInUp" data-delay=".6s">A Java developer fresh out of college is typically skilled in core Java concepts such as object-oriented programming, data structures, and algorithms. They have experience working with Java frameworks like Spring and Hibernate, and may be familiar with tools such as Maven or Git. While they might not have extensive professional experience, they are eager to learn, collaborate, and contribute to software development projects, focusing on writing clean, efficient code and developing web or desktop applications. They're also likely to be familiar with basic database operations, unit testing, and version control systems.</h3>
                                     </div>
                                  </div>
                                  <div class="col-md-6">
                                     <div class="social_icon">
                                        <ul>
                                           <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-phone-square" aria-hidden="true"></i></a></li>
                                           <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                                           <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                                        </ul>
@@ -152,28 +233,7 @@
                               </div>
                            </div>
                         </div>
-                        <div class="carousel-item">
-                           <div class="container-fluid">
-                              <div class="row">
-                                 <div class="col-md-6">
-                                    <div class="banner_taital_main">
-                                       <h3 class="banner_text">Hello Am <br>Dinkar Prasad</h3>
-                                       <h1 class="banner_taital">Java developer</h1>
-                                    </div>
-                                 </div>
-                                 <div class="col-md-6">
-                                    <div class="social_icon">
-                                       <ul>
-                                          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                       </ul>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
+                       
                         <div class="carousel-item">
                            <div class="container-fluid">
                               <div class="row">
@@ -243,14 +303,14 @@
          <div class="container">
             <div class="services_section_2">
                <div class="row">
-                  <div class="col-lg-3 col-sm-6">
+                  <div class="col-lg-3 col-sm-3">
                      <div class="box_main ">
-                        <div class="app_icon"><img src="images/icon-1.png"></div>
+                        <div class="app_icon" ><img src="images/icon-1.png" ></div>
                         <div class="app_icon_1"><img src="images/icon-1.png"></div>
-                        <h4 class="services_text active">App Design</h4>
+                        <h4 class="services_text">App Design</h4>
                      </div>
                   </div>
-                  <div class="col-lg-3 col-sm-6">
+                  <div class="col-lg-3 col-sm-3">
                      <div class="box_main ">
                         <div class="app_icon"><img src="images/icon-2.png"></div>
                         <div class="app_icon_1"><img src="images/icon-6.png"></div>
@@ -272,7 +332,7 @@
                      </div>
                   </div>
                </div>
-               <div class="readmore_bt"><a href="#">Read More</a></div>
+               <div class="readmore_bt"><a href="service.html">Read More</a></div>
             </div>
          </div>
       </div>
@@ -286,34 +346,7 @@
                </div>
             </div>
             <div class="portfolio_section">
-               <div class="portfolio_section_2">
-                  <div class="row">
-                     <div class="col-md-8">
-                        <div class="container_main">
-                           <img src="images/img-1.png" alt="" class="image">
-                           <div class="overlay">
-                              <div class="text">
-                                 <div class="btn_main">
-                                    <div class="buy_bt"><a href="#">See More</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4">
-                        <div class="container_main">
-                           <img src="images/img-2.png" alt="" class="image">
-                           <div class="overlay">
-                              <div class="text">
-                                 <div class="btn_main">
-                                    <div class="buy_bt"><a href="#">See More</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+               
                <div class="portfolio_section_2">
                   <div class="row">
                      <div class="col-md-4">
@@ -355,12 +388,13 @@
                   </div>
                </div>
             </div>
-            <div class="seemore_bt"><a href="#">See More</a></div>
+            <div class="seemore_bt"><a href="portfolio.html">See More</a></div>
          </div>
       </div>
       <!-- portfolio section end -->
       <!-- Skills section start -->
       <div class="blog_section layout_padding">
+        
          <div class="container">
             <div class="row">
                <div class="col-sm-12">
@@ -374,31 +408,28 @@
 
             <div class="container">
                <div class="row">
-                  <div class="col-md-5">
+                  <div class="col-md-4">
                      <div class="blog_box">
-                        <div class="blog_img">
-                          
-                         <img src="images/javascript.png"/>  
-                        </div>
-                        <h2 class="date_text">Javascript</h2>
-                     </div>
-                  </div>
-                  <div class="col-md-5">
-                     <div class="blog_box">
-                        <div class="blog_img">
-                           <img src="images/java.png"/>
-                        </div>
-                        <h2 class="date_text">Java</h2>
-                     </div>
-                  </div>
-                  <div class="col-md-5">
-                     <div class="blog_box">
-                        
                            <div class="blog_img">
-                              <img src="images/oracle.png"/> 
+                              <img src="images/java.png"/>
                            </div>
-                           <h2 class="date_text">Oracle</h2>
-                        
+                           <h2 class="date_text">Java</h2>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="blog_box">
+                        <div class="blog_img">
+                           <img src="images/spring.png"/>
+                        </div>
+                        <h2 class="date_text">Spring</h2>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="blog_box">
+                        <div class="blog_img">
+                           <img src="images/spring-boot.png"/>
+                        </div>
+                        <h2 class="date_text">springboot</h2>                        
                      </div>
                   </div>
                </div>
@@ -409,18 +440,83 @@
             </div>
          </div>
       </div>
+      
       <!-- Skills section end -->
+       <!-- Review section start -->
+     
+
+       <h2 class="title">Some Possitive Feedback That Encourage Us</h2>
+
+      
+       <div class="reviews">
+       
+       <div class="review">
+          <div class="head-review">
+             <img src="https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80" width="250px">
+          </div>
+          <div class="body-review">
+             <div class="name-review">Dileep Singh</div>
+             <div class="place-review">Mumbai</div>
+             <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half" aria-hidden="true"></i>
+             </div>
+             <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+          </div>
+       </div>
+       <div class="review">
+          <div class="head-review">
+             <img src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" width="250px">
+          </div>
+          <div class="body-review">
+             <div class="name-review">Riya Rai</div>
+             <div class="place-review">Surat</div>
+             <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+             </div>
+             <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+          </div>
+       </div>
+       <div class="review">
+          <div class="head-review">
+             <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" width="250px">
+          </div>
+          <div class="body-review">
+             <div class="name-review">Vikash Gupta</div>
+             <div class="place-review">New Delhi</div>
+             <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half" aria-hidden="true"></i>
+             </div>
+             <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+          </div>
+       </div>
+       
+    </div>
+       
+    
+    <!-- Review section end -->
       <!-- contact section start -->
       <div class="contact_section layout_padding">
          <div class="container">
             <div class="row">
-               <div class="col-sm-6">
+               <div class="col-sm-12">
                   <h1 class="contact_taital">My <span class="contact_taital_1">Contact</span></h1>
                </div>
             </div>
             <div class="contact_section_2">
                <div class="row">
-                  <div class="col-md-12">
+                  <div class="col-md-6">
                      <h1>The Best Time is Now. Let's Create Something Incredible Together!</h1>
                      <h3>Let’s move forward together – your vision and our expertise can create something extraordinary. Whether it’s a new project, a fresh idea, or a unique challenge, we’re here to support you every step of the way. Don’t wait for the perfect moment, the time is now. Let's make it happen!</h3>
                   </div>
@@ -443,7 +539,7 @@
          <div class="container">
             <div class="project_main">
                <h1 class="hire_text">Hire me for your projects</h1>
-               <div class="callnow_bt"><a href="#">Call Now</a></div>
+               <div class="callnow_bt"><a href="contact.html">Call Now</a></div>
             </div>
          </div>
       </div>
@@ -451,24 +547,24 @@
       <!-- footer section start -->
       <div class="footer_section">
          <div class="container">
-            <p class="copyright_text"><a href="#" >dinkarprasa682@gmail.com</a></p>
+            <p class="copyright_text"><a href="mailto:dinkarprasad682@gmail.com" >dinkarprasa682@gmail.com</a></p>
             <p class="copyright_text">485446,Nagod Satna Madhya Pradesh India</p>
             <div class="location_text">
                <ul>
                   <li>
-                     <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                     <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                   </li>
                   <li>
-                     <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                     <a href="#" target="_blank"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
                   </li>
                   <li>
-                     <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                     <a href="linkedin.com/in/dinkarprasad682" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                   </li>
                   <li>
-                     <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                     <a href="mailto:dinkarprasad682@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                   </li>
                   <li>
-                     <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                     <a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                   </li>
                </ul>
             </div>
