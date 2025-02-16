@@ -64,7 +64,10 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 9999;
-}.container{
+}
+.container{
+    
+    height: 50%;
     width: 100%;
 }
 /* D Logo Style */
@@ -276,7 +279,7 @@ button {
     width: 100%;
     float: left;
     background-image: url(../images/banner-bg.png);
-    height: auto;
+    height: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
     
@@ -313,7 +316,7 @@ button {
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #1053e3;
+    color: red;
 }
 
 .navbar {
@@ -392,8 +395,8 @@ button {
 .video_bt {
     width: 100%;
     float: left;
-    padding-top: 120px;
-    padding-left: 20px;
+    padding-top: 20px;
+    padding-left: 120px;
 }
 
 .play_icon img {
@@ -626,7 +629,13 @@ button {
 
 /* services section end */
 
-
+/* about section end */
+#din  {
+    width: 100%;
+    height: 50%;
+    border: 1cap !important;
+}
+/* about section end */
 /* portfolio section start */
 
 .portfolio_section {
@@ -655,10 +664,18 @@ button {
     padding-top: 30px;
 }
 
+.pro t{
+   padding-left: 30px;
+}
+
+#pro th{
+    padding-left:20%;
+}
+
 .image {
     display: block;
     width: 100%;
-    height: auto;
+    height: 120px;
 }
 
 .overlay {
@@ -677,6 +694,8 @@ button {
 
 .container_main {
     position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .container_main:hover .overlay {
@@ -850,7 +869,7 @@ button {
 }
 
 .col-sm-12{
-    background-image: url(../images/i.jpg);
+    
     width: 100%;
     height: justify;
 }
