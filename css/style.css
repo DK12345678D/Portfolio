@@ -546,7 +546,14 @@ button {
 
 
 /* banner section end */
-
+.servicest{
+          
+            background-color: #ecf0f1;
+            background-image:url(images/i.jpg);
+            padding: 40px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
 
 /* services section start */
 
@@ -790,7 +797,17 @@ button {
 
 /* portfolio section end */
 
-
+.slider-height2 {
+    background-image: url(../img/hero/hero2.jpg);
+    min-height: 390px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider-area .hero-cap .breadcrumb {
+    background: none;
+    padding: 0;
+    margin: 0;
+}
 /* skills section start */
 
 .blog_section {
