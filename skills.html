@@ -1,444 +1,492 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- site metas -->
+    <title>Skills</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- fevicon -->
+    <link rel="icon" href="images/d.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+    <!-- Tweaks for older IEs-->
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome css -->
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
 
-   <head>
-      <!-- basic -->
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <!-- site metas -->
-      <title>Skills</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- bootstrap css -->
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-      <!-- style css -->
-      <link rel="stylesheet" type="text/css" href="css/style.css">
-      <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
-      <!-- fevicon -->
-      <link rel="icon" href="images/d.png" type="image/gif" />
-      <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-      <!-- Tweaks for older IEs-->
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-      <!-- fonts -->
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-      <!-- font awesome css -->
-      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+      /* Full-page overlay */
+      /* Full-page overlay */
+      /* D Logo Style */
+      .d-logo {
+        font-size: 100px;
+        font-weight: bold;
+        color: #3498db;
+        /* Change the color of the logo */
+        text-transform: uppercase;
+        animation: rotateD 5s ease-in-out infinite,
+          scaleD 3s ease-in-out infinite;
+      }
 
-      <style>
-         /* Full-page overlay */
-         /* Full-page overlay */
-         /* D Logo Style */
-         .d-logo {
-            font-size: 100px;
-            font-weight: bold;
-            color: #3498db;
-            /* Change the color of the logo */
-            text-transform: uppercase;
-            animation: rotateD 5s ease-in-out infinite, scaleD 3s ease-in-out infinite;
-         }
+      /* Animation to rotate the D */
+      @keyframes rotateD {
+        0% {
+          transform: rotate(0deg);
+        }
 
-         /* Animation to rotate the D */
-         @keyframes rotateD {
-            0% {
-               transform: rotate(0deg);
-            }
+        50% {
+          transform: rotate(180deg);
+        }
 
-            50% {
-               transform: rotate(180deg);
-            }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
 
-            100% {
-               transform: rotate(360deg);
-            }
-         }
+      /* Animation to scale the D */
+      @keyframes scaleD {
+        0%,
+        100% {
+          transform: scale(2);
+        }
 
-         /* Animation to scale the D */
-         @keyframes scaleD {
-
-            0%,
-            100% {
-               transform: scale(2);
-            }
-
-            50% {
-               transform: scale(3.2);
-            }
-         }
-
-         /* Hide the loader after page has loaded */
-         body.loaded .loading-overlay {
-            display: none;
-         }
-      </style>
-   </head>
-<body>
-   <!-- Loading overlay with the animated "D" logo -->
-   <div class="loading-overlay">
+        50% {
+          transform: scale(3.2);
+        }
+      }
+      .servicest {
+    background-color: #ecf0f1;
+    background-image: url(images/i.jpg);
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+      /* Hide the loader after page has loaded */
+      body.loaded .loading-overlay {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Loading overlay with the animated "D" logo -->
+    <div class="loading-overlay">
       <div class="d-logo">DK</div>
-   </div>
-   <!-- header section start -->
-   <div class="header_section header_bg">
-      <div style="padding-left: 2%;">
-         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="logo">
-               <h1 style="color: white;">Dinkar Prasad</h1>
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                     <a class="nav-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="portfolio.html">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="service.html">Service</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="skills.html">Skills</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="contact.html">Contact Us</a>
-                  </li>
-               </ul>
-            </div>
-         </nav>
-      </div>
-   </div>
-   <!-- header section end -->
-   <!-- Skills section start -->
-   <div class="blog_section layoyut_padding margin_top90">
-      <div class="container">
-         <div class="row">
-            <section class="container servicest">
-            <div class="col-sm-12">
-               <h1 class="blog_taital">My <span class="blog_taital_1">Skills</span></h1>
-            </div>
-            </section>
-         </div>
-      </div>
-   </div>
-   <h1 style="padding-left: 5%;"><b>Professional Skills Set</b></h1>
-   <div class="blog_section_2">
-      <div class="Skills">
-         <div class="row">
-            <div class="col-md-4">
-               <div class="blog_box">
-                  <div class="blog_img">
-                     <img src="images/javascript.png" />
-                  </div>
-                  <h2 class="date_text">Javascript</h2>
-               </div>
-            </div>
-            <div class="col-md-4">
-               <div class="blog_box">
-                  <div class="blog_img">
-                     <img src="images/java.png" />
-                  </div>
-                  <h2 class="date_text">Java</h2>
-               </div>
-            </div>
-            <div class="col-md-4">
-               <div class="blog_box">
-                  <div class="blog_img">
-                     <img src="images/oracle.png" />
-                  </div>
-                  <h2 class="date_text">Oracle</h2>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <div class="blog_section_2">
-      <div class="skills">
-         <div class="row">
-            <div class="col-md-4">
-               <div class="blog_box">
-                  <div class="blog_img">
-                     <img src="images/spring.png" />
-                  </div>
-                  <h2 class="date_text">Spring</h2>
-               </div>
-            </div>
-            <div class="col-md-4">
-               <div class="blog_box">
-                  <div class="blog_img">
-                     <img src="images/spring-boot.png" />
-                  </div>
-                  <h2 class="date_text">springboot</h2>
-               </div>
-            </div>
-            <div class="col-md-4">
-               <div class="blog_box">
-                  <div class="blog_img">
-                     <img src="images/mongodb.png" />
-                  </div>
-                  <h2 class="date_text">mongodb</h2>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <div class="blog_section_2">
-      <div class="skills">
-         <div class="row">
-            <div class="col-md-4">
-               <div class="blog_box">
-                  <div class="blog_img">
-                     <img src="images/html.png" />
-                  </div>
-                  <h2 class="date_text">HTML</h2>
-               </div>
-            </div>
-            <div class="col-md-4">
-               <div class="blog_box">
-                  <div class="blog_img">
-                     <img src="images/css.png" />
-                  </div>
-                  <h2 class="date_text">CSS</h2>
-               </div>
-            </div>
-            <div class="col-md-4">
-               <div class="blog_box">
-                  <div class="blog_img">
-                     <img src="images/bootstrap.png" />
-                  </div>
-                  <h2 class="date_text">Bootstrap</h2>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <div class="blog_section_2">
-      <div class="skills">
-         <div class="row">
-            <div class="col-md-4">
-               <div class="blog_box">
-                  <div class="blog_img">
-                     <img src="images/apache-kafka.png" />
-                  </div>
-                  <h2 class="date_text">Apachekafka</h2>
-               </div>
-            </div>
-            <div class="col-md-4">
-               <div class="blog_box">
-                  <div class="blog_img">
-                     <img src="images/apache.png" />
-                  </div>
-                  <h2 class="date_text">Apache</h2>
-               </div>
-            </div>
-            <div class="col-md-4">
-               <div class="blog_box">
-                  <div class="blog_img">
-                     <img src="images/mysql.png" />
-                  </div>
-                  <h2 class="date_text">MySql</h2>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-
-
-   <h1 style="padding-left: 5%; margin-top: 5%;"><b> Professional Tool i Use </b></h1>
-
-   <div class="blog_section_2">
-      <div class="skills">
-         <div class="row">
-            <div class="col-md-4">
-               <div class="blog_box">
-                  <div class="blog_img">
-                     <img src="images/eclipse.png" />
-                  </div>
-                  <h2 class="date_text">Eclipse</h2>
-               </div>
-            </div>
-            <div class="col-md-4">
-               <div class="blog_box">
-                  <div class="blog_img">
-                     <img src="images/postman-api.png" />
-                  </div>
-                  <h2 class="date_text">Postman</h2>
-               </div>
-            </div>
-            <div class="col-md-4">
-               <div class="blog_box">
-                  <div class="blog_img">
-                     <img src="images/vs-code.png" />
-                  </div>
-                  <h2 class="date_text">VS Code</h2>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <div class="blog_section_2">
-      <div class="skills">
-         <div class="row">
-            <div class="col-md-4">
-               <div class="blog_box">
-                  <div class="blog_img">
-                     <img src="images/sublime.png" />
-                  </div>
-                  <h2 class="date_text">Sublime</h2>
-               </div>
-            </div>
-            <div class="col-md-4">
-               <div class="blog_box">
-                  <div class="blog_img">
-                     <img src="images/outlook.png" />
-                  </div>
-                  <h2 class="date_text">Outlook</h2>
-               </div>
-            </div>
-            <div class="col-md-4">
-               <div class="blog_box">
-                  <div class="blog_img">
-                     <img src="images/teams.png" />
-                  </div>
-                  <h2 class="date_text">Teams</h2>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-
-
-
-
-
-   <!-- Skills section end -->
-   <!-- contact section start -->
-   <div class="contact_section layout_padding">
-
-      <div class="container">
-
-         <div class="contact_section_2">
-
-            <div class="row">
-               <div class="col-md-6">
-                  <h1>The Best Time is Now. Let's Create Something Incredible Together!</h1>
-                  <h2>Let’s move forward together – your vision and our expertise can create something extraordinary.
-                     Whether it’s a new project, a fresh idea, or a unique challenge, we’re here to support you every
-                     step of the way. Don’t wait for the perfect moment, the time is now. Let's make it happen!</h2>
-               </div>
-               <div class="col-md-6">
-                  <div class="mail_section_1">
-                     <input type="text" class="mail_text" placeholder="Your Name" name="Your Name">
-                     <input type="text" class="mail_text" placeholder="Your Email" name="Your Email">
-                     <input type="text" class="mail_text" placeholder="Your Phone" name="Your Phone">
-                     <textarea class="massage-bt" placeholder="Your Massage" rows="5" id="comment"
-                        name="Your Massage"></textarea>
-                     <div class="send_bt"><a href="#">Send Now</a></div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!-- contact section end -->
-   <!-- project box section start -->
-   <div class="project_box">
-      <div class="container">
-         <div class="project_main">
-            <h1 class="hire_text">Hire me for your projects</h1>
-            <div class="callnow_bt"><a href="contact.html">Call Now</a></div>
-         </div>
-      </div>
-   </div>
-   <!-- project box section end -->
-   <!-- footer section start -->
-   <div class="footer_section margin_top90">
-      <div class="container">
-         <p class="copyright_text"><a href="#">dinkarprasa682@gmail.com</a></p>
-         <p class="copyright_text">485446,Nagod Satna Madhya Pradesh India</p>
-         <div class="location_text">
-            <ul>
-               <li>
-                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-               </li>
-
-               <li>
-                  <a href="https://www.linkedin.com/in/dinkarprasad682/" target="_blank"><i class="fa fa-linkedin"
-                        aria-hidden="true"></i></a>
-               </li>
-               <li>
-                  <a href="mailto:dinkarprasad682@gmail.com" target="_blank"><i class="fa fa-envelope"
-                        aria-hidden="true"></i></a>
-               </li>
-               <li>
-                  <a href="https://github.com/DK12345678D" target="_blank"><i class="fa fa-github"
-                        aria-hidden="true"></i></a>
-               </li>
+    </div>
+    <!-- header section start -->
+    <div class="header_bg">
+      <div style="padding-left: 2%">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="logo">
+            <h1 >Dinkar Prasad</h1>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="skills.html">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
             </ul>
-         </div>
+          </div>
+        </nav>
       </div>
-   </div>
-   <!-- footer section end -->
-   <!-- copyright section start -->
-   <div class="copyright_section">
+    </div>
+    <!-- header section end -->
+    <!-- Skills section start -->
+    <div class="blog_section layoyut_padding">
       <div class="container">
-         <p class="copyright_text">© 2025 All Rights Reserved | Designed and Developed by <a href="about.html"
-               style="color: #3498db;">Dinkar Prasad</a> </p>
-
+        <div class="row">
+          <section class="container servicest">
+            <div class="col-sm-12">
+              <h1 class="blog_taital">
+                My <span class="blog_taital_1">Skills</span>
+              </h1>
+            </div>
+          </section>
+        </div>
       </div>
    </div>
-   <!-- copyright section end -->
-   <!-- Javascript files-->
-   <script src="js/jquery.min.js"></script>
-   <script src="js/popper.min.js"></script>
-   <script src="js/bootstrap.bundle.min.js"></script>
-   <script src="js/jquery-3.0.0.min.js"></script>
-   <script src="js/plugin.js"></script>
-   <!-- sidebar -->
-   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-   <script src="js/custom.js"></script>
-   <script>
-      $('#myCarousel').carousel({
-         interval: false
+
+    <div class="blog_section_2">
+      <h1 style="padding-bottom: 5%"><b>Professional Skills Set</b></h1>
+      <div class="Skills">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="blog_box">
+              <div class="blog_img">
+                <img src="images/javascript.png" />
+              </div>
+              <h2 class="date_text">Javascript</h2>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="blog_box">
+              <div class="blog_img">
+                <img src="images/java.png" />
+              </div>
+              <h2 class="date_text">Java</h2>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="blog_box">
+              <div class="blog_img">
+                <img src="images/oracle.png" />
+              </div>
+              <h2 class="date_text">Oracle</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blog_section_2">
+      <div class="skills">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="blog_box">
+              <div class="blog_img">
+                <img src="images/spring.png" />
+              </div>
+              <h2 class="date_text">Spring</h2>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="blog_box">
+              <div class="blog_img">
+                <img src="images/spring-boot.png" />
+              </div>
+              <h2 class="date_text">springboot</h2>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="blog_box">
+              <div class="blog_img">
+                <img src="images/mongodb.png" />
+              </div>
+              <h2 class="date_text">mongodb</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blog_section_2">
+      <div class="skills">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="blog_box">
+              <div class="blog_img">
+                <img src="images/html.png" />
+              </div>
+              <h2 class="date_text">HTML</h2>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="blog_box">
+              <div class="blog_img">
+                <img src="images/css.png" />
+              </div>
+              <h2 class="date_text">CSS</h2>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="blog_box">
+              <div class="blog_img">
+                <img src="images/bootstrap.png" />
+              </div>
+              <h2 class="date_text">Bootstrap</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blog_section_2">
+      <div class="skills">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="blog_box">
+              <div class="blog_img">
+                <img src="images/apache-kafka.png" />
+              </div>
+              <h2 class="date_text">Apachekafka</h2>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="blog_box">
+              <div class="blog_img">
+                <img src="images/apache.png" />
+              </div>
+              <h2 class="date_text">Apache</h2>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="blog_box">
+              <div class="blog_img">
+                <img src="images/mysql.png" />
+              </div>
+              <h2 class="date_text">MySql</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+    <div class="blog_section_2">
+      <h1 style=" margin-bottom: 5%">
+        <b> Professional Tool i Use </b>
+      </h1>
+  
+      <div class="skills">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="blog_box">
+              <div class="blog_img">
+                <img src="images/eclipse.png" />
+              </div>
+              <h2 class="date_text">Eclipse</h2>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="blog_box">
+              <div class="blog_img">
+                <img src="images/postman-api.png" />
+              </div>
+              <h2 class="date_text">Postman</h2>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="blog_box">
+              <div class="blog_img">
+                <img src="images/vs-code.png" />
+              </div>
+              <h2 class="date_text">VS Code</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blog_section_2">
+      <div class="skills">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="blog_box">
+              <div class="blog_img">
+                <img src="images/sublime.png" />
+              </div>
+              <h2 class="date_text">Sublime</h2>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="blog_box">
+              <div class="blog_img">
+                <img src="images/outlook.png" />
+              </div>
+              <h2 class="date_text">Outlook</h2>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="blog_box">
+              <div class="blog_img">
+                <img src="images/teams.png" />
+              </div>
+              <h2 class="date_text">Teams</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills section end -->
+    <!-- contact section start -->
+    <div class="contact_section layout_padding">
+      <div class="container">
+        <div class="contact_section_2">
+          <div class="row">
+            <div class="col-md-6">
+              <h1>
+                The Best Time is Now. Let's Create Something Incredible
+                Together!
+              </h1>
+              <h2>
+                Let’s move forward together – your vision and our expertise can
+                create something extraordinary. Whether it’s a new project, a
+                fresh idea, or a unique challenge, we’re here to support you
+                every step of the way. Don’t wait for the perfect moment, the
+                time is now. Let's make it happen!
+              </h2>
+            </div>
+            <div class="col-md-6">
+              <div class="mail_section_1">
+                <input
+                  type="text"
+                  class="mail_text"
+                  placeholder="Your Name"
+                  name="Your Name"
+                />
+                <input
+                  type="text"
+                  class="mail_text"
+                  placeholder="Your Email"
+                  name="Your Email"
+                />
+                <input
+                  type="text"
+                  class="mail_text"
+                  placeholder="Your Phone"
+                  name="Your Phone"
+                />
+                <textarea
+                  class="massage-bt"
+                  placeholder="Your Massage"
+                  rows="5"
+                  id="comment"
+                  name="Your Massage"
+                ></textarea>
+                <div class="send_bt"><a href="#">Send Now</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact section end -->
+    <!-- project box section start -->
+    <div class="project_box">
+      <div class="container">
+        <div class="project_main">
+          <h1 class="hire_text">Hire me for your projects</h1>
+          <div class="callnow_bt"><a href="contact.html">Call Now</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- project box section end -->
+    <!-- footer section start -->
+    <div class="footer_section margin_top90">
+      <div class="container">
+        <p class="copyright_text"><a href="#">dinkarprasa682@gmail.com</a></p>
+        <p class="copyright_text">485446,Nagod Satna Madhya Pradesh India</p>
+        <div class="location_text">
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.linkedin.com/in/dinkarprasad682/"
+                target="_blank"
+                ><i class="fa fa-linkedin" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:dinkarprasad682@gmail.com" target="_blank"
+                ><i class="fa fa-envelope" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/DK12345678D" target="_blank"
+                ><i class="fa fa-github" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- footer section end -->
+    <!-- copyright section start -->
+    <div class="copyright_section">
+      <div class="container">
+        <p class="copyright_text">
+          © 2025 All Rights Reserved | Designed and Developed by
+          <a href="about.html" style="color: #3498db">Dinkar Prasad</a>
+        </p>
+      </div>
+    </div>
+    <!-- copyright section end -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+      $("#myCarousel").carousel({
+        interval: false,
       });
 
       //scroll slides on swipe for touch enabled devices
 
       $("#myCarousel").on("touchstart", function (event) {
-
-         var yClick = event.originalEvent.touches[0].pageY;
-         $(this).one("touchmove", function (event) {
-
-            var yMove = event.originalEvent.touches[0].pageY;
-            if (Math.floor(yClick - yMove) > 1) {
-               $(".carousel").carousel('next');
-            }
-            else if (Math.floor(yClick - yMove) < -1) {
-               $(".carousel").carousel('prev');
-            }
-         });
-         $(".carousel").on("touchend", function () {
-            $(this).off("touchmove");
-         });
+        var yClick = event.originalEvent.touches[0].pageY;
+        $(this).one("touchmove", function (event) {
+          var yMove = event.originalEvent.touches[0].pageY;
+          if (Math.floor(yClick - yMove) > 1) {
+            $(".carousel").carousel("next");
+          } else if (Math.floor(yClick - yMove) < -1) {
+            $(".carousel").carousel("prev");
+          }
+        });
+        $(".carousel").on("touchend", function () {
+          $(this).off("touchmove");
+        });
       });
-   </script>
-   <script>
+    </script>
+    <script>
       // Add 'loaded' class to body after page has loaded
-      window.addEventListener('load', function () {
-         document.body.classList.add('loaded');
+      window.addEventListener("load", function () {
+        document.body.classList.add("loaded");
       });
-   </script>
-   </body>
-
-   </html>
+    </script>
+  </body>
+</html>
