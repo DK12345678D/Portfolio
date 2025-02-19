@@ -53,16 +53,7 @@
         z-index: 9999;
       }
 
-      /* D Logo Style */
-      .d-logo {
-        font-size: 100px;
-        font-weight: bold;
-        color: #3498db; /* Change the color of the logo */
-        text-transform: uppercase;
-        animation: rotateD 5s ease-in-out infinite,
-          scaleD 3s ease-in-out infinite;
-      }
-
+     
       /* Animation to rotate the D */
       @keyframes rotateD {
         0% {
@@ -86,6 +77,51 @@
           transform: scale(3.2);
         }
       }
+      header {
+  background: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.item {
+  margin-bottom: 20px;
+}
 
       /* Hide the loader after page has loaded */
       body.loaded .loading-overlay {
@@ -99,7 +135,7 @@
       <div class="d-logo">DK</div>
     </div>
     <!-- header section start -->
-    <div class="header_bg">
+    <div class="header_bg home_menu menu_fixed animated fadeInDown">
       <div style="padding-left: 2%">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="logo"><h1 >Dinkar Prasad</h1></div>
@@ -140,27 +176,63 @@
       </div>
     </div>
     <!-- header section end -->
-    <div class="slider-area">
-      <div class="slider-height2 d-flex align-items-center">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-12">
-              <div class="hero-cap">
-                <h2>API Development &amp; Integration</h2>
-                <nav aria-label="breadcrumb ">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                      <a href="index.html">Home</a>
-                    </li>
-                    <li class="breadcrumb-item"><a href="#">My Services</a></li>
-                  </ol>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
+    <header>
+      <h1>Database Design & Optimization</h1>
+      <p>Ensuring efficient data storage and fast retrieval for better application performance.</p>
+    </header>
+  
+    <section class="intro">
+      <h2>What is Database Design & Optimization?</h2>
+      <p>Database Design involves creating an organized structure for your data to ensure that it is stored in a way that is easy to maintain and scale. Optimization focuses on improving the speed, efficiency, and performance of the database, ensuring quick data retrieval and smooth application performance.</p>
+    </section>
+  
+    <section class="details">
+      <h2>What Does Database Design & Optimization Include?</h2>
+  
+      <div class="item">
+        <h3>Database Design</h3>
+        <p>Good database design ensures that your data is structured in an efficient, scalable, and accessible way. Here's what I offer for designing your database:</p>
+        <ul>
+          <li>Entity Relationship Diagram (ERD) Design</li>
+          <li>Normalization</li>
+          <li>Data Integrity Constraints</li>
+          <li>Optimized Table Structures</li>
+        </ul>
       </div>
-    </div>
+  
+      <div class="item">
+        <h3>Database Optimization</h3>
+        <p>Once the database is designed, I focus on optimizing it for speed and performance. Key areas include:</p>
+        <ul>
+          <li>Indexing</li>
+          <li>Query Optimization</li>
+          <li>Database Caching</li>
+          <li>Optimizing Storage</li>
+          <li>Database Sharding</li>
+        </ul>
+      </div>
+    </section>
+  
+    <section class="benefits">
+      <h2>Benefits of Database Design & Optimization</h2>
+      <ul>
+        <li>Improved Application Performance</li>
+        <li>Scalability</li>
+        <li>Reduced Downtime</li>
+        <li>Cost Efficiency</li>
+      </ul>
+    </section>
+  
+    <section class="why-choose">
+      <h2>Why Choose My Database Design & Optimization Services?</h2>
+      <ul>
+        <li>Expert Design</li>
+        <li>Advanced Optimization Techniques</li>
+        <li>Performance Monitoring</li>
+        <li>Security & Data Integrity</li>
+        <li>Long-Term Scalability</li>
+      </ul>
+    </section>
 
     <!-- contact section start -->
     <div class="contact_section layout_padding">
@@ -230,6 +302,7 @@
       </div>
     </div>
     <!-- project box section end -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
     <!-- footer section start -->
     <div class="footer_section">
       <div class="container">
@@ -280,6 +353,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/plugin.js"></script>
+    <script src="js/js.common.js"></script>
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>

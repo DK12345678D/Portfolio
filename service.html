@@ -54,15 +54,7 @@
         z-index: 9999;
       }
 
-      /* D Logo Style */
-      .d-logo {
-        font-size: 100px;
-        font-weight: bold;
-        color: #3498db; /* Change the color of the logo */
-        text-transform: uppercase;
-        animation: rotateD 5s ease-in-out infinite,
-          scaleD 3s ease-in-out infinite;
-      }
+      
 
       /* Animation to rotate the D */
       @keyframes rotateD {
@@ -150,17 +142,18 @@
     <!-- header section end -->
     <!-- services section start -->
     <div class="services_section layout_padding ">
-      <div class="container">
-        <section class="container servicest">
+      <div class="container" >
         <div class="row">
-            <div class="col-sm-12">
-              <h1 class="services_taital">
-                My <span class="portfolio_taital_1">Services</span>
-              </h1>
-            </div> 
-        </div>
-      </section>
+        <section class="container servicest">
+          <div class="col-sm-12">
+            <h1 class="contact_taital">
+              My <span class="contact_taital_1">Services</span>
+            </h1>
+          </div>
+        </section>
       </div>
+      </div>
+      
       <div class="container">
         <div class="services_section_2">
           <div class="row">
@@ -210,6 +203,7 @@
       </div>
     </div>
     <!-- project box section end -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
     <!-- footer section start -->
     <div class="footer_section">
       <div class="container">
@@ -259,6 +253,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/plugin.js"></script>
+    <script src="js/js.common.js"></script>
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>

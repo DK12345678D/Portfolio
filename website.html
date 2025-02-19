@@ -53,15 +53,7 @@
         z-index: 9999;
       }
 
-      /* D Logo Style */
-      .d-logo {
-        font-size: 100px;
-        font-weight: bold;
-        color: #3498db; /* Change the color of the logo */
-        text-transform: uppercase;
-        animation: rotateD 5s ease-in-out infinite,
-          scaleD 3s ease-in-out infinite;
-      }
+      
 
       /* Animation to rotate the D */
       @keyframes rotateD {
@@ -86,7 +78,51 @@
           transform: scale(3.2);
         }
       }
+      header {
+  background: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
 
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.item {
+  margin-bottom: 20px;
+}
       /* Hide the loader after page has loaded */
       body.loaded .loading-overlay {
         display: none;
@@ -99,7 +135,7 @@
       <div class="d-logo">DK</div>
     </div>
     <!-- header section start -->
-    <div class="header_bg">
+    <div class="header_bg home_menu menu_fixed animated fadeInDown">
       <div style="padding-left: 2%">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="logo"><h1 >Dinkar Prasad</h1></div>
@@ -140,7 +176,61 @@
       </div>
     </div>
     <!-- header section end -->
-
+    <header>
+      <h1>Responsive Front-End Development</h1>
+      <p>Ensuring seamless experiences across all devices.</p>
+    </header>
+  
+    <section class="intro">
+      <h2>What is Responsive Front-End Development?</h2>
+      <p>Responsive Front-End Development is the practice of designing and developing websites that automatically adjust their layout and content to suit various screen sizes and resolutions. This ensures that your users have an optimal viewing experience, whether they are on a large desktop monitor or a small mobile phone.</p>
+    </section>
+  
+    <section class="details">
+      <h2>What Does Responsive Front-End Development Include?</h2>
+      <div class="item">
+        <h3>Mobile-First Design</h3>
+        <p>Mobile-first design is a strategy where the design process begins by focusing on the mobile experience, ensuring that the application looks great on small screens.</p>
+      </div>
+      <div class="item">
+        <h3>Fluid Grid Layouts</h3>
+        <p>Rather than using fixed widths for elements, I design your layout using fluid grids that scale proportionally, ensuring that your website adjusts dynamically to different screen sizes.</p>
+      </div>
+      <div class="item">
+        <h3>Flexible Images & Media</h3>
+        <p>I make sure that all visual content scales responsively, reducing load time and ensuring fast performance across all devices.</p>
+      </div>
+      <div class="item">
+        <h3>CSS Media Queries</h3>
+        <p>CSS media queries allow the application of different styles for different screen sizes, ensuring a consistent look on all devices.</p>
+      </div>
+      <div class="item">
+        <h3>Cross-Browser Compatibility</h3>
+        <p>I ensure your website functions properly across all popular browsers, guaranteeing a consistent user experience.</p>
+      </div>
+    </section>
+  
+    <section class="benefits">
+      <h2>Benefits of Responsive Front-End Development</h2>
+      <ul>
+        <li>Improved User Experience</li>
+        <li>Better SEO</li>
+        <li>Faster Load Times</li>
+        <li>Cost Efficiency</li>
+        <li>Future-Proofing</li>
+      </ul>
+    </section>
+  
+    <section class="why-choose">
+      <h2>Why Choose My Responsive Front-End Development Services?</h2>
+      <ul>
+        <li>Tailored Designs</li>
+        <li>Expert Development</li>
+        <li>Focus on Performance</li>
+        <li>Seamless User Experience</li>
+        <li>Ongoing Support</li>
+      </ul>
+    </section>
     <!-- contact section start -->
     <div class="contact_section layout_padding">
       <div class="container">
@@ -199,6 +289,7 @@
       </div>
     </div>
     <!-- contact section end -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
     <!-- project box section start -->
     <div class="project_box">
       <div class="container">
@@ -259,6 +350,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/plugin.js"></script>
+    <script src="js/js.common.js"></script>
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>

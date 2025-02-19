@@ -131,15 +131,7 @@
         z-index: 9999;
       }
 
-      /* D Logo Style */
-      .d-logo {
-        font-size: 100px;
-        font-weight: bold;
-        color: #3498db; /* Change the color of the logo */
-        text-transform: uppercase;
-        animation: rotateD 5s ease-in-out infinite,
-          scaleD 3s ease-in-out infinite;
-      }
+      
 
       /* Animation to rotate the D */
       @keyframes rotateD {
@@ -184,7 +176,7 @@
       <div class="d-logo">DK</div>
     </div>
     <!-- header section start -->
-    <div class="header_bg">
+    <div class="header_bg home_menu menu_fixed animated fadeInDown">
       <div style="padding-left: 2%">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="logo"><h1 >Dinkar Prasad</h1></div>
@@ -253,7 +245,7 @@
           databases, and gaining experience with development tools and version
           control (like Git). He'll work on improving his coding skills,
           collaborating with teams, and familiarizing himself with agile
-          practices and the software development lifecycle.
+          practices and the software development lifecycle.’’
         </p>
       </div>
     </div>
@@ -404,6 +396,7 @@
       </div>
     </div>
     <!-- project box section end -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
     <!-- footer section start -->
     <div class="footer_section margin_top90">
       <div class="container">
@@ -456,6 +449,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/plugin.js"></script>
+    <script src="js/js.common.js"></script>
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
@@ -481,12 +475,7 @@
         });
       });
     </script>
-    <script>
-      // Add 'loaded' class to body after page has loaded
-      window.addEventListener("load", function () {
-        document.body.classList.add("loaded");
-      });
-    </script>
+    
     <script>
       // Add 'loaded' class to body after page has loaded
       window.addEventListener("load", function () {

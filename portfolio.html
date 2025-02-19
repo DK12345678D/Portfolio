@@ -153,6 +153,18 @@
       </div>
     </div>
     <!-- header section end -->
+     <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
     <div class="blog_section layoyut_padding ">
       <div class="container">
         <div class="row">
@@ -376,11 +388,11 @@
                 <div class="container_main">
                   <img src="images/b1.png" alt="" class="image" />
                   <div class="overlay">
-                    <!-- <div class="text">
+                    <div class="text">
                                  <div class="btn_main">
                                     <div class="buy_bt"><a href="#">See More</a></div>
                                  </div>
-                              </div> -->
+                              </div>
                   </div>
                 </div>
               </div>
@@ -538,7 +550,7 @@
       </div>
     </div>
     <!-- portfolio section end -->
-
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
     <!-- project box section start -->
     <div class="project_box">
       <div class="container">
@@ -599,6 +611,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/plugin.js"></script>
+    <script src="js/js.common.js"></script>
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
@@ -625,6 +638,26 @@
       });
     </script>
     <script>
+      // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
       // Add 'loaded' class to body after page has loaded
       window.addEventListener("load", function () {
         document.body.classList.add("loaded");
