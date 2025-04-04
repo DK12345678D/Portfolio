@@ -87,12 +87,12 @@
         }
       }
       .servicest {
-    background-color: #ecf0f1;
-    background-image: url(images/i.jpg);
-    padding: 40px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
+        background-color: #ecf0f1;
+        background-image: url(images/i.jpg);
+        padding: 40px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
       /* Hide the loader after page has loaded */
       body.loaded .loading-overlay {
         display: none;
@@ -115,7 +115,7 @@
     <div class="header_bg">
       <div style="padding-left: 2%">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="logo"><h1 >Dinkar Prasad</h1></div>
+          <div class="logo"><h1>Dinkar Prasad</h1></div>
           <button
             class="navbar-toggler"
             type="button"
@@ -153,19 +153,18 @@
       </div>
     </div>
     <!-- header section end -->
-     <!-- The Modal -->
-<div id="myModal" class="modal">
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
 
-  <!-- The Close Button -->
-  <span class="close">&times;</span>
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01" />
 
-  <!-- Modal Content (The Image) -->
-  <img class="modal-content" id="img01">
-
-  <!-- Modal Caption (Image Text) -->
-  <div id="caption"></div>
-</div>
-    <div class="blog_section layoyut_padding ">
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+    <div class="contact_section layout_padding">
       <div class="container">
         <div class="row">
           <section class="container servicest">
@@ -389,10 +388,10 @@
                   <img src="images/b1.png" alt="" class="image" />
                   <div class="overlay">
                     <div class="text">
-                                 <div class="btn_main">
-                                    <div class="buy_bt"><a href="#">See More</a></div>
-                                 </div>
-                              </div>
+                      <div class="btn_main">
+                        <div class="buy_bt"><a href="#">See More</a></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -639,25 +638,25 @@
     </script>
     <script>
       // Get the modal
-var modal = document.getElementById("myModal");
+      var modal = document.getElementById("myModal");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("myImg");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      };
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
       // Add 'loaded' class to body after page has loaded
       window.addEventListener("load", function () {
         document.body.classList.add("loaded");

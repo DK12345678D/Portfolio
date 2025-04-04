@@ -81,6 +81,12 @@ body {
     height: 50%;
     width: 100%;
 }
+
+@media (min-width: 576px) {
+    .container {
+       max-width: 100%;
+    }
+}
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -340,6 +346,8 @@ button {
     top: 0;
     width: 100%;
     z-index: 999;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px;
     
 
 }
@@ -402,7 +410,14 @@ button {
 
 
 /* header section end */
-
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+   
+}
 
 /* banner section start */
 
@@ -634,6 +649,8 @@ button {
     width: 100%;
     float: left;
     padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .box_main {
