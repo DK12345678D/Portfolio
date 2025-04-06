@@ -57,7 +57,7 @@
         font-size: 1.1rem;
         color: rgb(150, 150, 150);
         font-style: italic;
-        font-color: red;
+        font-color: rgb(153, 42, 42);
       }
 
       .reviews {
@@ -237,14 +237,19 @@
       </div>
       <div class="col-sm-6">
         <h1>About :</h1>
-        <p>
-          I Am Dinkar, as a fresher Java developer, will focus on mastering core
-          Java, learning frameworks like Spring and Hibernate, understanding
-          databases, and gaining experience with development tools and version
-          control (like Git). He'll work on improving his coding skills,
-          collaborating with teams, and familiarizing himself with agile
-          practices and the software development lifecycle.’’
-        </p>
+        <h4>
+          I Am Dinkar, as a fresher Java developer, A highly motivated and
+          results-oriented Computer Science graduate with strong expertise in
+          Java development and full-stack programming. Skilled in designing and
+          developing scalable web applications, optimizing performance, and
+          building secure, efficient RESTful APIs. Proficient in working with a
+          variety of technologies including Spring Boot, Hibernate, and MySQL,
+          with a keen focus on debugging, security, and performance
+          enhancements. Demonstrated ability to collaborate with
+          cross-functional teams to deliver high-quality software solutions on
+          time. Passionate about leveraging technical skills and problem-solving
+          abilities to drive success in a dynamic development environment.
+        </h4>
       </div>
     </div>
     <!-- Review section start -->
@@ -451,28 +456,6 @@
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
-    <script>
-      $("#myCarousel").carousel({
-        interval: false,
-      });
-
-      //scroll slides on swipe for touch enabled devices
-
-      $("#myCarousel").on("touchstart", function (event) {
-        var yClick = event.originalEvent.touches[0].pageY;
-        $(this).one("touchmove", function (event) {
-          var yMove = event.originalEvent.touches[0].pageY;
-          if (Math.floor(yClick - yMove) > 1) {
-            $(".carousel").carousel("next");
-          } else if (Math.floor(yClick - yMove) < -1) {
-            $(".carousel").carousel("prev");
-          }
-        });
-        $(".carousel").on("touchend", function () {
-          $(this).off("touchmove");
-        });
-      });
-    </script>
 
     <script>
       // Add 'loaded' class to body after page has loaded

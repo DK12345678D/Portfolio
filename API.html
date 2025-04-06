@@ -82,15 +82,10 @@
         display: none;
       }
 
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f7fa;
-      }
+      
       header {
         color: white;
-        padding: 20px;
+        padding: 10px;
         text-align: center;
       }
       section {
@@ -107,7 +102,7 @@
         margin: 10px 0;
       }
       .container {
-        width: 80%;
+        width: 98%;
         margin: 0 auto;
       }
       .benefits,
@@ -120,7 +115,7 @@
       }
       .services li,
       .benefits li {
-        margin-left: 20px;
+        margin-left: 10px;
       }
       .highlight {
         color: #2980b9;
@@ -175,49 +170,8 @@
       </div>
     </div>
     <!-- header section end -->
-
-    <!-- header  start -->
-    <!-- <div class="slider-area">
-
-      <div class="slidee-height2 d-flex align-items-center">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-12">
-              <div class="hero-cap">
-                <h2>API Development & Integration</h2>
-                <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                      <a href="index.html">Home</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                      ::before
-                      <a href="#">My Services</a>
-                    </li>
-                  </ol>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- <section class="breadcrumb breadcrumb_bg">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-12">
-                  <div class="breadcrumb_iner">
-                      <div class="breadcrumb_iner_item">
-                          <h2>blog</h2>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section> -->
-    <!-- header  end -->
     <section class="container benefits" style="padding-top: 1%">
-      <header style="padding-top: 15%">
+      <header style="padding-top: 10%">
         <h1>API Development & Integration</h1>
       </header>
     </section>
@@ -428,7 +382,6 @@
       </div>
     </div>
     <!-- contact section end -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
     <!-- project box section start -->
     <div class="project_box">
       <div class="container">
@@ -439,6 +392,7 @@
       </div>
     </div>
     <!-- project box section end -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
     <!-- footer section start -->
     <div class="footer_section">
       <div class="container">
@@ -493,26 +447,11 @@
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
+
     <script>
-      $("#myCarousel").carousel({
-        interval: false,
-      });
-
-      //scroll slides on swipe for touch enabled devices
-
-      $("#myCarousel").on("touchstart", function (event) {
-        var yClick = event.originalEvent.touches[0].pageY;
-        $(this).one("touchmove", function (event) {
-          var yMove = event.originalEvent.touches[0].pageY;
-          if (Math.floor(yClick - yMove) > 1) {
-            $(".carousel").carousel("next");
-          } else if (Math.floor(yClick - yMove) < -1) {
-            $(".carousel").carousel("prev");
-          }
-        });
-        $(".carousel").on("touchend", function () {
-          $(this).off("touchmove");
-        });
+      // Add 'loaded' class to body after page has loaded
+      window.addEventListener("load", function () {
+        document.body.classList.add("loaded");
       });
     </script>
   </body>

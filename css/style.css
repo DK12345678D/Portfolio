@@ -658,10 +658,9 @@ button {
     border-radius: 100%;
     border: 6px solid #f5c729;
     height: auto;
-    padding: 70px 0px;
+    padding: 80px 0px;
     box-shadow: 0px 0px 60px 0px #f0f0ef;
 }
-
 .app_icon {
     width: 100%;
     margin: 0 auto;
@@ -871,7 +870,7 @@ button {
 .portfolio_section {
     width: 100%;
     float: left;
-    padding: 90px 0px;
+    padding: 20px 0px;
 }
 
 .portfolio_taital {

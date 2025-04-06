@@ -53,7 +53,6 @@
         z-index: 9999;
       }
 
-     
       /* Animation to rotate the D */
       @keyframes rotateD {
         0% {
@@ -78,50 +77,59 @@
         }
       }
       header {
-  background: #007bff;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
+        border-radius: 8px;
+        margin-bottom: 20px;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      .benefits,
+      .services,
+      .why-choose {
+        background-color: #ecf0f1;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
 
-header h1 {
-  font-size: 2.5rem;
-}
+      header h1 {
+        font-size: 2.5rem;
+      }
 
-header p {
-  font-size: 1.2rem;
-  margin-top: 10px;
-}
+      header p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+      }
 
-section {
-  padding: 20px;
-  margin: 20px 0;
-  background-color: #fff;
-  border-radius: 8px;
-}
+      section {
+        padding: 20px;
+        margin: 20px 0;
+        background-color: #fff;
+        border-radius: 8px;
+      }
 
-h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-}
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
 
-h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
 
-ul {
-  list-style-type: none;
-}
+      ul {
+        list-style-type: none;
+      }
 
-li {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
+      li {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
 
-.item {
-  margin-bottom: 20px;
-}
+      .item {
+        margin-bottom: 20px;
+      }
 
       /* Hide the loader after page has loaded */
       body.loaded .loading-overlay {
@@ -135,10 +143,10 @@ li {
       <div class="d-logo">DK</div>
     </div>
     <!-- header section start -->
-    <div class="header_bg home_menu menu_fixed animated fadeInDown">
+    <div class="header_bg">
       <div style="padding-left: 2%">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="logo"><h1 >Dinkar Prasad</h1></div>
+          <div class="logo"><h1>Dinkar Prasad</h1></div>
           <button
             class="navbar-toggler"
             type="button"
@@ -176,22 +184,32 @@ li {
       </div>
     </div>
     <!-- header section end -->
-    <header>
-      <h1>Database Design & Optimization</h1>
-      <p>Ensuring efficient data storage and fast retrieval for better application performance.</p>
-    </header>
-  
+    <section class="container benefits" style="padding-top: 1%">
+      <header style="padding-top: 10%">
+        <h1>Database Design & Optimization</h1>
+      </header>
+    </section>
     <section class="intro">
       <h2>What is Database Design & Optimization?</h2>
-      <p>Database Design involves creating an organized structure for your data to ensure that it is stored in a way that is easy to maintain and scale. Optimization focuses on improving the speed, efficiency, and performance of the database, ensuring quick data retrieval and smooth application performance.</p>
+      <p>
+        Database Design involves creating an organized structure for your data
+        to ensure that it is stored in a way that is easy to maintain and scale.
+        Optimization focuses on improving the speed, efficiency, and performance
+        of the database, ensuring quick data retrieval and smooth application
+        performance.
+      </p>
     </section>
-  
+
     <section class="details">
       <h2>What Does Database Design & Optimization Include?</h2>
-  
+
       <div class="item">
         <h3>Database Design</h3>
-        <p>Good database design ensures that your data is structured in an efficient, scalable, and accessible way. Here's what I offer for designing your database:</p>
+        <p>
+          Good database design ensures that your data is structured in an
+          efficient, scalable, and accessible way. Here's what I offer for
+          designing your database:
+        </p>
         <ul>
           <li>Entity Relationship Diagram (ERD) Design</li>
           <li>Normalization</li>
@@ -199,10 +217,13 @@ li {
           <li>Optimized Table Structures</li>
         </ul>
       </div>
-  
+
       <div class="item">
         <h3>Database Optimization</h3>
-        <p>Once the database is designed, I focus on optimizing it for speed and performance. Key areas include:</p>
+        <p>
+          Once the database is designed, I focus on optimizing it for speed and
+          performance. Key areas include:
+        </p>
         <ul>
           <li>Indexing</li>
           <li>Query Optimization</li>
@@ -212,7 +233,7 @@ li {
         </ul>
       </div>
     </section>
-  
+
     <section class="benefits">
       <h2>Benefits of Database Design & Optimization</h2>
       <ul>
@@ -222,7 +243,7 @@ li {
         <li>Cost Efficiency</li>
       </ul>
     </section>
-  
+
     <section class="why-choose">
       <h2>Why Choose My Database Design & Optimization Services?</h2>
       <ul>
@@ -357,28 +378,7 @@ li {
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
-    <script>
-      $("#myCarousel").carousel({
-        interval: false,
-      });
 
-      //scroll slides on swipe for touch enabled devices
-
-      $("#myCarousel").on("touchstart", function (event) {
-        var yClick = event.originalEvent.touches[0].pageY;
-        $(this).one("touchmove", function (event) {
-          var yMove = event.originalEvent.touches[0].pageY;
-          if (Math.floor(yClick - yMove) > 1) {
-            $(".carousel").carousel("next");
-          } else if (Math.floor(yClick - yMove) < -1) {
-            $(".carousel").carousel("prev");
-          }
-        });
-        $(".carousel").on("touchend", function () {
-          $(this).off("touchmove");
-        });
-      });
-    </script>
     <script>
       // Add 'loaded' class to body after page has loaded
       window.addEventListener("load", function () {

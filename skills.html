@@ -163,14 +163,6 @@
           <div class="col-md-4">
             <div class="blog_box">
               <div class="blog_img">
-                <img src="images/javascript.png" />
-              </div>
-              <h2 class="date_text">Javascript</h2>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="blog_box">
-              <div class="blog_img">
                 <img src="images/java.png" />
               </div>
               <h2 class="date_text">Java</h2>
@@ -182,6 +174,14 @@
                 <img src="images/oracle.png" />
               </div>
               <h2 class="date_text">Oracle</h2>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="blog_box">
+              <div class="blog_img">
+                <img src="images/mysql.png" />
+              </div>
+              <h2 class="date_text">MySql</h2>
             </div>
           </div>
         </div>
@@ -239,9 +239,9 @@
           <div class="col-md-4">
             <div class="blog_box">
               <div class="blog_img">
-                <img src="images/bootstrap.png" />
+                <img src="images/javascript.png" />
               </div>
-              <h2 class="date_text">Bootstrap</h2>
+              <h2 class="date_text">Javascript</h2>
             </div>
           </div>
         </div>
@@ -269,9 +269,9 @@
           <div class="col-md-4">
             <div class="blog_box">
               <div class="blog_img">
-                <img src="images/mysql.png" />
+                <img src="images/bootstrap.png" />
               </div>
-              <h2 class="date_text">MySql</h2>
+              <h2 class="date_text">Bootstrap</h2>
             </div>
           </div>
         </div>
@@ -461,28 +461,7 @@
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
-    <script>
-      $("#myCarousel").carousel({
-        interval: false,
-      });
 
-      //scroll slides on swipe for touch enabled devices
-
-      $("#myCarousel").on("touchstart", function (event) {
-        var yClick = event.originalEvent.touches[0].pageY;
-        $(this).one("touchmove", function (event) {
-          var yMove = event.originalEvent.touches[0].pageY;
-          if (Math.floor(yClick - yMove) > 1) {
-            $(".carousel").carousel("next");
-          } else if (Math.floor(yClick - yMove) < -1) {
-            $(".carousel").carousel("prev");
-          }
-        });
-        $(".carousel").on("touchend", function () {
-          $(this).off("touchmove");
-        });
-      });
-    </script>
     <script>
       // Add 'loaded' class to body after page has loaded
       window.addEventListener("load", function () {

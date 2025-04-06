@@ -53,8 +53,6 @@
         z-index: 9999;
       }
 
-     
-
       /* Animation to rotate the D */
       @keyframes rotateD {
         0% {
@@ -79,12 +77,12 @@
         }
       }
       .servicest {
-    background-color: #ecf0f1;
-    background-image: url(images/i.jpg);
-    padding: 40px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
+        background-color: #ecf0f1;
+        background-image: url(images/i.jpg);
+        padding: 50px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
       /* Hide the loader after page has loaded */
       body.loaded .loading-overlay {
         display: none;
@@ -100,7 +98,7 @@
     <div class="header_bg">
       <div style="padding-left: 2%">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="logo"><h1 >Dinkar Prasad</h1></div>
+          <div class="logo"><h1>Dinkar Prasad</h1></div>
           <button
             class="navbar-toggler"
             type="button"
@@ -137,12 +135,11 @@
         </nav>
       </div>
     </div>
-    <!-- header section end -->
+
     <!-- contact section start -->
     <div class="contact_section layout_padding">
       <div class="container">
         <div class="row">
-        
           <section class="container servicest">
             <div class="col-sm-12">
               <h1 class="contact_taital">
@@ -150,10 +147,10 @@
               </h1>
             </div>
           </section>
-       </div>
-       </div>
+        </div>
+      </div>
     </div>
-    
+
     <div class="new_home_web">
       <div class="responsive-container-block big-container">
         <img
@@ -175,7 +172,15 @@
             the way. Don’t wait for the perfect moment, the time is now. Let's
             make it happen!
           </p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116104.97200408726!2d80.72064521073088!3d24.579518302882594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39847f12a0d55141%3A0xa6208334386e35e2!2sSatna%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1739955464305!5m2!1sen!2sin" width="82%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116104.97200408726!2d80.72064521073088!3d24.579518302882594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39847f12a0d55141%3A0xa6208334386e35e2!2sSatna%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1739955464305!5m2!1sen!2sin"
+            width="82%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
         <div class="responsive-container-block container">
           <div
@@ -302,7 +307,6 @@
       </div>
     </div>
 
-    
     <!-- copyright section end -->
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>
@@ -314,28 +318,7 @@
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
-    <script>
-      $("#myCarousel").carousel({
-        interval: false,
-      });
 
-      //scroll slides on swipe for touch enabled devices
-
-      $("#myCarousel").on("touchstart", function (event) {
-        var yClick = event.originalEvent.touches[0].pageY;
-        $(this).one("touchmove", function (event) {
-          var yMove = event.originalEvent.touches[0].pageY;
-          if (Math.floor(yClick - yMove) > 1) {
-            $(".carousel").carousel("next");
-          } else if (Math.floor(yClick - yMove) < -1) {
-            $(".carousel").carousel("prev");
-          }
-        });
-        $(".carousel").on("touchend", function () {
-          $(this).off("touchmove");
-        });
-      });
-    </script>
     <script>
       // Add 'loaded' class to body after page has loaded
       window.addEventListener("load", function () {

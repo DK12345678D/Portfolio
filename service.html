@@ -177,11 +177,11 @@
             </a>
             <a href="springboot.html" class="col-lg-3 col-sm-6">
               <div class="box_main">
-                <div class="app_icon"><img src="images/spring-boot.png" /></div>
+                <div class="app_icon"><img src="images/database.png" /></div>
                 <div class="app_icon_1">
-                  <img src="images/spring-boot.png" />
+                  <img src="images/database.png" />
                 </div>
-                <h4 class="services_text">SpringBoot</h4>
+                <h4 class="services_text">Database Design</h4>
               </div>
             </a>
           </div>
@@ -253,28 +253,7 @@
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
-    <script>
-      $("#myCarousel").carousel({
-        interval: false,
-      });
 
-      //scroll slides on swipe for touch enabled devices
-
-      $("#myCarousel").on("touchstart", function (event) {
-        var yClick = event.originalEvent.touches[0].pageY;
-        $(this).one("touchmove", function (event) {
-          var yMove = event.originalEvent.touches[0].pageY;
-          if (Math.floor(yClick - yMove) > 1) {
-            $(".carousel").carousel("next");
-          } else if (Math.floor(yClick - yMove) < -1) {
-            $(".carousel").carousel("prev");
-          }
-        });
-        $(".carousel").on("touchend", function () {
-          $(this).off("touchmove");
-        });
-      });
-    </script>
     <script>
       // Add 'loaded' class to body after page has loaded
       window.addEventListener("load", function () {

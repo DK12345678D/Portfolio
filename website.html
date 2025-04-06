@@ -76,8 +76,18 @@
           transform: scale(3.2);
         }
       }
+
+      .benefits,
+      .services,
+      .why-choose {
+        background-color: #ecf0f1;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
       header {
-        background: #007bff;
+        border-radius: 8px;
+        margin-bottom: 20px;
         color: white;
         padding: 20px;
         text-align: center;
@@ -133,7 +143,7 @@
       <div class="d-logo">DK</div>
     </div>
     <!-- header section start -->
-    <div class="header_bg home_menu menu_fixed animated fadeInDown">
+    <div class="header_bg">
       <div style="padding-left: 2%">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="logo"><h1>Dinkar Prasad</h1></div>
@@ -174,11 +184,11 @@
       </div>
     </div>
     <!-- header section end -->
-    <header>
-      <h1>Responsive Front-End Development</h1>
-      <p>Ensuring seamless experiences across all devices.</p>
-    </header>
-
+    <section class="container benefits" style="padding-top: 1%">
+      <header style="padding-top: 10%">
+        <h1>Responsive Front-End Development</h1>
+      </header>
+    </section>
     <section class="intro">
       <h2>What is Responsive Front-End Development?</h2>
       <p>
@@ -375,28 +385,7 @@
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
-    <script>
-      $("#myCarousel").carousel({
-        interval: false,
-      });
 
-      //scroll slides on swipe for touch enabled devices
-
-      $("#myCarousel").on("touchstart", function (event) {
-        var yClick = event.originalEvent.touches[0].pageY;
-        $(this).one("touchmove", function (event) {
-          var yMove = event.originalEvent.touches[0].pageY;
-          if (Math.floor(yClick - yMove) > 1) {
-            $(".carousel").carousel("next");
-          } else if (Math.floor(yClick - yMove) < -1) {
-            $(".carousel").carousel("prev");
-          }
-        });
-        $(".carousel").on("touchend", function () {
-          $(this).off("touchmove");
-        });
-      });
-    </script>
     <script>
       // Add 'loaded' class to body after page has loaded
       window.addEventListener("load", function () {
