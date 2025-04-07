@@ -26,7 +26,7 @@
     <!-- Tweaks for older IEs-->
     <link
       rel="stylesheet"
-      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <!-- fonts -->
     <link
@@ -277,7 +277,7 @@
                           <h3
                             data-animation="fadeInUp"
                             data-delay=".6s"
-                            style="color: white"
+                            style="color: black"
                           >
                             A Java developer fresh out of college is typically
                             skilled in core Java concepts such as
@@ -384,11 +384,11 @@
             </div>
           </div>
         </section>
-        <div class="container">
+        <!-- <div class="container">
           <div class="video_bt">
             <div class="play_icon"><img src="images/play-icon.png" /></div>
           </div>
-        </div>
+        </div> -->
       </div>
       <!-- banner section end -->
     </div>
@@ -409,8 +409,8 @@
           <div class="row">
             <a href="API.html" class="col-lg-3 col-sm-6">
               <div class="box_main">
-                <div class="app_icon"><img src="images/icon-1.png" /></div>
-                <div class="app_icon_1"><img src="images/icon-1.png" /></div>
+                <div class="app_icon"><img src="images/api-64.png" /></div>
+                <div class="app_icon_1"><img src="images/api-64.png" /></div>
                 <h4 class="services_text">API Design</h4>
               </div>
             </a>
@@ -658,34 +658,38 @@
               </h3>
             </div>
             <div class="col-md-6">
-              <div class="mail_section_1">
-                <input
-                  type="text"
-                  class="mail_text"
-                  placeholder="Your Name"
-                  name="Your Name"
-                />
-                <input
-                  type="text"
-                  class="mail_text"
-                  placeholder="Your Email"
-                  name="Your Email"
-                />
-                <input
-                  type="text"
-                  class="mail_text"
-                  placeholder="Your Phone"
-                  name="Your Phone"
-                />
-                <textarea
-                  class="massage-bt"
-                  placeholder="Your Massage"
-                  rows="5"
-                  id="comment"
-                  name="Your Massage"
-                ></textarea>
-                <div class="send_bt"><a href="#">Send Now</a></div>
-              </div>
+              <form action="https://formspree.io/f/xqapgegw" method="POST">
+                <div class="mail_section_1">
+                  <input
+                    type="text"
+                    class="mail_text"
+                    placeholder="Your Name"
+                    name="Your Name"
+                  />
+                  <input
+                    type="text"
+                    class="mail_text"
+                    placeholder="Your Email"
+                    name="Your Email"
+                  />
+                  <input
+                    type="text"
+                    class="mail_text"
+                    placeholder="Your Phone"
+                    name="Your Phone"
+                  />
+                  <textarea
+                    class="massage-bt"
+                    placeholder="Your Massage"
+                    rows="5"
+                    id="comment"
+                    name="Your Massage"
+                  ></textarea>
+                  <div class="send_bt">
+                    <button type="submit">Send Now</button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -717,13 +721,12 @@
             <li>
               <a
                 href="https://www.linkedin.com/in/dinkarprasad682/"
-                target="_blank"
-                ><i class="fa fa-linkedin" aria-hidden="true"></i
+                target="_blank"></i
               ></a>
             </li>
             <li>
               <a href="https://github.com/DK12345678D" target="_blank"
-                ><i class="fa fa-github" aria-hidden="true"></i
+                ><i class="fa fa-github"></i
               ></a>
             </li>
             <li>
@@ -741,6 +744,7 @@
       <div class="container">
         <p class="copyright_text">
           © 2025 All Rights Reserved | Designed and Developed by
+          <i class="fa-brands fa-whatsapp"></i>
           <a href="about.html" style="color: #3498db">Dinkar Prasad</a>
         </p>
       </div>

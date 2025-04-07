@@ -331,7 +331,8 @@ button {
 .header_section {
     width: 100%;
     float: left;
-    background-image: url(../images/banner-bg.png);
+  
+    display: flex;
     height: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -453,6 +454,10 @@ button {
 }
 
 .social_icon {
+    background-image: url(../images/banner-bg3.avif);
+    background-position: left center; /* This will position the image to the left */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-size: cover; /* Make sure the image covers the whole section */
     width: 100%;
     float: right;
     text-align: right;
