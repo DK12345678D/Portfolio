@@ -312,13 +312,31 @@ button {
     cursor: pointer;
 }
 
+.send_bt button {
+    width: 100;
+    background-color: #fa7e23; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 15px 32px; /* Add padding */
+    text-align: center; /* Align text to center */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline block for centering */
+    font-size: 20px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.send_bt button:hover {
+    background-color: #252f2d; /* Darken background on hover */
+}
+
 .full {
     float: left;
     width: 100%;
 }
 
 .layout_padding {
-    padding-top: 90px;
+    padding-top: 80px;
     padding-bottom: 0px;
 }
 
@@ -340,7 +358,7 @@ button {
 }
 
 .header_bg {
-   
+    
     float: left;
    position: fixed;
     left: 0;
@@ -349,22 +367,21 @@ button {
     z-index: 999;
     background-color: white;
     box-shadow: 0px 0px 20px 0px;
-    
+   
 
 }
 .menu_fixed {
   
-    z-index: 9999 !important;
-    width: 100%;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+    
+    
     top: 0;
     
     height: 88px;
 }
 
 .animated {
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
@@ -454,11 +471,7 @@ button {
 }
 
 .social_icon {
-    background-image: url(../images/banner-bg3.avif);
-    background-position: left center; /* This will position the image to the left */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  background-size: cover; /* Make sure the image covers the whole section */
-    width: 100%;
+       width: 100%;
     float: right;
     text-align: right;
 }
@@ -1698,10 +1711,10 @@ textarea#comment.massage-bt::placeholder {
     text-align: center;
 }
 
-.send_bt a {
+.send_bt  {
     width: 100%;
     text-align: center;
-    font-size: 16px;
+    font-size: 26px;
     color: #fefefd;
     background-color: #fa7e23;
     padding: 14px;
@@ -1711,7 +1724,7 @@ textarea#comment.massage-bt::placeholder {
     border-radius: 5px;
 }
 
-.send_bt a:hover {
+.send_bt :hover {
     color: #fefefd;
     background-color: #252f2d;
 }
@@ -1786,7 +1799,7 @@ textarea#comment.massage-bt::placeholder {
     float: left;
     font-size: 30%;
     text-align: center;
-    background-color: #252f2d;
+    background-color: black;
     height: auto;
     color: #ffffff;
     padding: 60px 0px 45px 0px;
@@ -1811,10 +1824,10 @@ textarea#comment.massage-bt::placeholder {
 
 .location_text li a {
     float: left;
-    font-size: 20px;
+    font-size: 40px;
     color: white;
     margin: 0px 10px;
-    background-color: #3e412d;
+    /* background-color: #3e412d; */
     padding: 12px 0px;
     border-radius: 100%;
     width: 60px;
@@ -1822,8 +1835,8 @@ textarea#comment.massage-bt::placeholder {
 }
 
 .location_text li a:hover {
-    color: #252f2d;
-    background-color: #fefefd;
+    color: #cd1c54;
+    /* background-color: #fefefd; */
 }
 
 
@@ -1835,7 +1848,7 @@ textarea#comment.massage-bt::placeholder {
 .copyright_section {
     width: 100%;
     float: left;
-    background-color: #252f2d;
+    background-color: black;
     height: auto;
     font-size: 40%;
 }
