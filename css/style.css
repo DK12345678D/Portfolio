@@ -326,9 +326,6 @@ button {
     border-radius: 5px; /* Rounded corners */
 }
 
-.send_bt button:hover {
-    background-color: #252f2d; /* Darken background on hover */
-}
 
 .full {
     float: left;
@@ -862,7 +859,11 @@ button {
     color: #fff;
     font-weight: 600;
   }
-  
+  .send_bt:hover {
+    background-color: #252f2d;
+    color: white; /* optional: changes text color for contrast */
+  }
+    
   .portfolio .portfolio-wrap .portfolio-info p {
     color: #ffffff;
     font-size: 14px;
