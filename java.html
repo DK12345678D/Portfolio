@@ -92,6 +92,8 @@
         margin-bottom: 20px;
       }
 
+      
+
       header h1 {
         font-size: 2.5rem;
       }
@@ -132,7 +134,10 @@
       .item {
         margin-bottom: 20px;
       }
-
+  .container {
+        width: 98%;
+        
+      }
       /* Hide the loader after page has loaded */
       body.loaded .loading-overlay {
         display: none;
@@ -144,50 +149,10 @@
     <div class="loading-overlay">
       <div class="d-logo">DK</div>
     </div>
-    <!-- header section start -->
-    <div class="header_bg">
-      <div style="padding-left: 2%">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="logo"><h1>Dinkar Prasad</h1></div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="service.html">Service</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="skills.html">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </div>
-    <!-- header section end -->
-    <section class="container benefits" style="padding-top: 1%">
-      <header style="padding-top: 10%">
+    <!-- Header will be loaded here -->
+    <div id="header"></div>
+    <section class="container benefitsa" >
+      <header >
         <h1>Java</h1>
       </header>
     </section>
@@ -364,55 +329,24 @@
     </div>
     <!-- project box section end -->
     <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
-    <!-- footer section start -->
-    <div class="footer_section margin_top90">
-      <div class="container">
-        <p class="copyright_text"><a href="#">dinkarprasa682@gmail.com</a></p>
-        <p class="copyright_text">485446,Nagod Satna Madhya Pradesh India</p>
+   <!-- Header will be loaded here -->
+    <div id="header"></div>
 
-        <div class="location_text">
-          <ul>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/dinkarprasad682/"
-                target="_blank"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://github.com/DK12345678D" target="_blank"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://wa.me/7000045867"><i class="fa-brands fa-whatsapp"></i></a>
-            </li>
+    <!-- Footer will be loaded here -->
+    <div id="footer"></div>
 
-            <!-- <li>
-              <a href="#"
-                ><i class="fa-brands fa-instagram" aria-hidden="true"></i
-              ></a>
-            </li> -->
-            <li>
-              <a href="mailto:dinkarprasad682@gmail.com" target="_blank"
-                ><i class="fa fa-envelope" aria-hidden="true"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- footer section end -->
-    <!-- copyright section start -->
-    <div class="copyright_section">
-      <div class="container">
-        <p class="copyright_text">
-          © 2025 All Rights Reserved | Designed and Developed by
+    <!-- Script to import header and footer -->
+    <script>
+      // Load header
+      fetch("header.html")
+        .then((res) => res.text())
+        .then((data) => (document.getElementById("header").innerHTML = data));
 
-          <a href="about.html" style="color: #3498db">Dinkar Prasad</a>
-        </p>
-      </div>
-    </div>
+      // Load footer
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data));
+    </script>
 
     <!-- copyright section end -->
     <!-- Javascript files-->

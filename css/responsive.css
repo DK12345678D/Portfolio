@@ -339,7 +339,7 @@
 @media (max-width: 575px) {
     .header_section {
         background-size: cover;
-        background: #252f2d!important;
+        /* background: #252f2d!important; */
     }
     .logo {
         width: auto;

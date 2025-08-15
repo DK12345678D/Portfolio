@@ -367,12 +367,8 @@ button {
    
 
 }
-.menu_fixed {
-  
-    
-    
+.menu_fixed { 
     top: 0;
-    
     height: 88px;
 }
 
@@ -417,6 +413,11 @@ button {
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
     color: red;
+  
+	/* color: #33AEFF !important; */
+	background-color: rgba(51, 174, 255, 0.1);
+	transform: scale(1.05);
+
 }
 .navbar {
     
@@ -439,7 +440,7 @@ button {
 .banner_section {
     width: 100%;
     float: left;
-    padding: 0px 0px 220px 0px;
+    /* padding: 0px 0px 220px 0px; */
 }
 
 .banner_taital_main {
@@ -1800,10 +1801,16 @@ textarea#comment.massage-bt::placeholder {
     float: left;
     font-size: 30%;
     text-align: center;
-    background-color: black;
+    background-color: white;
     height: auto;
-    color: #ffffff;
-    padding: 60px 0px 45px 0px;
+    color: black;
+    padding-top: 30px;     
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0px 0px 20px 0px;
+   
 }
 
 .location_text {
@@ -1826,7 +1833,7 @@ textarea#comment.massage-bt::placeholder {
 .location_text li a {
     float: left;
     font-size: 40px;
-    color: white;
+    color: black;
     margin: 0px 10px;
     /* background-color: #3e412d; */
     padding: 12px 0px;
@@ -1849,7 +1856,7 @@ textarea#comment.massage-bt::placeholder {
 .copyright_section {
     width: 100%;
     float: left;
-    background-color: black;
+    background-color: white;
     height: auto;
     font-size: 40%;
 }
@@ -1857,14 +1864,14 @@ textarea#comment.massage-bt::placeholder {
 .copyright_text {
     width: 100%;
     float: left;
-    font-size: 26px;
-    margin: 15px 0px;
-    color: #ffffff;
+    font-size: 20px;
+    margin: 15px;
+    color: black;
     text-align: center;
 }
 
 .copyright_text a {
-    color: #ffffff;
+    color: black;
 }
 
 .copyright_text a:hover {
@@ -1987,3 +1994,12 @@ body.loaded .loading-overlay {
     opacity: 1;
     bottom: 15px;
   }
+
+  .benefitsa
+       {
+        background-color: #ecf0f1;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        margin-top: 100px;
+      }

@@ -94,47 +94,8 @@
     <div class="loading-overlay">
       <div class="d-logo">DK</div>
     </div>
-    <!-- header section start -->
-    <div class="header_bg">
-      <div style="padding-left: 2%">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="logo"><h1>Dinkar Prasad</h1></div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="service.html">Service</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="skills.html">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </div>
+    <!-- Header will be loaded here -->
+    <div id="header"></div>
 
     <!-- contact section start -->
     <div class="contact_section layout_padding">
@@ -270,59 +231,24 @@
       </div>
     </div>
     <!-- project box section end -->
-    <!-- footer section start -->
-    <div class="footer_section">
-      <div class="container">
-        <p class="copyright_text"><a href="#">dinkarprasa682@gmail.com</a></p>
-        <p class="copyright_text">485446,Nagod Satna Madhya Pradesh India</p>
-        <div class="location_text">
-          <ul>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/dinkarprasad682/"
-                target="_blank"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://github.com/DK12345678D" target="_blank"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://wa.me/7000045867"
-                ><i
-                  class="fa-brands fa-whatsapp"
-                 
-                ></i
-              ></a>
-            </li>
+    <!-- Header will be loaded here -->
+    <div id="header"></div>
 
-            <!-- <li>
-              <a href="#"
-                ><i class="fa-brands fa-instagram" aria-hidden="true"></i
-              ></a>
-            </li> -->
-            <li>
-              <a href="mailto:dinkarprasad682@gmail.com" target="_blank"
-                ><i class="fa fa-envelope" aria-hidden="true"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- footer section end -->
-    <!-- copyright section start -->
-    <div class="copyright_section">
-      <div class="container">
-        <p class="copyright_text">
-          © 2025 All Rights Reserved | Designed and Developed by
-          <a href="about.html" style="color: #3498db">Dinkar Prasad</a>
-        </p>
-      </div>
-    </div>
+    <!-- Footer will be loaded here -->
+    <div id="footer"></div>
 
+    <!-- Script to import header and footer -->
+    <script>
+      // Load header
+      fetch("header.html")
+        .then((res) => res.text())
+        .then((data) => (document.getElementById("header").innerHTML = data));
+
+      // Load footer
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data));
+    </script>
     <!-- copyright section end -->
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>

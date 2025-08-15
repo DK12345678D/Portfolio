@@ -1,391 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- basic -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- mobile metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
-    <!-- site metas -->
-    <title>About | Dinkar</title>
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <!-- bootstrap css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <!-- style css -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <!-- Responsive-->
-    <link rel="stylesheet" href="css/responsive.css" />
-    <!-- fevicon -->
-    <link rel="icon" href="images/d.png" type="image/gif" />
-    <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
-    <!-- Tweaks for older IEs-->
-   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <!-- fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- font awesome css -->
-    <link
-      rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
-    />
-    <style>
-      /* review section start*/
 
-      .rev-section {
-        margin: auto;
-        padding: 0 1rem;
-      }
+<head>
+  <!-- basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- mobile metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <!-- site metas -->
+  <title>About | Dinkar</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <!-- bootstrap css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <!-- style css -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- Responsive-->
+  <link rel="stylesheet" href="css/responsive.css" />
+  <!-- fevicon -->
+  <link rel="icon" href="images/d.png" type="image/gif" />
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+  <!-- Tweaks for older IEs-->
 
-      .title {
-        font-size: 2.5rem;
-        padding-left: 5%;
-        text-transform: uppercase;
-        color: rgb(50, 50, 50);
-        margin-bottom: 0.5rem;
-      }
-      .note {
-        font-size: 1.1rem;
-        color: rgb(150, 150, 150);
-        font-style: italic;
-        font-color: rgb(153, 42, 42);
-      }
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"   />
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <!-- font awesome css -->
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+  <style>
+    /* review section start*/
 
-      .reviews {
-        margin: 2rem auto;
-        display: flex;
-        flex-wrap: wrap;
-        padding-left: 8%;
-        padding-right: 8%;
-      }
+    .rev-section {
+      margin: auto;
+      padding: 0 1rem;
+    }
+
+    .title {
+      font-size: 2.5rem;
+      padding-left: 5%;
+      text-transform: uppercase;
+      color: rgb(50, 50, 50);
+      margin-bottom: 0.5rem;
+      margin-top: 4rem;
+     
+    }
+
+    .note {
+      font-size: 1.1rem;
+      color: rgb(150, 150, 150);
+      font-style: italic;
+      font-color: rgb(153, 42, 42);
+    }
+
+    .reviews {
+      margin: 2rem auto;
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 8%;
+      padding-right: 8%;
+    }
+
+    .review {
+      margin: 0 1rem;
+      min-width: 300px;
+      flex: 1;
+    }
+
+    .head-review {
+      margin: 1.75rem auto;
+      width: 150px;
+      height: 150px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5%;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    }
+
+    .body-review {
+      background-color: rgb(238, 238, 238);
+      padding: 2.5rem;
+      box-shadow: 2px 2px 10px 3px rgb(225, 225, 225);
+    }
+
+    .name-review {
+      font-size: 1.5rem;
+      color: rgb(50, 50, 50);
+      margin-bottom: 0.25rem;
+    }
+
+    .place-review {
+      color: red;
+      font-style: italic;
+    }
+
+    .rating {
+      color: rgb(253, 180, 42);
+      margin: 1rem 0;
+    }
+
+    .desc-review {
+      line-height: 1.5rem;
+      letter-spacing: 1px;
+      color: rgb(150, 150, 150);
+    }
+
+    @media (max-width: 678px) {
       .review {
-        margin: 0 1rem;
-        min-width: 300px;
-        flex: 1;
+        margin-top: 1.5rem;
+      }
+    }
+
+    /* review section end*/
+    /* Full-page overlay */
+    .loading-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    /* Animation to rotate the D */
+    @keyframes rotateD {
+      0% {
+        transform: rotate(0deg);
       }
 
-      .head-review {
-        margin: 1.75rem auto;
-        width: 150px;
-        height: 150px;
-      }
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 5%;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+      50% {
+        transform: rotate(180deg);
       }
 
-      .body-review {
-        background-color: rgb(238, 238, 238);
-        padding: 2.5rem;
-        box-shadow: 2px 2px 10px 3px rgb(225, 225, 225);
+      100% {
+        transform: rotate(360deg);
       }
-      .name-review {
-        font-size: 1.5rem;
-        color: rgb(50, 50, 50);
-        margin-bottom: 0.25rem;
-      }
-      .place-review {
-        color: red;
-        font-style: italic;
-      }
-      .rating {
-        color: rgb(253, 180, 42);
-        margin: 1rem 0;
-      }
-      .desc-review {
-        line-height: 1.5rem;
-        letter-spacing: 1px;
-        color: rgb(150, 150, 150);
+    }
+
+    /* Animation to scale the D */
+    @keyframes scaleD {
+
+      0%,
+      100% {
+        transform: scale(2);
       }
 
-      @media (max-width: 678px) {
-        .review {
-          margin-top: 1.5rem;
-        }
+      50% {
+        transform: scale(3.2);
       }
+    }
 
-      /* review section end*/
-      /* Full-page overlay */
-      .loading-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(255, 255, 255, 0.8);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 9999;
-      }
+    .servicest {
+      background-color: #ecf0f1;
+      background-image: url(images/i.jpg);
+      padding: 40px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
 
-      /* Animation to rotate the D */
-      @keyframes rotateD {
-        0% {
-          transform: rotate(0deg);
-        }
-        50% {
-          transform: rotate(180deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      }
+    /* Hide the loader after page has loaded */
+    body.loaded .loading-overlay {
+      display: none;
+    }
+  </style>
+</head>
 
-      /* Animation to scale the D */
-      @keyframes scaleD {
-        0%,
-        100% {
-          transform: scale(2);
-        }
-        50% {
-          transform: scale(3.2);
-        }
-      }
-      .servicest {
-        background-color: #ecf0f1;
-        background-image: url(images/i.jpg);
-        padding: 40px;
-        border-radius: 8px;
-        margin-bottom: 20px;
-      }
-      /* Hide the loader after page has loaded */
-      body.loaded .loading-overlay {
-        display: none;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Loading overlay with the animated "D" logo -->
-    <div class="loading-overlay">
-      <div class="d-logo">DK</div>
-    </div>
-    <!-- header section start -->
-    <div class="header_bg home_menu animated fadeInDown">
-      <div style="padding-left: 2%">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="logo"><h1>Dinkar Prasad</h1></div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="service.html">Service</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="skills.html">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </div>
-    <!-- header section end -->
-    <div class="contact_section layout_padding">
-      <div class="container">
-        <div class="row">
-          <section class="container servicest">
-            <div class="col-sm-12">
-              <h1 class="contact_taital">
-                About<span class="contact_taital_1">Us</span>
-              </h1>
-            </div>
-          </section>
-        </div>
-      </div>
-    </div>
-    <div class="container" style="display: flex">
-      <div class="col-sm-6">
-        <img
-          id="din"
-          style="width: 60%; height: 50%; margin-top: 10px"
-          src="images/4.png"
-        />
-      </div>
-      <div class="col-sm-6">
-        <h1>About :</h1>
-        <h4>
-          I Am Dinkar, as a fresher Java developer, A highly motivated and
-          results-oriented Computer Science graduate with strong expertise in
-          Java development and full-stack programming. Skilled in designing and
-          developing scalable web applications, optimizing performance, and
-          building secure, efficient RESTful APIs. Proficient in working with a
-          variety of technologies including Spring Boot, Hibernate, and MySQL,
-          with a keen focus on debugging, security, and performance
-          enhancements. Demonstrated ability to collaborate with
-          cross-functional teams to deliver high-quality software solutions on
-          time. Passionate about leveraging technical skills and problem-solving
-          abilities to drive success in a dynamic development environment.
-        </h4>
-      </div>
-    </div>
-    <!-- Review section start -->
+<body>
+  <!-- Loading overlay with the animated "D" logo -->
+  <div class="loading-overlay">
+    <div class="d-logo">DK</div>
+  </div>
 
-    <h2 class="title">Some Possitive Feedback That Encourage Us</h2>
+  <!-- Header will be loaded here -->
 
-    <div class="reviews">
-      <div class="review">
-        <div class="head-review">
-          <img
-            src="https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
-            width="250px"
-          />
-        </div>
-        <div class="body-review">
-          <div class="name-review">Dileep Singh</div>
-          <div class="place-review">Mumbai</div>
-          <div class="rating">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-          </div>
-          <div class="desc-review">
-            Thanks to Dinkar Prasad, we now have a modern, responsive website
-            that perfectly represents our brand. His expertise in web
-            development is top-notch!
-          </div>
-        </div>
-      </div>
-      <div class="review">
-        <div class="head-review">
-          <img
-            src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
-            width="250px"
-          />
-        </div>
-        <div class="body-review">
-          <div class="name-review">Riya Rai</div>
-          <div class="place-review">Surat</div>
-          <div class="rating">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star-half" aria-hidden="true"></i>
-          </div>
-          <div class="desc-review">
-            Dinkar's attention to detail and commitment to quality have helped
-            our website perform better than we imagined. Highly recommend his
-            services!
-          </div>
-        </div>
-      </div>
-      <div class="review">
-        <div class="head-review">
-          <img
-            src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-            width="250px"
-          />
-        </div>
-        <div class="body-review">
-          <div class="name-review">Vikash Gupta</div>
-          <div class="place-review">New Delhi</div>
-          <div class="rating">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-          </div>
-          <div class="desc-review">
-            Dinkar delivered a website that works seamlessly on all devices.
-            We’re seeing higher user engagement and faster and smooth load
-            times, thanks to his expert work !
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Review section end -->
-    <!-- contact section start -->
-    <div class="contact_section layout_padding">
-      <div class="container">
-        <div class="row">
+  <div class="contact_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <section class="container servicest">
           <div class="col-sm-12">
             <h1 class="contact_taital">
-              My <span class="contact_taital_1">Contact</span>
+              About<span class="contact_taital_1">Us</span>
             </h1>
           </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="about-me pb-top">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-4 col-md-4">
+          <div class="about-me-img mb-20">
+            <img src="images/4.png" alt="" style="border: 2px solid #000; margin: 25% ;">
+          </div>
         </div>
-        <div class="contact_section_2">
-          <div class="row">
-            <div class="col-md-6">
-              <h1>
-                The Best Time is Now. Let's Create Something Incredible
-                Together!
-              </h1>
-              <h3>
-                Let’s move forward together – your vision and our expertise can
-                create something extraordinary. Whether it’s a new project, a
-                fresh idea, or a unique challenge, we’re here to support you
-                every step of the way. Don’t wait for the perfect moment, the
-                time is now. Let's make it happen!
-              </h3>
-            </div>
-            <div class="col-md-6">
-              <div class="mail_section_1">
-                <input
-                  type="text"
-                  class="mail_text"
-                  placeholder="Your Name"
-                  name="Your Name"
-                />
-                <input
-                  type="text"
-                  class="mail_text"
-                  placeholder="Your Email"
-                  name="Your Email"
-                />
-                <input
-                  type="text"
-                  class="mail_text"
-                  placeholder="Your Phone"
-                  name="Your Phone"
-                />
-                <textarea
-                  class="massage-bt"
-                  placeholder="Your Massage"
-                  rows="5"
-                  id="comment"
-                  name="Your Massage"
-                ></textarea>
-               
-                  
-                  <button class="send_bt" type="submit" >Send Now</button>
-              
+
+        <div class="col-lg-6 col-md-6">
+          <div class="about-me-caption">
+            <h2 >About:</h2>
+            <p class="pb-50"> I Am Dinkar, as a fresher Java developer, A highly motivated and
+              results-oriented Computer Science graduate with strong expertise in
+              Java development and full-stack programming. Skilled in designing and
+              developing scalable web applications, optimizing performance, and
+              building secure, efficient RESTful APIs. Proficient in working with a
+              variety of technologies including Spring Boot, Hibernate, and MySQL,
+              with a keen focus on debugging, security, and performance
+              enhancements. Demonstrated ability to collaborate with
+              cross-functional teams to deliver high-quality software solutions on
+              time. Passionate about leveraging technical skills and problem-solving
+              abilities to drive success in a dynamic development environment.
+            I </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Review section start -->
+
+  <h2 class="title">Some Possitive Feedback That Encourage Us</h2>
+
+  <div class="reviews">
+    <div class="review">
+      <div class="head-review">
+        <img
+          src="https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
+          width="250px" />
+      </div>
+      <div class="body-review">
+        <div class="name-review">Dileep Singh</div>
+        <div class="place-review">Mumbai</div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </div>
+        <div class="desc-review">
+          Thanks to Dinkar Prasad, we now have a modern, responsive website
+          that perfectly represents our brand. His expertise in web
+          development is top-notch!
+        </div>
+      </div>
+    </div>
+    <div class="review">
+      <div class="head-review">
+        <img
+          src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+          width="250px" />
+      </div>
+      <div class="body-review">
+        <div class="name-review">Riya Rai</div>
+        <div class="place-review">Surat</div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-half" aria-hidden="true"></i>
+        </div>
+        <div class="desc-review">
+          Dinkar's attention to detail and commitment to quality have helped
+          our website perform better than we imagined. Highly recommend his
+          services!
+        </div>
+      </div>
+    </div>
+    <div class="review">
+      <div class="head-review">
+        <img
+          src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          width="250px" />
+      </div>
+      <div class="body-review">
+        <div class="name-review">Vikash Gupta</div>
+        <div class="place-review">New Delhi</div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </div>
+        <div class="desc-review">
+          Dinkar delivered a website that works seamlessly on all devices.
+          We’re seeing higher user engagement and faster and smooth load
+          times, thanks to his expert work !
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Review section end -->
+  <!-- contact section start -->
+  <div class="contact_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="contact_taital">
+            My <span class="contact_taital_1">Contact</span>
+          </h1>
+        </div>
+      </div>
+      <div class="contact_section_2">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>
+              The Best Time is Now. Let's Create Something Incredible
+              Together!
+            </h1>
+            <h3>
+              Let’s move forward together – your vision and our expertise can
+              create something extraordinary. Whether it’s a new project, a
+              fresh idea, or a unique challenge, we’re here to support you
+              every step of the way. Don’t wait for the perfect moment, the
+              time is now. Let's make it happen!
+            </h3>
+          </div>
+          <div class="col-md-6">
+            <div class="mail_section_1">
+              <input type="text" class="mail_text" placeholder="Your Name" name="Your Name" />
+              <input type="text" class="mail_text" placeholder="Your Email" name="Your Email" />
+              <input type="text" class="mail_text" placeholder="Your Phone" name="Your Phone" />
+              <textarea class="massage-bt" placeholder="Your Massage" rows="5" id="comment"
+                name="Your Massage"></textarea>
+
+
+              <button class="send_bt" type="submit">Send Now</button>
+
             </div>
           </div>
         </div>
@@ -403,60 +356,24 @@
     </div>
     <!-- project box section end -->
     <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
-     <!-- footer section start -->
-     <div class="footer_section margin_top90">
-      <div class="container">
-        <p class="copyright_text"><a href="#">dinkarprasa682@gmail.com</a></p>
-        <p class="copyright_text">485446,Nagod Satna Madhya Pradesh India</p>
+    <!-- Header will be loaded here -->
+    <div id="header"></div>
 
-        <div class="location_text">
-          <ul>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/dinkarprasad682/"
-                target="_blank"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://github.com/DK12345678D" target="_blank"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://wa.me/7000045867"
-                ><i
-                  class="fa-brands fa-whatsapp"
-                 
-                ></i
-              ></a>
-            </li>
+    <!-- Footer will be loaded here -->
+    <div id="footer"></div>
 
-            <!-- <li>
-              <a href="#"
-                ><i class="fa-brands fa-instagram" aria-hidden="true"></i
-              ></a>
-            </li> -->
-            <li>
-              <a href="mailto:dinkarprasad682@gmail.com" target="_blank"
-                ><i class="fa fa-envelope" aria-hidden="true"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- footer section end -->
-    <!-- copyright section start -->
-    <div class="copyright_section">
-      <div class="container">
-        <p class="copyright_text">
-          © 2025 All Rights Reserved | Designed and Developed by
+    <!-- Script to import header and footer -->
+    <script>
+      // Load header
+      fetch("header.html")
+        .then((res) => res.text())
+        .then((data) => (document.getElementById("header").innerHTML = data));
 
-          <a href="about.html" style="color: #3498db">Dinkar Prasad</a>
-        </p>
-      </div>
-    </div>
+      // Load footer
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data));
+    </script>
 
     <!-- copyright section end -->
     <!-- Javascript files-->
@@ -476,5 +393,6 @@
         document.body.classList.add("loaded");
       });
     </script>
-  </body>
+</body>
+
 </html>
