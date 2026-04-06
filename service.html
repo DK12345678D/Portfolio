@@ -17,6 +17,8 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <!-- style css -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Modern 3D Theme -->
+    <link rel="stylesheet" type="text/css" href="css/modern-3d.css" />
     <!-- Responsive-->
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- fevicon -->
@@ -30,13 +32,13 @@
     />
     <!-- fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&family=Outfit:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <!-- font awesome css -->
     <link
       rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
     <style>
@@ -91,6 +93,9 @@
     </style>
   </head>
   <body>
+    <!-- Custom Interactive Cursor -->
+    <div class="custom-cursor" id="cursor"></div>
+
     <!-- Loading overlay with the animated "D" logo -->
     <div class="loading-overlay">
       <div class="d-logo">DK</div>
@@ -98,50 +103,47 @@
     <!-- Header will be loaded here -->
     <div id="header"></div>
     <!-- services section start -->
-    <div class="contact_section layout_padding">
-      <div class="container">
-        <div class="row">
-          <section class="container servicest">
-            <div class="col-sm-12">
-              <h1 class="contact_taital">
-                My <span class="contact_taital_1">Services</span>
-              </h1>
-            </div>
-          </section>
-        </div>
+    <div class="layout_padding">
+      <div class="container text-center mb-5">
+        <h1 class="modern-title animate-up" style="font-size: 3.5rem;">Our <span class="gradient-text">Services</span></h1>
+        <p style="color: var(--text-secondary); font-size: 1.1rem;">Expert solutions for backend architecture and full-stack development.</p>
       </div>
 
       <div class="container">
-        <div class="services_section_2">
-          <div class="row">
-            <a href="API.html" class="col-lg-3 col-sm-6">
-              <div class="box_main">
-                <div class="app_icon"><img src="images/api-50.png" /></div>
-                <div class="app_icon_1"><img src="images/api-50.png" /></div>
-                <h4 class="services_text">API Design</h4>
+        <div class="row g-4 justify-content-center animate-up" style="animation-delay: 0.2s;">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <a href="API.html" style="text-decoration: none;">
+              <div class="box_main glass-card h-100">
+                <div class="app_icon"><img src="images/api-50.png" style="filter: brightness(0) invert(1);" /></div>
+                <h4 style="color: #fff; font-weight: 700; margin-top: 1rem;">API Design</h4>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 10px;">Scalable RESTful services and micro-service architecture.</p>
               </div>
             </a>
-            <a href="Website.html" class="col-lg-3 col-sm-6">
-              <div class="box_main">
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <a href="Website.html" style="text-decoration: none;">
+              <div class="box_main glass-card h-100">
                 <div class="app_icon"><img src="images/icon-2.png" /></div>
-                <div class="app_icon_1"><img src="images/icon-2.png" /></div>
-                <h4 class="services_text">Website Design</h4>
+                <h4 style="color: #fff; font-weight: 700; margin-top: 1rem;">Web Design</h4>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 10px;">Modern, interactive, and responsive user interfaces.</p>
               </div>
             </a>
-            <a href="java.html" class="col-lg-3 col-sm-6">
-              <div class="box_main">
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <a href="java.html" style="text-decoration: none;">
+              <div class="box_main glass-card h-100">
                 <div class="app_icon"><img src="images/java-50.png" /></div>
-                <div class="app_icon_1"><img src="images/java-50.png" /></div>
-                <h4 class="services_text">Java</h4>
+                <h4 style="color: #fff; font-weight: 700; margin-top: 1rem;">Java</h4>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 10px;">Robust enterprise logic and system implementation.</p>
               </div>
             </a>
-            <a href="Database.html" class="col-lg-3 col-sm-6">
-              <div class="box_main">
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <a href="Database.html" style="text-decoration: none;">
+              <div class="box_main glass-card h-100">
                 <div class="app_icon"><img src="images/database.png" /></div>
-                <div class="app_icon_1">
-                  <img src="images/database.png" />
-                </div>
-                <h4 class="services_text">Database Design</h4>
+                <h4 style="color: #fff; font-weight: 700; margin-top: 1rem;">DB Design</h4>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 10px;">Efficient data modeling and database optimization.</p>
               </div>
             </a>
           </div>
@@ -149,69 +151,18 @@
       </div>
     </div>
     <!-- services section end -->
-     <!-- contact section start -->
-    <div class="contact_section layout_padding">
+    <!-- CTA section -->
+    <div class="layout_padding">
       <div class="container">
-        <div class="contact_section_2">
-          <div class="row">
-            <div class="col-md-6">
-              <h1>
-                The Best Time is Now. Let's Create Something Incredible
-                Together!
-              </h1>
-              <h2>
-                Let’s move forward together – your vision and our expertise can
-                create something extraordinary. Whether it’s a new project, a
-                fresh idea, or a unique challenge, we’re here to support you
-                every step of the way. Don’t wait for the perfect moment, the
-                time is now. Let's make it happen!
-              </h2>
-            </div>
-            <div class="col-md-6">
-              <div class="mail_section_1">
-                <input
-                  type="text"
-                  class="mail_text"
-                  placeholder="Your Name"
-                  name="Your Name"
-                />
-                <input
-                  type="text"
-                  class="mail_text"
-                  placeholder="Your Email"
-                  name="Your Email"
-                />
-                <input
-                  type="text"
-                  class="mail_text"
-                  placeholder="Your Phone"
-                  name="Your Phone"
-                />
-                <textarea
-                  class="massage-bt"
-                  placeholder="Your Massage"
-                  rows="5"
-                  id="comment"
-                  name="Your Massage"
-                ></textarea>
-                <button class="send_bt">Send Now</button>
-              </div>
-            </div>
+        <div class="glass-card text-center py-5 animate-up" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(6, 182, 212, 0.1)); border-color: rgba(99, 102, 241, 0.2);">
+          <h1 class="modern-title" style="font-size: 2.5rem; margin-bottom: 2rem;">Ready to build something amazing?</h1>
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="contact.html" class="premium-btn">Message Now</a>
+            <a href="tel:7000045867" class="premium-btn-outline ml-3">Call Me</a>
           </div>
         </div>
       </div>
     </div>
-    <!-- contact section end -->
-    <!-- project box section start -->
-    <div class="project_box">
-      <div class="container">
-        <div class="project_main">
-          <h1 class="hire_text">Hire me for your projects</h1>
-          <div class="callnow_bt"><a href="contact.html">Call Now</a></div>
-        </div>
-      </div>
-    </div>
-    <!-- project box section end -->
     <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
    <!-- Header will be loaded here -->
     <div id="header"></div>
@@ -232,22 +183,14 @@
         .then((data) => (document.getElementById("footer").innerHTML = data));
     </script>
     <!-- copyright section end -->
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+    <!-- Modern Theme Logic -->
+    <script src="js/modern-theme.js"></script>
+
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/plugin.js"></script>
-    <script src="js/js.common.js"></script>
-    <!-- sidebar -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/custom.js"></script>
-
-    <script>
-      // Add 'loaded' class to body after page has loaded
-      window.addEventListener("load", function () {
-        document.body.classList.add("loaded");
-      });
-    </script>
   </body>
 </html>

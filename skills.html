@@ -17,6 +17,8 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <!-- style css -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Modern 3D Theme -->
+    <link rel="stylesheet" type="text/css" href="css/modern-3d.css" />
     <!-- Responsive-->
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- fevicon -->
@@ -30,13 +32,13 @@
     />
     <!-- fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&family=Outfit:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <!-- font awesome css -->
     <link
       rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
     <style>
@@ -93,6 +95,9 @@
     </style>
   </head>
   <body>
+    <!-- Custom Interactive Cursor -->
+    <div class="custom-cursor" id="cursor"></div>
+
     <!-- Loading overlay with the animated "D" logo -->
     <div class="loading-overlay">
       <div class="d-logo">DK</div>
@@ -100,409 +105,61 @@
     <!-- Header will be loaded here -->
     <div id="header"></div>
     <!-- Skills section start -->
-    <div class="contact_section layout_padding">
+    <div class="layout_padding">
+      <div class="container text-center mb-5">
+        <h1 class="modern-title animate-up" style="font-size: 3.5rem;">Technical <span class="gradient-text">Skills</span></h1>
+        <p style="color: var(--text-secondary); font-size: 1.1rem;">My diverse skill set across backend, frontend, and DevOps.</p>
+      </div>
+
+      <div class="container animate-up" style="animation-delay: 0.2s;">
+        <!-- Languages & Frameworks -->
+        <div class="row mb-5 justify-content-center">
+          <div class="col-lg-12">
+            <h3 class="mb-4" style="color: #fff; font-weight: 700; border-left: 4px solid var(--primary-color); padding-left: 15px;">Languages & Core Frameworks</h3>
+          </div>
+          <div class="col-md-3 mb-4"><div class="blog_box glass-card text-center py-4"><img src="images/java.png" style="height: 50px; margin-bottom: 1rem;"><h5 style="color:#fff;">Java</h5></div></div>
+          <div class="col-md-3 mb-4"><div class="blog_box glass-card text-center py-4"><img src="images/spring-boot.png" style="height: 50px; margin-bottom: 1rem;"><h5 style="color:#fff;">Spring Boot</h5></div></div>
+          <div class="col-md-3 mb-4"><div class="blog_box glass-card text-center py-4"><img src="images/security.png" style="height: 50px; margin-bottom: 1rem;"><h5 style="color:#fff;">Spring Security</h5></div></div>
+          <div class="col-md-3 mb-4"><div class="blog_box glass-card text-center py-4"><img src="images/javascript.png" style="height: 50px; margin-bottom: 1rem;"><h5 style="color:#fff;">JavaScript</h5></div></div>
+        </div>
+
+        <!-- Databases -->
+        <div class="row mb-5 justify-content-center">
+          <div class="col-lg-12">
+            <h3 class="mb-4" style="color: #fff; font-weight: 700; border-left: 4px solid var(--secondary-color); padding-left: 15px;">Databases & Persistence</h3>
+          </div>
+          <div class="col-md-3 mb-4"><div class="blog_box glass-card text-center py-4"><img src="images/mysql.png" style="height: 50px; margin-bottom: 1rem;"><h5 style="color:#fff;">MySQL</h5></div></div>
+          <div class="col-md-3 mb-4"><div class="blog_box glass-card text-center py-4"><img src="images/oracle.png" style="height: 50px; margin-bottom: 1rem;"><h5 style="color:#fff;">Oracle</h5></div></div>
+          <div class="col-md-3 mb-4"><div class="blog_box glass-card text-center py-4"><img src="images/mongodb.png" style="height: 50px; margin-bottom: 1rem;"><h5 style="color:#fff;">MongoDB</h5></div></div>
+        </div>
+
+        <!-- Tools & DevOps -->
+        <div class="row mb-5 justify-content-center">
+          <div class="col-lg-12">
+            <h3 class="mb-4" style="color: #fff; font-weight: 700; border-left: 4px solid var(--accent-color); padding-left: 15px;">DevOps & Professional Tools</h3>
+          </div>
+          <div class="col-md-2 col-sm-4 mb-4"><div class="blog_box glass-card text-center py-3"><img src="images/git.png" style="height: 40px; margin-bottom: 0.5rem;"><h6 style="color:#fff;">Git</h6></div></div>
+          <div class="col-md-2 col-sm-4 mb-4"><div class="blog_box glass-card text-center py-3"><img src="images/docker.png" style="height: 40px; margin-bottom: 0.5rem;"><h6 style="color:#fff;">Docker</h6></div></div>
+          <div class="col-md-2 col-sm-4 mb-4"><div class="blog_box glass-card text-center py-3"><img src="images/postman-api.png" style="height: 40px; margin-bottom: 0.5rem;"><h6 style="color:#fff;">Postman</h6></div></div>
+          <div class="col-md-2 col-sm-4 mb-4"><div class="blog_box glass-card text-center py-3"><img src="images/vs-code.png" style="height: 40px; margin-bottom: 0.5rem;"><h6 style="color:#fff;">Jenkins</h6></div></div>
+          <div class="col-md-2 col-sm-4 mb-4"><div class="blog_box glass-card text-center py-3"><img src="images/jira.png" style="height: 40px; margin-bottom: 0.5rem;"><h6 style="color:#fff;">Swagger</h6></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA section -->
+    <div class="layout_padding">
       <div class="container">
-        <div class="row">
-          <section class="container servicest">
-            <div class="col-sm-12">
-              <h1 class="blog_taital">
-                My <span class="blog_taital_1">Skills</span>
-              </h1>
-            </div>
-          </section>
-        </div>
-      </div>
-    </div>
-
-    <div class="blog_section_2">
-      <h1 style="padding-bottom: 5%"><b>Professional Skills </b></h1>
-      <h2 style="padding-bottom: 5%"><b> Languages </b></h2>
-      <div class="Skills">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="blog_box">
-              <div class="blog_img">
-                <img src="images/java.png" />
-              </div>
-              <h2 class="date_text">Java</h2>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="blog_box">
-              <div class="blog_img">
-                <img src="images/javascript.png" />
-              </div>
-              <h2 class="date_text">Javascript</h2>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="blog_box">
-              <div class="blog_img">
-                <img src="images/sql.png" />
-              </div>
-              <h2 class="date_text">SQL</h2>
-            </div>
+        <div class="glass-card text-center py-5" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(6, 182, 212, 0.1)); border-color: rgba(99, 102, 241, 0.2);">
+          <h1 class="modern-title" style="font-size: 2.5rem; margin-bottom: 2rem;">Ready to collaborate?</h1>
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="contact.html" class="premium-btn">Send Message</a>
+            <a href="portfolio.html" class="premium-btn-outline ml-3">View Projects</a>
           </div>
         </div>
       </div>
     </div>
-  
-     <div class="blog_section_2">
-        <h2 style="padding-bottom: 5%"><b> Frameworks </b></h2>
-    <div class="Skills">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="blog_box">
-            <div class="blog_img">
-              <img src="images/spring.png" />
-            </div>
-            <h2 class="date_text">Spring</h2>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="blog_box">
-            <div class="blog_img">
-              <img src="images/spring-boot.png" />
-            </div>
-            <h2 class="date_text">springboot</h2>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="blog_box">
-            <div class="blog_img">
-              <img src="images/security.png" />
-            </div>
-            <h2 class="date_text">Spring Secuirty</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    
-     <div class="blog_section_2">
-      <h2 style="padding-bottom: 5%"><b> Frontend </b></h2>
-    <div class="Skills">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="blog_box">
-            <div class="blog_img">
-              <img src="images/html.png" />
-            </div>
-            <h2 class="date_text">HTML5</h2>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="blog_box">
-            <div class="blog_img">
-              <img src="images/css.png" />
-            </div>
-            <h2 class="date_text">CSS3</h2>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="blog_box">
-            <div class="blog_img">
-              <img src="images/bootstrap.png" />
-            </div>
-            <h2 class="date_text">Bootstrap</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="blog_section_2">
-    <div class="Skills">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="blog_box">
-            <div class="blog_img">
-              <img src="images/jsp.png" />
-            </div>
-            <h2 class="date_text">JSP</h2>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="blog_box">
-            <div class="blog_img">
-              <img src="images/thyme.png" />
-            </div>
-            <h2 class="date_text">Thymeleaf</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  
-     <div class="blog_section_2">
-        <h2 style="padding-bottom: 5%"><b> Databases </b></h2>
-    <div class="Skills">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="blog_box">
-            <div class="blog_img">
-              <img src="images/mysql.png" />
-            </div>
-            <h2 class="date_text">MySql</h2>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="blog_box">
-            <div class="blog_img">
-              <img src="images/oracle.png" />
-            </div>
-            <h2 class="date_text">Oracle</h2>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="blog_box">
-            <div class="blog_img">
-              <img src="images/mongodb.png" />
-            </div>
-            <h2 class="date_text">mongodb</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-   
-     <div class="blog_section_2">
-       <h2 style="padding-bottom: 5%"><b> DevOps & Tools </b></h2>
-    <div class="Skills">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="blog_box">
-            <div class="blog_img">
-              <img src="images/git.png" />
-            </div>
-            <h2 class="date_text">GIT</h2>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="blog_box">
-            <div class="blog_img">
-              <img src="images/github.png" />
-            </div>
-            <h2 class="date_text">GitHub</h2>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="blog_box">
-            <div class="blog_img">
-              <img src="images/docker.png" />
-            </div>
-            <h2 class="date_text">Docker</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="blog_section_2">
-    <div class="Skills">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="blog_box">
-            <div class="blog_img">
-              <img src="images/apache-kafka.png" />
-            </div>
-            <h2 class="date_text">Apachekafka</h2>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="blog_box">
-            <div class="blog_img">
-              <img src="images/apache.png" />
-            </div>
-            <h2 class="date_text">Apache</h2>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="blog_box">
-            <div class="blog_img">
-              <img src="images/jenkis.png" />
-            </div>
-            <h2 class="date_text">Jinkins</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-   
-     <div class="blog_section_2">
-       <h2 style="padding-bottom: 5%"><b> Testing & APIs </b></h2>
-    <div class="Skills">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="blog_box">
-            <div class="blog_img">
-              <img src="images/junit.png" />
-            </div>
-            <h2 class="date_text">JUnit</h2>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="blog_box">
-            <div class="blog_img">
-              <img src="images/swagger.png" />
-            </div>
-            <h2 class="date_text">Swagger</h2>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="blog_box">
-            <div class="blog_img">
-              <img src="images/postman-api.png" />
-            </div>
-            <h2 class="date_text">Postmen</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    
-     <div class="blog_section_2">
-      <h2 style="padding-bottom: 5%"><b> Project Management </b></h2>
-         <div class="Skills">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="blog_box">
-            <div class="blog_img">
-              <img src="images/jira.png" />
-            </div>
-            <h2 class="date_text">Jira</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="blog_section_2">
-      <h1 style="margin-bottom: 5%">
-        <b> Professional Tool i Use </b>
-      </h1>
-
-      <div class="skills">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="blog_box">
-              <div class="blog_img">
-                <img src="images/eclipse.png" />
-              </div>
-              <h2 class="date_text">Eclipse</h2>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="blog_box">
-              <div class="blog_img">
-                <img src="images/postman-api.png" />
-              </div>
-              <h2 class="date_text">Postman</h2>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="blog_box">
-              <div class="blog_img">
-                <img src="images/vs-code.png" />
-              </div>
-              <h2 class="date_text">VS Code</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="blog_section_2">
-      <div class="skills">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="blog_box">
-              <div class="blog_img">
-                <img src="images/sublime.png" />
-              </div>
-              <h2 class="date_text">Sublime</h2>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="blog_box">
-              <div class="blog_img">
-                <img src="images/outlook.png" />
-              </div>
-              <h2 class="date_text">Outlook</h2>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="blog_box">
-              <div class="blog_img">
-                <img src="images/teams.png" />
-              </div>
-              <h2 class="date_text">Teams</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Skills section end -->
-    <!-- contact section start -->
-    <div class="contact_section layout_padding">
-      <div class="container">
-        <div class="contact_section_2">
-          <div class="row">
-            <div class="col-md-6">
-              <h1>
-                The Best Time is Now. Let's Create Something Incredible
-                Together!
-              </h1>
-              <h2>
-                Let’s move forward together – your vision and our expertise can
-                create something extraordinary. Whether it’s a new project, a
-                fresh idea, or a unique challenge, we’re here to support you
-                every step of the way. Don’t wait for the perfect moment, the
-                time is now. Let's make it happen!
-              </h2>
-            </div>
-            <div class="col-md-6">
-              <div class="mail_section_1">
-                <input
-                  type="text"
-                  class="mail_text"
-                  placeholder="Your Name"
-                  name="Your Name"
-                />
-                <input
-                  type="text"
-                  class="mail_text"
-                  placeholder="Your Email"
-                  name="Your Email"
-                />
-                <input
-                  type="text"
-                  class="mail_text"
-                  placeholder="Your Phone"
-                  name="Your Phone"
-                />
-                <textarea
-                  class="massage-bt"
-                  placeholder="Your Massage"
-                  rows="5"
-                  id="comment"
-                  name="Your Massage"
-                ></textarea>
-                <button class="send_bt">Send Now</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- contact section end -->
-    <!-- project box section start -->
-    <div class="project_box">
-      <div class="container">
-        <div class="project_main">
-          <h1 class="hire_text">Hire me for your projects</h1>
-          <div class="callnow_bt"><a href="contact.html">Call Now</a></div>
-        </div>
-      </div>
-    </div>
-    <!-- project box section end -->
+ end -->
     <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
     <!-- Header will be loaded here -->
     <div id="header"></div>
@@ -523,22 +180,14 @@
         .then((data) => (document.getElementById("footer").innerHTML = data));
     </script>
     <!-- copyright section end -->
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+    <!-- Modern Theme Logic -->
+    <script src="js/modern-theme.js"></script>
+
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/plugin.js"></script>
-    <script src="js/js.common.js"></script>
-    <!-- sidebar -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/custom.js"></script>
-
-    <script>
-      // Add 'loaded' class to body after page has loaded
-      window.addEventListener("load", function () {
-        document.body.classList.add("loaded");
-      });
-    </script>
   </body>
 </html>

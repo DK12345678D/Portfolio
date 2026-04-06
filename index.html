@@ -17,6 +17,8 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <!-- style css -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Modern 3D Theme -->
+    <link rel="stylesheet" type="text/css" href="css/modern-3d.css" />
     <!-- Responsive-->
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- fevicon -->
@@ -30,58 +32,50 @@
     />
     <!-- fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&family=Outfit:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <!-- font awesome css -->
     <link
       rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <style>
       /* Full-page overlay */
-      /* D Logo Style */
+      .loading-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100000;
+        transition: opacity 0.8s ease, visibility 0.8s ease;
+      }
+      
+      .loaded .loading-overlay {
+        opacity: 0;
+        visibility: hidden;
+      }
+
       .d-logo {
-        font-size: 100px;
-        font-weight: bold;
-        color: #3498db;
-        /* Change the color of the logo */
-        text-transform: uppercase;
-        animation: rotateD 5s ease-in-out infinite,
-          scaleD 3s ease-in-out infinite;
+        font-size: 80px;
+        font-weight: 900;
+        color: transparent;
+        -webkit-text-stroke: 2px #6366f1;
+        text-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+        animation: logoPulse 2s ease-in-out infinite;
+        position: relative;
       }
 
-      /* Animation to rotate the D */
-      @keyframes rotateD {
-        0% {
-          transform: rotate(0deg);
-        }
-
-        50% {
-          transform: rotate(180deg);
-        }
-
-        100% {
-          transform: rotate(360deg);
-        }
+      @keyframes logoPulse {
+        0%, 100% { transform: scale(1) rotateY(0deg); opacity: 0.5; }
+        50% { transform: scale(1.2) rotateY(180deg); opacity: 1; }
       }
 
-      /* Animation to scale the D */
-      @keyframes scaleD {
-        0%,
-        100% {
-          transform: scale(2);
-        }
-
-        50% {
-          transform: scale(3.2);
-        }
-      }
-
-      /* Hide the loader after page has loaded */
-      body.loaded .loading-overlay {
-        display: none;
-      }
 
       /* review section start*/
 
@@ -163,214 +157,94 @@
   </head>
 
   <body>
+    <!-- Custom Interactive Cursor -->
+    <div class="custom-cursor" id="cursor"></div>
+
     <!-- Loading overlay with the animated "D" logo -->
     <div class="loading-overlay">
       <div class="d-logo">DK</div>
     </div>
+
     <!-- Header will be loaded here -->
     <div id="header"></div>
     <!-- header section start -->
     <div class="header_section">
-      <!-- banner section start -->
+      <!-- Hero section start -->
       <div class="banner_section layout_padding">
-        <section class="slide-wrapper">
-          <div class="container-fluid">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li
-                  data-target="#myCarousel"
-                  data-slide-to="0"
-                  class="active"
-                ></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="banner_taital_main">
-                          <h1
-                            data-animation="fadeInUp"
-                            data-delay=".6s"
-                            class="banner_taital"
-                            style="animation-delay: 0.6s; color: black"
-                          >
-                            I'm Java developer
-                          </h1>
-                          <h3
-                            data-animation="fadeInUp"
-                            data-delay=".6s"
-                            style="color: black"
-                          >
-                            A Java developer fresh out of college is typically
-                            skilled in core Java concepts such as
-                            object-oriented programming, data structures, and
-                            algorithms. They have experience working with Java
-                            frameworks like Spring and Hibernate, and may be
-                            familiar with tools such as Maven or Git. While they
-                            might not have extensive professional experience,
-                            they are eager to learn, collaborate, and contribute
-                            to software development projects, focusing on
-                            writing clean, efficient code and developing web or
-                            desktop applications. They're also likely to be
-                            familiar with basic database operations, unit
-                            testing, and version control systems.
-                          </h3>
-                        </div>
-                      </div>
-                      <div
-                        class="col-md-6"
-                        style="
-                          background-image: url(../images/banner-bg3.avif);
-                          padding: auto;
-                        "
-                      >
-                        <!-- <div class="social_icon">
-                          <ul>
-                            <li>
-                              <a href="mailto:dinkarprasad682@gmail.com"
-                                ><i
-                                  class="fa fa-envelope"
-                                  aria-hidden="true"
-                                ></i
-                              ></a>
-                            </li>
-                            <li>
-                              <a href="https://github.com/DK12345678D"
-                                ><i class="fa fa-github" aria-hidden="true"></i
-                              ></a>
-                            </li>
-                            <li>
-                              <a
-                                href="https://www.linkedin.com/in/dinkarprasad682/"
-                                ><i
-                                  class="fa fa-linkedin"
-                                  aria-hidden="true"
-                                ></i
-                              ></a>
-                            </li>
-                            <li>
-                              <a href="#"
-                                ><i
-                                  class="fa fa-instagram"
-                                  aria-hidden="true"
-                                ></i
-                              ></a>
-                            </li>
-                          </ul>
-                        </div> -->
-                      </div>
-                    </div>
-                  </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10 text-center animate-up">
+              <div class="banner_taital_main">
+                <h1 class="modern-title float-3d mb-4" style="font-size: clamp(2.2rem, 5vw, 4rem);">
+                  I'm <span class="gradient-text">Dinkar Prasad</span> — Java Backend Developer
+                </h1>
+                <p class="modern-subtitle mb-5 mx-auto" style="font-size: 1.15rem; line-height: 1.9; max-width: 780px; color: var(--text-secondary);">
+                  ~1 year of experience building scalable and secure REST APIs using <strong style="color:#fff;">Spring Boot</strong> &amp; <strong style="color:#fff;">MySQL</strong>. Skilled in microservices architecture, JWT authentication, and backend performance optimization — delivering production-ready systems in Agile environments.
+                </p>
+                <div class="d-flex flex-wrap gap-3 justify-content-center">
+                  <a href="portfolio.html" class="premium-btn mb-3 mr-3">View My Work</a>
+                  <a href="contact.html" class="premium-btn-outline mb-3">Get in Touch</a>
+                  <a href="about.html" class="premium-btn-outline mb-3" style="border-color: rgba(6,182,212,0.4); color: var(--secondary-color);">My Resume</a>
                 </div>
-
-                <!-- <div class="carousel-item">
-                        <div class="container-fluid">
-                           <div class="row">
-                              <div class="col-md-6">
-                                 <div class="banner_taital_main">
-                                    <h3 class="banner_text">Hello Am <br>Dinkar Prasad </h3>
-                                    <h1 class="banner_taital">Java developer</h1>
-                                 </div>
-                              </div>
-                              <div class="col-md-6">
-                                 <div class="social_icon">
-                                    <ul>
-                                       <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                       <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li> </a>
-                                       </li>
-                                       <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                       <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="carousel-item">
-                        <div class="container-fluid">
-                           <div class="row">
-                              <div class="col-md-6">
-                                 <div class="banner_taital_main">
-                                    <h3 class="banner_text">Hello Am <br>Dinkar Prasad</h3>
-                                    <h1 class="banner_taital">Java developer</h1>
-                                 </div>
-                              </div>
-                              <div class="col-md-6">
-                                 <div class="social_icon">
-                                    <ul>
-                                       <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                       <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
-                                       <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                       <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div> -->
               </div>
             </div>
           </div>
-        </section>
-        <!-- <div class="container">
-          <div class="video_bt">
-            <div class="play_icon"><img src="images/play-icon.png" /></div>
-          </div>
-        </div> -->
+        </div>
       </div>
-      <!-- banner section end -->
+      <!-- Hero section end -->
     </div>
     <!-- header section end -->
     <!-- services section start -->
-    <div class="services_section layout_padding margin_90">
+    <div class="services_section layout_padding">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <h1 class="services_taital">
-              My <span class="portfolio_taital_1">Services</span>
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <h1 class="modern-title" style="font-size: 3rem;">
+              My <span class="gradient-text">Expertise</span>
             </h1>
+            <p style="color: var(--text-secondary);">Specialized in backend engineering — from API design to secure, production-ready systems.</p>
           </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="services_section_2">
-          <div class="row">
-            <a href="API.html" class="col-lg-3 col-sm-6">
-              <div class="box_main">
-                <div class="app_icon"><img src="images/api-64.png" /></div>
-                <div class="app_icon_1"><img src="images/api-64.png" /></div>
-                <h4 class="services_text">API Design</h4>
-              </div>
-            </a>
-            <a href="Website.html" class="col-lg-3 col-sm-6">
-              <div class="box_main">
-                <div class="app_icon"><img src="images/icon-2.png" /></div>
-                <div class="app_icon_1"><img src="images/icon-2.png" /></div>
-                <h4 class="services_text">Website Design</h4>
-              </div>
-            </a>
-            <a href="java.html" class="col-lg-3 col-sm-6">
-              <div class="box_main">
-                <div class="app_icon"><img src="images/java-50.png" /></div>
-                <div class="app_icon_1"><img src="images/java-50.png" /></div>
-                <h4 class="services_text">Java</h4>
-              </div>
-            </a>
-            <a href="springboot.html" class="col-lg-3 col-sm-6">
-              <div class="box_main">
-                <div class="app_icon"><img src="images/database.png" /></div>
-                <div class="app_icon_1">
-                  <img src="images/database.png" />
-                </div>
-                <h4 class="services_text">Database Design</h4>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <a href="API.html" style="text-decoration: none;">
+              <div class="box_main glass-card">
+                <div class="app_icon"><img src="images/api-64.png" style="width: 100%; filter: drop-shadow(0 0 8px rgba(99,102,241,0.5));"></div>
+                <h4 style="color: #fff; font-weight: 700; margin-bottom: 1rem;">API Development</h4>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">I design and develop scalable RESTful APIs using Spring Boot, focusing on clean architecture, performance, and real-world business logic.</p>
               </div>
             </a>
           </div>
-          <div class="readmore_bt"><a href="service.html">Read More</a></div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <a href="service.html" style="text-decoration: none;">
+              <div class="box_main glass-card">
+                <div class="app_icon"><img src="images/spring-boot.png" style="width: 100%; filter: drop-shadow(0 0 8px rgba(107,243,141,0.5));"></div>
+                <h4 style="color: #fff; font-weight: 700; margin-bottom: 1rem;">Backend Development</h4>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">I build secure and maintainable backend systems using Java, Spring Boot, and Hibernate, ensuring production-ready applications.</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <a href="java.html" style="text-decoration: none;">
+              <div class="box_main glass-card">
+                <div class="app_icon"><img src="images/java.png" style="width: 100%; filter: drop-shadow(0 0 8px rgba(249,115,22,0.5));"></div>
+                <h4 style="color: #fff; font-weight: 700; margin-bottom: 1rem;">Core Java</h4>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">I have a strong foundation in object-oriented programming, data structures, and multithreading for efficient backend logic.</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <a href="springboot.html" style="text-decoration: none;">
+              <div class="box_main glass-card">
+                <div class="app_icon"><img src="images/mysql.png" style="width: 100%; filter: drop-shadow(0 0 8px rgba(6,182,212,0.5));"></div>
+                <h4 style="color: #fff; font-weight: 700; margin-bottom: 1rem;">Database Management</h4>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">I design and manage relational databases using MySQL and Oracle, with hands-on experience in Hibernate/JPA for efficient data handling.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <a href="service.html" class="premium-btn">View All Services</a>
         </div>
       </div>
     </div>
@@ -378,247 +252,220 @@
     <!-- portfolio section start -->
     <div class="portfolio_section layout_padding">
       <div class="container">
-        <h1><b>Our Recent Project:</b></h1>
-        <!-- <div class="row">
-               <div class="col-sm-12" style="padding-right: 75%;">
-                  <h1 class="portfolio_taital">My <span class="portfolio_taital_1">Portfolio</span></h1>
-               </div>
-            </div> -->
-        <div class="portfolio_section">
-          <div class="portfolio_section_2">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="container_main">
-                  <img src="images/bookh.png" alt="" class="image" />
-                  <!-- <div class="overlay">
-                    <div class="text">
-                      <div class="btn_main">
-                        <div class="buy_bt">
-                          <a href="portfolio.html">See More</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div> -->
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="container_main">
-                  <img src="images/emph.png" alt="" class="image" />
-                  <!-- <div class="overlay">
-                    <div class="text">
-                      <div class="btn_main">
-                        <div class="buy_bt">
-                          <a href="portfolio.html">See More</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div> -->
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="container_main">
-                  <img src="images/home.png" alt="" class="image" />
-                  <!-- <div class="overlay">
-                    <div class="text">
-                      <div class="btn_main">
-                        <div class="buy_bt">
-                          <a href="portfolio.html">See More</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div> -->
-                </div>
+        <div class="row justify-content-between align-items-center mb-5">
+          <div class="col-md-7">
+            <h1 class="modern-title" style="font-size: 3rem;">Recent <span class="gradient-text">Projects</span></h1>
+            <p style="color: var(--text-secondary);">Showcasing some of my best work in backend and web development.</p>
+          </div>
+          <div class="col-md-3 text-md-right mt-3 mt-md-0">
+            <a href="portfolio.html" class="premium-btn-outline">Browse Portfolio</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="portfolio_gallery_item glass-card p-0">
+              <img src="images/bookh.png" alt="Project 1" />
+              <div class="project-overlay">
+                <h5 style="color: #fff; margin-bottom: 0.5rem; font-weight: 700;">Exam Portal System</h5>
+                <p style="color: var(--text-secondary); font-size: 0.85rem; margin: 0;">Java, Spring Boot, Spring Security, MySQL, REST APIs</p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="seemore_bt"><a href="portfolio.html">See More</a></div>
+          <div class="col-md-4 mb-4">
+            <div class="portfolio_gallery_item glass-card p-0">
+              <img src="images/emph.png" alt="MyCap App" />
+              <div class="project-overlay">
+                <h5 style="color: #fff; margin-bottom: 0.5rem; font-weight: 700;">MyCap App</h5>
+                <p style="color: var(--text-secondary); font-size: 0.85rem; margin: 0;">Java, Spring Boot, WebSocket, Razorpay API, MySQL</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="portfolio_gallery_item glass-card p-0">
+              <img src="images/home.png" alt="MyMaid App" />
+              <div class="project-overlay">
+                <h5 style="color: #fff; margin-bottom: 0.5rem; font-weight: 700;">MyMaid App</h5>
+                <p style="color: var(--text-secondary); font-size: 0.85rem; margin: 0;">Java, Spring Boot, MySQL, Spring Security, JWT</p>
+              </div>
+            </div>
+          </div>
+          
       </div>
     </div>
-
     <!-- portfolio section end -->
     <!-- Skills section start -->
-
-    <div class="blog_section_2">
-      <h1 style="padding-bottom: 5%"><b>Professional Skills Set</b></h1>
-      <div class="Skills">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="blog_box">
-              <div class="blog_img">
-                <img src="images/java.png" />
-              </div>
-              <h2 class="date_text">Java</h2>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="blog_box">
-              <div class="blog_img">
-                <img src="images/spring-boot.png" />
-              </div>
-              <h2 class="date_text">springboot</h2>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="blog_box">
-              <div class="blog_img">
-                <img src="images/oracle.png" />
-              </div>
-              <h2 class="date_text">Oracle</h2>
-            </div>
+    <div class="blog_section_2 layout_padding">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <h1 class="modern-title" style="font-size: 3rem;">Technical <span class="gradient-text">Skills</span></h1>
+            <p style="color: var(--text-secondary);">Languages, frameworks, databases and tools I use to build production-ready systems.</p>
           </div>
         </div>
-        <div class="readmore_bt"><a href="service.html">Read More</a></div>
+        <div class="row g-3 justify-content-center">
+          <div class="col-6 col-md-3 col-lg-2 mb-3">
+            <div class="blog_box glass-card text-center py-4">
+              <img src="images/java.png" style="height: 45px; margin-bottom: 0.75rem; filter: drop-shadow(0 0 6px rgba(249,115,22,0.5));">
+              <h6 style="color:#fff; margin:0; font-weight:700;">Java</h6>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3">
+            <div class="blog_box glass-card text-center py-4">
+              <img src="images/spring-boot.png" style="height: 45px; margin-bottom: 0.75rem; filter: drop-shadow(0 0 6px rgba(107,243,141,0.5));">
+              <h6 style="color:#fff; margin:0; font-weight:700;">Spring Boot</h6>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3">
+            <div class="blog_box glass-card text-center py-4">
+              <img src="images/security.png" style="height: 45px; margin-bottom: 0.75rem; filter: drop-shadow(0 0 6px rgba(99,102,241,0.5));">
+              <h6 style="color:#fff; margin:0; font-weight:700;">Spring Security</h6>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3">
+            <div class="blog_box glass-card text-center py-4">
+              <img src="images/mysql.png" style="height: 45px; margin-bottom: 0.75rem; filter: drop-shadow(0 0 6px rgba(6,182,212,0.5));">
+              <h6 style="color:#fff; margin:0; font-weight:700;">MySQL</h6>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3">
+            <div class="blog_box glass-card text-center py-4">
+              <img src="images/oracle.png" style="height: 45px; margin-bottom: 0.75rem; filter: drop-shadow(0 0 6px rgba(244,63,94,0.4));">
+              <h6 style="color:#fff; margin:0; font-weight:700;">Oracle</h6>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 mb-3">
+            <div class="blog_box glass-card text-center py-4">
+              <img src="images/mongodb.png" style="height: 45px; margin-bottom: 0.75rem; filter: drop-shadow(0 0 6px rgba(107,243,141,0.5));">
+              <h6 style="color:#fff; margin:0; font-weight:700;">MongoDB</h6>
+            </div>
+          </div>
+         
+        </div>
+        <div class="text-center mt-5">
+          <a href="skills.html" class="premium-btn">View All Skills</a>
+        </div>
       </div>
     </div>
-
     <!-- Skills section end -->
     <!-- Review section start -->
 
-    <!-- <h1 style="padding-bottom: 5%"></h1> -->
-    <div class="services_section layout_padding margin_90">
+    <!-- Positive Feedback Section -->
+    <div class="services_section layout_padding">
       <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <h1 class="modern-title" style="font-size: 3rem;">Client <span class="gradient-text">Feedback</span></h1>
+            <p style="color: var(--text-secondary);">What people say about working with me.</p>
+          </div>
+        </div>
         <div class="row">
-          <div class="col-sm-12">
-            <h1><b>Some Possitive Feedback That Encourage Us</b></h1>
+          <div class="col-md-4">
+            <div class="review glass-card h-100 mb-4">
+              <div class="head-review mb-4 text-center">
+                <img
+                  src="https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"
+                  style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary-color);"
+                />
+              </div>
+              <div class="body-review-content text-center">
+                <h4 style="color: #fff; font-weight: 700; margin-bottom: 0.25rem;">Dileep Singh</h4>
+                <p style="color: var(--accent-color); font-size: 0.8rem; margin-bottom: 1rem;">MUMBAI</p>
+                <div class="rating mb-3" style="color: #fbbf24;">
+                  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </div>
+                <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">"Dinkar delivered a modern, responsive website that perfectly represents our brand. Top-notch expertise!"</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="review glass-card h-100 mb-4">
+              <div class="head-review mb-4 text-center">
+                <img
+                  src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"
+                  style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary-color);"
+                />
+              </div>
+              <div class="body-review-content text-center">
+                <h4 style="color: #fff; font-weight: 700; margin-bottom: 0.25rem;">Riya Rai</h4>
+                <p style="color: var(--accent-color); font-size: 0.8rem; margin-bottom: 1rem;">SURAT</p>
+                <div class="rating mb-3" style="color: #fbbf24;">
+                  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i>
+                </div>
+                <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">"Attention to detail and commitment to quality are exceptional. Highly recommend his services!"</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="review glass-card h-100 mb-4">
+              <div class="head-review mb-4 text-center">
+                <img
+                  src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"
+                  style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary-color);"
+                />
+              </div>
+              <div class="body-review-content text-center">
+                <h4 style="color: #fff; font-weight: 700; margin-bottom: 0.25rem;">Vikash Gupta</h4>
+                <p style="color: var(--accent-color); font-size: 0.8rem; margin-bottom: 1rem;">NEW DELHI</p>
+                <div class="rating mb-3" style="color: #fbbf24;">
+                  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </div>
+                <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">"A website that works seamlessly on all devices with incredibly fast load times. Expert work!"</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="reviews">
-      <div class="review">
-        <div class="head-review">
-          <img
-            id="reimg"
-            src="https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
-            width="250px"
-          />
-        </div>
-        <div class="body-review">
-          <div class="name-review">Dileep Singh</div>
-          <div class="place-review">Mumbai</div>
-          <div class="rating">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-          </div>
-          <div class="desc-review">
-            Thanks to Dinkar Prasad, we now have a modern, responsive website
-            that perfectly represents our brand. His expertise in web
-            development is top-notch!
-          </div>
-        </div>
-      </div>
-      <div class="review">
-        <div class="head-review">
-          <img
-            id="reimg"
-            src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
-            width="250px"
-          />
-        </div>
-        <div class="body-review">
-          <div class="name-review">Riya Rai</div>
-          <div class="place-review">Surat</div>
-          <div class="rating">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star-half" aria-hidden="true"></i>
-          </div>
-          <div class="desc-review">
-            Dinkar's attention to detail and commitment to quality have helped
-            our website perform better than we imagined. Highly recommend his
-            services!
-          </div>
-        </div>
-      </div>
-      <div class="review">
-        <div class="head-review">
-          <img
-            id="reimg"
-            src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-            width="250px"
-          />
-        </div>
-        <div class="body-review">
-          <div class="name-review">Vikash Gupta</div>
-          <div class="place-review">New Delhi</div>
-          <div class="rating">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-          </div>
-          <div class="desc-review">
-            Dinkar delivered a website that works seamlessly on all devices.
-            We’re seeing higher user engagement and faster and smooth load
-            times, thanks to his expert work !
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Positive Feedback Section End -->
 
-    <!-- Review section end -->
     <!-- contact section start -->
     <div class="contact_section layout_padding">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <h1 class="contact_taital">
-              My <span class="contact_taital_1">Contact</span>
-            </h1>
-          </div>
-        </div>
-        <div class="contact_section_2">
-          <div class="row">
-            <div class="col-md-6">
-              <h1>
-                The Best Time is Now. Let's Create Something Incredible
-                Together!
-              </h1>
-              <h3>
-                Let’s move forward together – your vision and our expertise can
-                create something extraordinary. Whether it’s a new project, a
-                fresh idea, or a unique challenge, we’re here to support you
-                every step of the way. Don’t wait for the perfect moment, the
-                time is now. Let's make it happen!
-              </h3>
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0 animate-up">
+            <h1 class="modern-title" style="font-size: 3rem;">Let's <span class="gradient-text">Connect</span></h1>
+            <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 2.5rem;">
+              The Best Time is Now. Let's Create Something Incredible Together! Whether it’s a new project or a unique challenge, I’m here to help.
+            </p>
+            <div class="d-flex align-items-center mb-4">
+              <div class="icon-box mr-3" style="width: 50px; height: 50px; background: rgba(99, 102, 241, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--primary-color);">
+                <i class="fa fa-envelope"></i>
+              </div>
+              <div>
+                <p style="color: var(--text-muted); margin: 0; font-size: 0.85rem;">Email Me</p>
+                <h5 style="color: #fff; margin: 0; font-weight: 600;">dinkarprasa682@gmail.com</h5>
+              </div>
             </div>
-            <div class="col-md-6">
+            <div class="d-flex align-items-center">
+              <div class="icon-box mr-3" style="width: 50px; height: 50px; background: rgba(6, 182, 212, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--secondary-color);">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div>
+                <p style="color: var(--text-muted); margin: 0; font-size: 0.85rem;">Call Me</p>
+                <h5 style="color: #fff; margin: 0; font-weight: 600;">+91 7000045867</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 animate-up" style="animation-delay: 0.2s;">
+            <div class="glass-card">
               <form action="https://formspree.io/f/xqapgegw" method="POST">
-                <div class="mail_section_1">
-                  <input
-                    type="text"
-                    class="mail_text"
-                    placeholder="Your Name"
-                    name="Your Name"
-                  />
-                  <input
-                    type="text"
-                    class="mail_text"
-                    placeholder="Your Email"
-                    name="Your Email"
-                  />
-                  <input
-                    type="text"
-                    class="mail_text"
-                    placeholder="Your Phone"
-                    name="Your Phone"
-                  />
-                  <textarea
-                    class="massage-bt"
-                    placeholder="Your Massage"
-                    rows="5"
-                    id="comment"
-                    name="Your Massage"
-                  ></textarea>
-
-                  <button class="send_bt" type="submit">Send Now</button>
+                <div class="row">
+                  <div class="col-md-12 mb-3">
+                    <input type="text" class="form-control premium-input" placeholder="Your Name" name="Your Name" required />
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <input type="email" class="form-control premium-input" placeholder="Your Email" name="Your Email" required />
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <input type="text" class="form-control premium-input" placeholder="Your Phone" name="Your Phone" />
+                  </div>
+                  <div class="col-md-12 mb-4">
+                    <textarea class="form-control premium-input" placeholder="Your Message" rows="5" name="Your Massage" required></textarea>
+                  </div>
+                  <div class="col-md-12">
+                    <button class="premium-btn w-100" type="submit">Send Message</button>
+                  </div>
                 </div>
               </form>
             </div>
@@ -628,19 +475,22 @@
     </div>
     <!-- contact section end -->
     <!-- project box section start -->
-    <div class="project_box">
+    <div class="layout_padding">
       <div class="container">
-        <div class="project_main">
-          <h1 class="hire_text">Hire me for your projects</h1>
-          <div class="callnow_bt"><a href="contact.html">Call Now</a></div>
+        <div class="glass-card text-center py-5" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(6, 182, 212, 0.1)); border-color: rgba(99, 102, 241, 0.2);">
+          <h1 class="modern-title" style="font-size: 2.5rem; margin-bottom: 2rem;">Ready to bring your ideas to life?</h1>
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="contact.html" class="premium-btn">Hire Me Now</a>
+            <a href="mailto:dinkarprasa682@gmail.com" class="premium-btn-outline ml-3">Email Me</a>
+          </div>
         </div>
       </div>
     </div>
     <!-- project box section end -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+
 
     <!-- Header will be loaded here -->
-    <div id="header"></div>
+
 
     <!-- Footer will be loaded here -->
     <div id="footer"></div>
@@ -659,15 +509,14 @@
     </script>
 
     <!-- copyright section end -->
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+    <!-- Modern Theme Logic -->
+    <script src="js/modern-theme.js"></script>
+
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/plugin.js"></script>
-    <script src="js/js.common.js"></script>
-    <!-- sidebar -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/custom.js"></script>
   </body>
 </html>
