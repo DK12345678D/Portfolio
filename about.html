@@ -1,253 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- mobile metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
-  <!-- site metas -->
-  <title>About | Dinkar</title>
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <!-- bootstrap css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-  <!-- style css -->
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <!-- Responsive-->
+  <title>About | Dinkar Prasad – Java Backend Developer</title>
+  <meta name="description" content="About Dinkar Prasad – Java Backend Developer with experience in Spring Boot, REST APIs, and Microservices." />
+  <meta name="author" content="Dinkar Prasad" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/modern-3d.css" />
   <link rel="stylesheet" href="css/responsive.css" />
-  <!-- fevicon -->
+  <!-- Favicon -->
   <link rel="icon" href="images/d.png" type="image/gif" />
-  <!-- Scrollbar Custom CSS -->
-  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
-  <!-- Tweaks for older IEs-->
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"   />
-  <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
-  <!-- font awesome css -->
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
-  <style>
-    /* review section start*/
-
-    .rev-section {
-      margin: auto;
-      padding: 0 1rem;
-    }
-
-    .title {
-      font-size: 2.5rem;
-      padding-left: 5%;
-      text-transform: uppercase;
-      color: rgb(50, 50, 50);
-      margin-bottom: 0.5rem;
-      margin-top: 4rem;
-     
-    }
-
-    .note {
-      font-size: 1.1rem;
-      color: rgb(150, 150, 150);
-      font-style: italic;
-    }
-
-    .reviews {
-      margin: 2rem auto;
-      display: flex;
-      flex-wrap: wrap;
-      padding-left: 8%;
-      padding-right: 8%;
-    }
-
-    .review {
-      margin: 0 1rem;
-      min-width: 300px;
-      flex: 1;
-    }
-
-    .head-review {
-      margin: 1.75rem auto;
-      width: 150px;
-      height: 150px;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 5%;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-    }
-
-    .body-review {
-      background-color: rgb(238, 238, 238);
-      padding: 2.5rem;
-      box-shadow: 2px 2px 10px 3px rgb(225, 225, 225);
-    }
-
-    .name-review {
-      font-size: 1.5rem;
-      color: rgb(50, 50, 50);
-      margin-bottom: 0.25rem;
-    }
-
-    .place-review {
-      color: red;
-      font-style: italic;
-    }
-
-    .rating {
-      color: rgb(253, 180, 42);
-      margin: 1rem 0;
-    }
-
-    .desc-review {
-      line-height: 1.5rem;
-      letter-spacing: 1px;
-      color: rgb(150, 150, 150);
-    }
-
-    @media (max-width: 678px) {
-      .review {
-        margin-top: 1.5rem;
-      }
-    }
-
-    /* review section end*/
-    /* Full-page overlay */
-    .loading-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.8);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-    }
-
-    /* Animation to rotate the D */
-    @keyframes rotateD {
-      0% {
-        transform: rotate(0deg);
-      }
-
-      50% {
-        transform: rotate(180deg);
-      }
-
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-
-    /* Animation to scale the D */
-    @keyframes scaleD {
-
-      0%,
-      100% {
-        transform: scale(2);
-      }
-
-      50% {
-        transform: scale(3.2);
-      }
-    }
-
-    .servicest {
-      background-color: #ecf0f1;
-      background-image: url(images/i.jpg);
-      padding: 40px;
-      border-radius: 8px;
-      margin-bottom: 20px;
-    }
-
-    /* Hide the loader after page has loaded */
-    body.loaded .loading-overlay {
-      display: none;
-    }
-  </style>
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
 </head>
-
 <body>
-  <!-- Custom Interactive Cursor -->
+  <!-- Custom Cursor -->
   <div class="custom-cursor" id="cursor"></div>
 
-  <!-- Loading overlay with the animated "D" logo -->
+  <!-- Loading Overlay -->
   <div class="loading-overlay">
-    <div class="d-logo">DK</div>
+    <div style="font-size: 80px; font-weight: 900; background: linear-gradient(135deg, #6366f1, #06b6d4); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; animation: pulse 1.5s ease-in-out infinite;">DK</div>
   </div>
 
-  <!-- Header will be loaded here -->
+  <!-- Header -->
+  <div id="header"></div>
 
+  <!-- About Hero -->
   <div class="layout_padding">
     <div class="container">
       <div class="row justify-content-center mb-5">
         <div class="col-lg-8 text-center animate-up">
           <h1 class="modern-title" style="font-size: 3.5rem;">About <span class="gradient-text">Me</span></h1>
-          <p style="color: var(--text-secondary); font-size: 1.1rem;">Passionate Developer dedicated to building high-quality software.</p>
+          <p style="color: var(--text-secondary); font-size: 1.1rem;">Java Backend Developer passionate about building scalable, secure, and production-ready systems.</p>
         </div>
       </div>
-      
-      <div class="row align-items-center glass-card p-lg-5 animate-up">
+
+      <!-- Profile Card -->
+      <div class="row align-items-center glass-card p-lg-5 animate-up mb-5">
         <div class="col-lg-4 mb-5 mb-lg-0 text-center">
           <div class="about-img-container p-2" style="background: rgba(255,255,255,0.05); border-radius: 40px; border: 1px solid var(--glass-border);">
             <img src="images/4.png" alt="Dinkar Prasad" class="float-3d" style="width: 100%; border-radius: 32px; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
           </div>
         </div>
         <div class="col-lg-8 pl-lg-5">
-          <h2 class="modern-title mb-4" style="font-size: 2.2rem;">I Am <span class="gradient-text">Dinkar Prasad</span></h2>
-          <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
-            Java Backend Developer with ~1 year of experience building scalable and secure REST APIs using Spring Boot and MySQL. Skilled in microservices architecture, authentication using JWT, and backend performance optimization. Strong experience in developing production-ready systems, integrating third-party services, and working in Agile environments.
+          <h2 class="modern-title mb-3" style="font-size: 2.2rem;">I Am <span class="gradient-text">Dinkar Prasad</span></h2>
+          <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.9; margin-bottom: 2rem;">
+            <strong style="color: #fff;">Software Engineer</strong> &amp; Java Backend Developer with <strong style="color:#fff;">2+ years</strong> of experience building scalable, secure mission-critical systems and REST APIs using <strong style="color:#fff;">Spring Boot</strong> &amp; <strong style="color:#fff;">MySQL</strong>. Specialist in microservices architecture, JWT security, and backend performance optimization — delivering production-ready solutions in high-velocity Agile environments.
           </p>
-          <div class="row g-4">
-            <div class="col-md-6 mb-3">
-              <div class="p-3" style="background: rgba(255,255,255,0.02); border-radius: 16px; border: 1px solid var(--glass-border);">
-                <h5 style="color: #fff; font-weight: 700; margin-bottom: 0.5rem;"><i class="fa fa-code mr-2" style="color: var(--primary-color);"></i> Backend Focus</h5>
-                <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">Spring Boot, Hibernate, MySQL</p>
+          <div class="row g-3 mb-4">
+            <div class="col-md-6 col-lg-3">
+              <div class="p-3 h-100" style="background: rgba(99,102,241,0.06); border-radius: 16px; border: 1px solid var(--glass-border);">
+                <h6 style="color: #fff; font-weight: 700; margin-bottom: 0.4rem; font-size: 0.85rem;"><i class="fa-solid fa-server mr-2" style="color: var(--primary-color);"></i> Backend</h6>
+                <p style="color: var(--text-muted); font-size: 0.75rem; margin: 0;">Spring Boot, Hibernate, MySQL, JWT</p>
               </div>
             </div>
-            <div class="col-md-6 mb-3">
-              <div class="p-3" style="background: rgba(255,255,255,0.02); border-radius: 16px; border: 1px solid var(--glass-border);">
-                <h5 style="color: #fff; font-weight: 700; margin-bottom: 0.5rem;"><i class="fa fa-terminal mr-2" style="color: var(--secondary-color);"></i> Frontend Flair</h5>
-                <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">HTML, CSS, JavaScript, Bootstrap</p>
+            <div class="col-md-6 col-lg-3">
+              <div class="p-3 h-100" style="background: rgba(6,182,212,0.06); border-radius: 16px; border: 1px solid var(--glass-border);">
+                <h6 style="color: #fff; font-weight: 700; margin-bottom: 0.4rem; font-size: 0.85rem;"><i class="fa-solid fa-cubes mr-2" style="color: var(--secondary-color);"></i> Cloud</h6>
+                <p style="color: var(--text-muted); font-size: 0.75rem; margin: 0;">Microservices, Docker, CI/CD</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="p-3 h-100" style="background: rgba(244,63,94,0.06); border-radius: 16px; border: 1px solid var(--glass-border);">
+                <h6 style="color: #fff; font-weight: 700; margin-bottom: 0.4rem; font-size: 0.85rem;"><i class="fa-solid fa-database mr-2" style="color: var(--accent-color);"></i> Data</h6>
+                <p style="color: var(--text-muted); font-size: 0.75rem; margin: 0;">MySQL, Oracle, MongoDB</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="p-3 h-100" style="background: rgba(251,191,36,0.06); border-radius: 16px; border: 1px solid var(--glass-border);">
+                <h6 style="color: #fff; font-weight: 700; margin-bottom: 0.4rem; font-size: 0.85rem;"><i class="fa-solid fa-users-gear mr-2" style="color: #fbbf24;"></i> Agile</h6>
+                <p style="color: var(--text-muted); font-size: 0.75rem; margin: 0;">Scrum, Git, Code Reviews</p>
               </div>
             </div>
           </div>
-          <div class="mt-4">
+          <div class="d-flex flex-wrap gap-3">
             <a href="contact.html" class="premium-btn">Let's Work Together</a>
+            <a href="portfolio.html" class="premium-btn-outline ml-3">View Projects</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Resume Sections start -->
+  <!-- Experience & Education -->
   <div class="layout_padding pt-0">
     <div class="container">
       <div class="row g-5">
-        <div class="col-lg-6 mb-4">
-          <h2 class="modern-title mb-4" style="font-size: 2.2rem;"><span class="gradient-text">Experience</span></h2>
-          <div class="glass-card mb-4" style="padding: 2rem; text-align: left;">
-            <h4 style="color: #fff; font-weight: 700; margin-bottom: 0.5rem;">Trainee Software Engineer</h4>
-            <p style="color: var(--accent-color); font-weight: 600; font-size: 0.9rem; margin-bottom: 1rem;">BerryBloomer Pvt Ltd | April 2025 – Present</p>
-            <ul style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5; padding-left: 1.2rem;">
+
+        <!-- Experience -->
+        <div class="col-lg-6">
+          <h2 class="modern-title mb-4" style="font-size: 2rem;"><span class="gradient-text">Experience</span></h2>
+
+          <div class="glass-card mb-4" style="padding: 2rem;">
+            <div class="d-flex align-items-start mb-2">
+              <div style="width: 42px; height: 42px; background: rgba(99,102,241,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-right: 1rem;">
+                <i class="fa-solid fa-briefcase" style="color: var(--primary-color);"></i>
+              </div>
+              <div>
+                <h5 style="color: #fff; font-weight: 700; margin-bottom: 0.2rem;">Software Engineer</h5>
+                <p style="color: var(--accent-color); font-weight: 600; font-size: 0.85rem; margin: 0;">BerryBloomer Pvt Ltd &nbsp;|&nbsp; April 2025 – Present</p>
+              </div>
+            </div>
+            <ul style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.8; padding-left: 1.2rem; margin: 0;">
               <li>Developed and maintained RESTful APIs using Java and Spring Boot for client-facing applications</li>
               <li>Designed and integrated MySQL databases to ensure efficient and reliable data handling</li>
               <li>Improved API performance and resolved production-level issues, enhancing system stability</li>
               <li>Collaborated in Agile development cycles including sprint planning, code reviews, and deployments</li>
             </ul>
           </div>
-          <div class="glass-card mb-4" style="padding: 2rem; text-align: left;">
-            <h4 style="color: #fff; font-weight: 700; margin-bottom: 0.5rem;">Java Developer Intern</h4>
-            <p style="color: var(--accent-color); font-weight: 600; font-size: 0.9rem; margin-bottom: 1rem;">KodNest Pvt Ltd, Bangalore | Nov 2022 – Apr 2023</p>
-            <ul style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5; padding-left: 1.2rem;">
+
+          <div class="glass-card mb-4" style="padding: 2rem;">
+            <div class="d-flex align-items-start mb-2">
+              <div style="width: 42px; height: 42px; background: rgba(6,182,212,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-right: 1rem;">
+                <i class="fa-solid fa-code" style="color: var(--secondary-color);"></i>
+              </div>
+              <div>
+                <h5 style="color: #fff; font-weight: 700; margin-bottom: 0.2rem;">Java Developer Intern</h5>
+                <p style="color: var(--accent-color); font-weight: 600; font-size: 0.85rem; margin: 0;">KodNest Pvt Ltd, Bangalore &nbsp;|&nbsp; Nov 2022 – Apr 2023</p>
+              </div>
+            </div>
+            <ul style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.8; padding-left: 1.2rem; margin: 0;">
               <li>Designed and developed 80+ REST APIs using Spring Boot and MySQL</li>
               <li>Applied OOP principles and MVC architecture to build scalable backend systems</li>
               <li>Contributed to Agile sprints, improving development efficiency and delivery timelines</li>
@@ -255,138 +134,82 @@
           </div>
         </div>
 
-        <div class="col-lg-6 mb-4">
-          <h2 class="modern-title mb-4" style="font-size: 2.2rem;"><span class="gradient-text">Education & Training</span></h2>
-          <div class="glass-card mb-4" style="padding: 2rem; text-align: left;">
-            <h4 style="color: #fff; font-weight: 700; margin-bottom: 0.5rem;">B.Tech in Computer Science</h4>
-            <p style="color: var(--accent-color); font-weight: 600; font-size: 0.9rem; margin-bottom: 0.5rem;">SAM College of Engineering and Technology, Bhopal (RGPV) | 2018 – 2022</p>
+        <!-- Education & Certifications -->
+        <div class="col-lg-6">
+          <h2 class="modern-title mb-4" style="font-size: 2rem;"><span class="gradient-text">Education & Training</span></h2>
+
+          <div class="glass-card mb-4" style="padding: 2rem;">
+            <div class="d-flex align-items-start">
+              <div style="width: 42px; height: 42px; background: rgba(244,63,94,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-right: 1rem;">
+                <i class="fa-solid fa-graduation-cap" style="color: var(--accent-color);"></i>
+              </div>
+              <div>
+                <h5 style="color: #fff; font-weight: 700; margin-bottom: 0.2rem;">B.Tech in Computer Science</h5>
+                <p style="color: var(--accent-color); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.25rem;">SAM College of Engineering, Bhopal (RGPV) &nbsp;|&nbsp; CGPA: 7.7</p>
+                <p style="color: var(--text-muted); font-size: 0.82rem; margin: 0;">2018 – 2022</p>
+              </div>
+            </div>
           </div>
-          <div class="glass-card mb-4" style="padding: 2rem; text-align: left;">
-            <h4 style="color: #fff; font-weight: 700; margin-bottom: 0.5rem;">Full Stack Java Developer Program</h4>
-            <p style="color: var(--accent-color); font-weight: 600; font-size: 0.9rem; margin-bottom: 1rem;">Naresh IT Technology | Jun 2023 – Mar 2024</p>
-            <ul style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5; padding-left: 1.2rem;">
-              <li>Built full-stack applications using Spring Boot and Oracle</li>
-              <li>Implemented authentication and role-based access using Spring Security</li>
-              <li>Gained hands-on experience with Docker and Jenkins for CI/CD</li>
+
+          <div class="glass-card mb-4" style="padding: 2rem;">
+            <div class="d-flex align-items-start mb-3">
+              <div style="width: 42px; height: 42px; background: rgba(107,243,141,0.12); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-right: 1rem;">
+                <i class="fa-solid fa-laptop-code" style="color: #6bf18d;"></i>
+              </div>
+              <div>
+                <h5 style="color: #fff; font-weight: 700; margin-bottom: 0.2rem;">Full Stack Java Developer Program</h5>
+                <p style="color: var(--accent-color); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.25rem;">Naresh IT Technology</p>
+                <p style="color: var(--text-muted); font-size: 0.82rem; margin: 0;">Jun 2023 – Mar 2024</p>
+              </div>
+            </div>
+            <ul style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.8; padding-left: 1.2rem; margin: 0;">
+              <li>Built full-stack apps using Spring Boot and Oracle</li>
+              <li>Implemented authentication using Spring Security & JWT</li>
+              <li>Hands-on experience with Docker and Jenkins CI/CD</li>
             </ul>
           </div>
-          <div class="glass-card mb-4" style="padding: 2rem; text-align: left;">
-            <h4 style="color: #fff; font-weight: 700; margin-bottom: 1rem;">Certifications</h4>
-            <ul style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5; padding-left: 1.2rem; margin: 0;">
+
+          <div class="glass-card mb-4" style="padding: 2rem;">
+            <h5 style="color: #fff; font-weight: 700; margin-bottom: 1rem;"><i class="fa-solid fa-certificate mr-2" style="color: #fbbf24;"></i> Certifications</h5>
+            <ul style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.9; padding-left: 1.2rem; margin: 0;">
               <li>Java Programming Internship – KodNest Pvt Ltd (2022)</li>
               <li>Certified Java Programmer – Naresh IT (2023)</li>
-              <li>REST API (Intermediate) – HackerRank</li>
-              <li>Software Engineer Intern Certification – HackerRank (2024–25)</li>
+              <li>REST API Intermediate – HackerRank</li>
+              <li>Software Engineer Intern – HackerRank (2024–25)</li>
               <li>Spring Boot & REST API Development – Naresh IT (2024)</li>
               <li>Spring & Angular Full Stack Developer – Infosys Springboard (2025)</li>
             </ul>
           </div>
         </div>
+
       </div>
     </div>
   </div>
-  <!-- Resume Sections end -->
 
-  <!-- Review section end -->
-  <!-- contact section start -->
-  <div class="contact_section layout_padding">
+  <!-- CTA -->
+  <div class="layout_padding pt-0">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <h1 class="contact_taital">
-            My <span class="contact_taital_1">Contact</span>
-          </h1>
-        </div>
-      </div>
-      <div class="contact_section_2">
-        <div class="row">
-          <div class="col-md-6">
-            <h1>
-              The Best Time is Now. Let's Create Something Incredible
-              Together!
-            </h1>
-            <h3>
-              Let’s move forward together – your vision and our expertise can
-              create something extraordinary. Whether it’s a new project, a
-              fresh idea, or a unique challenge, we’re here to support you
-              every step of the way. Don’t wait for the perfect moment, the
-              time is now. Let's make it happen!
-            </h3>
-          </div>
-          <div class="col-md-6">
-            <div class="mail_section_1">
-              <input type="text" class="mail_text" placeholder="Your Name" name="Your Name" />
-              <input type="text" class="mail_text" placeholder="Your Email" name="Your Email" />
-              <input type="text" class="mail_text" placeholder="Your Phone" name="Your Phone" />
-              <textarea class="massage-bt" placeholder="Your Massage" rows="5" id="comment"
-                name="Your Massage"></textarea>
-
-
-              <button class="send_bt" type="submit">Send Now</button>
-
-            </div>
-          </div>
+      <div class="glass-card text-center py-5" style="background: linear-gradient(135deg, rgba(99,102,241,0.1), rgba(6,182,212,0.1)); border-color: rgba(99,102,241,0.2);">
+        <h1 class="modern-title" style="font-size: 2.5rem; margin-bottom: 2rem;">Ready to collaborate?</h1>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="contact.html" class="premium-btn">Send Message</a>
+          <a href="portfolio.html" class="premium-btn-outline ml-3">View Projects</a>
         </div>
       </div>
     </div>
-    <!-- contact section end -->
-    <!-- project box section start -->
-    <div class="project_box">
-      <div class="container">
-        <div class="project_main">
-          <h1 class="hire_text">Hire me for your projects</h1>
-          <div class="callnow_bt"><a href="contact.html">Call Now</a></div>
-        </div>
-      </div>
-    </div>
-    <!-- project box section end -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
-    <!-- Header will be loaded here -->
-    <div id="header"></div>
+  </div>
 
-    <!-- Footer will be loaded here -->
-    <div id="footer"></div>
+  <!-- Footer -->
+  <div id="footer"></div>
 
-    <!-- Script to import header and footer -->
-    <script>
-      // Load header
-      fetch("header.html")
-        .then((res) => res.text())
-        .then((data) => (document.getElementById("header").innerHTML = data));
-
-      // Load footer
-      fetch("footer.html")
-        .then((res) => res.text())
-        .then((data) => (document.getElementById("footer").innerHTML = data));
-    </script>
-
-    <!-- copyright section end -->
-    <!-- Javascript files-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/plugin.js"></script>
-    <script src="js/js.common.js"></script>
-    <!-- sidebar -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/custom.js"></script>
-
-    <!-- Custom Cursor Logic -->
-    <script>
-      const cursor = document.getElementById("cursor");
-      document.addEventListener("mousemove", (e) => {
-        cursor.style.left = e.clientX + "px";
-        cursor.style.top = e.clientY + "px";
-      });
-
-      // Add 'loaded' class to body after page has loaded
-      window.addEventListener("load", function () {
-        setTimeout(() => {
-          document.body.classList.add("loaded");
-        }, 1000);
-      });
-    </script>
+  <!-- Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  <script src="js/modern-theme.js"></script>
+  <script>
+    fetch("header.html").then(r => r.text()).then(d => document.getElementById("header").innerHTML = d);
+    fetch("footer.html").then(r => r.text()).then(d => document.getElementById("footer").innerHTML = d);
+  </script>
 </body>
-
 </html>

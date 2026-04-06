@@ -1,380 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- basic -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- mobile metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
-    <!-- site metas -->
-    <title>Database | Dinkar</title>
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <!-- bootstrap css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <!-- style css -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <!-- Responsive-->
-    <link rel="stylesheet" href="css/responsive.css" />
-    <!-- fevicon -->
-    <link rel="icon" href="images/d.png" type="image/gif" />
-    <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
-    <!-- Tweaks for older IEs-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <!-- fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- font awesome css -->
-    <link
-      rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
-    />
-    <style>
-      /* Full-page overlay */
-      .loading-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(255, 255, 255, 0.8);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 9999;
-      }
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Database Management | Dinkar Prasad</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/modern-3d.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="icon" href="images/d.png" type="image/gif" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="custom-cursor" id="cursor"></div>
+  <div class="loading-overlay">
+    <div style="font-size: 80px; font-weight: 900; background: linear-gradient(135deg, #6366f1, #06b6d4); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; animation: pulse 1.5s ease-in-out infinite;">DK</div>
+  </div>
 
-      /* Animation to rotate the D */
-      @keyframes rotateD {
-        0% {
-          transform: rotate(0deg);
-        }
-        50% {
-          transform: rotate(180deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      }
+  <div id="header"></div>
 
-      /* Animation to scale the D */
-      @keyframes scaleD {
-        0%,
-        100% {
-          transform: scale(2);
-        }
-        50% {
-          transform: scale(3.2);
-        }
-      }
-      .container {
-        width: 98%;
-     
-      }
-      header {
-        color: white;
-        padding: 10px;
-        text-align: center;
-       
-      }
-      section {
-        padding: 20px;
-        margin: 20px 0;
-        background-color: #fff;
-        border-radius: 8px;
-      }
-      h1,
-      h2 {
-        color: #2c3e50;
-      }
-      p{
-        font-size: larger;
-      }
-      ul {
-        list-style-type: none;
-      }
-      li {
-        margin: 10px 0;
-      }
-      
-      .benefits,
-      .services {
-        background-color: #ecf0f1;
-        padding: 20px;
-        border-radius: 8px;
-        margin-bottom: 20px;
-      }
-      .highlight {
-        color: #2980b9;
-        font-weight: bold;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Loading overlay with the animated "D" logo -->
-    <div class="loading-overlay">
-      <div class="d-logo">DK</div>
-    </div>
-    <!-- Header will be loaded here -->
-    <div id="header"></div>
-    <section class="container benefitsa" >
-      <header>
-        <h1>Database Design & Optimization</h1>
-      </header>
-    </section>
-    <section class="container benefits">
-      <p>
-        Your application’s performance heavily relies on how well your database
-        is structured and optimized. I specialize in
-        <strong>Database Design & Optimization</strong> to ensure that your data
-        is stored efficiently and accessed quickly, leading to improved
-        performance and scalability of your web applications.
-      </p>
-    </section>
+  <div class="layout_padding">
+    <div class="container container-98">
+      <div class="row justify-content-center mb-5 text-center animate-up">
+        <div class="col-lg-8">
+          <h1 class="modern-title" style="font-size: 3.5rem;">Database <span class="gradient-text">Management</span></h1>
+          <p style="color: var(--text-secondary); font-size: 1.15rem; line-height: 1.8;">Designing robust, high-performance data architectures for modern mission-critical applications.</p>
+        </div>
+      </div>
 
-    <section class="container benefits">
-      <h2>What is Database Design & Optimization?</h2>
-      <p>
-        Database Design involves creating an organized structure for your data
-        to ensure that it is stored in a way that is easy to maintain and scale.
-        Optimization focuses on improving the speed, efficiency, and performance
-        of the database, ensuring quick data retrieval and smooth application
-        performance.
-      </p>
-    </section>
-
-    <section class="container benefits">
-      <h2>What Does Database Design & Optimization Include?</h2>
-      <h3>Database Design</h3>
-      <p>
-        Good database design ensures that your data is structured in an
-        efficient, scalable, and accessible way. Here's what I offer for
-        designing your database:
-      </p>
-      <ul>
-        <li>
-          <span class="highlight">Entity Relationship Diagram (ERD) Design</span
-          >: I create clear and effective ERDs that model the relationships
-          between different data entities in your system.
-        </li>
-        <li>
-          <span class="highlight">Normalization</span>: I ensure that the
-          database is normalized to avoid redundancy and ensure that data is
-          stored logically and efficiently.
-        </li>
-        <li>
-          <span class="highlight">Data Integrity Constraints</span>: I implement
-          constraints such as primary keys, foreign keys, and unique constraints
-          to ensure the accuracy and consistency of your data.
-        </li>
-        <li>
-          <span class="highlight">Optimized Table Structures</span>: Designing
-          tables that efficiently store data, with proper indexing and optimized
-          field types for quick queries.
-        </li>
-      </ul>
-
-      <h3>Database Optimization</h3>
-      <p>
-        Once the database is designed, I focus on optimizing it for speed and
-        performance. Key areas include:
-      </p>
-      <ul>
-        <li>
-          <span class="highlight">Indexing</span>: I create and manage indexes
-          to speed up data retrieval, ensuring that queries run efficiently,
-          even with large datasets.
-        </li>
-        <li>
-          <span class="highlight">Query Optimization</span>: I analyze and
-          optimize SQL queries to ensure they execute in the shortest time
-          possible, minimizing server load.
-        </li>
-        <li>
-          <span class="highlight">Database Caching</span>: Implementing caching
-          strategies to reduce the need for repetitive database queries,
-          improving response times.
-        </li>
-        <li>
-          <span class="highlight">Optimizing Storage</span>: I ensure efficient
-          storage management by eliminating unnecessary data and optimizing data
-          storage strategies (e.g., archiving or partitioning).
-        </li>
-        <li>
-          <span class="highlight">Database Sharding</span>: For large-scale
-          applications, I implement sharding to break the database into smaller,
-          more manageable pieces, improving performance and scalability.
-        </li>
-      </ul>
-    </section>
-
-    <section class="container benefits">
-      <h2>Benefits of Database Design & Optimization</h2>
-      <ul>
-        <li>
-          <span class="highlight">Improved Application Performance</span>:
-          Proper design and optimization ensure your application can handle a
-          larger volume of users and data, with faster load times.
-        </li>
-        <li>
-          <span class="highlight">Scalability</span>: With a well-designed and
-          optimized database, your application can scale to accommodate future
-          growth without slowing down.
-        </li>
-        <li>
-          <span class="highlight">Reduced Downtime</span>: Optimizing your
-          database minimizes performance bottlenecks, reducing the chances of
-          downtime and ensuring a smoother user experience.
-        </li>
-        <li>
-          <span class="highlight">Cost Efficiency</span>: Optimized databases
-          reduce resource consumption, lowering server costs and increasing
-          operational efficiency.
-        </li>
-      </ul>
-    </section>
-
-    <section class="container benefits">
-      <h2>Why Choose My Database Design & Optimization Services?</h2>
-      <ul>
-        <li>
-          <span class="highlight">Expert Design</span>: I bring years of
-          experience in designing well-structured, scalable databases that align
-          with your business needs and data requirements.
-        </li>
-        <li>
-          <span class="highlight">Advanced Optimization Techniques</span>: I
-          apply the latest optimization techniques to ensure that your database
-          performs efficiently even with large datasets.
-        </li>
-        <li>
-          <span class="highlight">Performance Monitoring</span>: After
-          optimizing your database, I monitor its performance regularly to
-          ensure it continues to run at peak efficiency.
-        </li>
-        <li>
-          <span class="highlight">Security & Data Integrity</span>: I prioritize
-          security, ensuring that your data is safe and protected while
-          maintaining data integrity through effective constraint management.
-        </li>
-        <li>
-          <span class="highlight">Long-Term Scalability</span>: My designs and
-          optimizations are built to handle growth, so your system can scale
-          seamlessly as your business expands.
-        </li>
-      </ul>
-    </section>
-    <!-- contact section start -->
-    <div class="contact_section layout_padding">
-      <div class="container">
-        <!-- <div class="row">
-          <div class="col-sm-12" style="padding-right:75%;">
-             <h1 class="contact_taital">My <span class="contact_taital_1">Contact</span></h1>
-          </div>
-       </div> -->
-        <div class="contact_section_2">
-          <div class="row">
-            <div class="col-md-6">
-              <h1>
-                The Best Time is Now. Let's Create Something Incredible
-                Together!
-              </h1>
-              <h3>
-                Let’s move forward together – your vision and our expertise can
-                create something extraordinary. Whether it’s a new project, a
-                fresh idea, or a unique challenge, we’re here to support you
-                every step of the way. Don’t wait for the perfect moment, the
-                time is now. Let's make it happen!
-              </h3>
-            </div>
-            <div class="col-md-6">
-              <div class="mail_section_1">
-                <input
-                  type="text"
-                  class="mail_text"
-                  placeholder="Your Name"
-                  name="Your Name"
-                />
-                <input
-                  type="text"
-                  class="mail_text"
-                  placeholder="Your Email"
-                  name="Your Email"
-                />
-                <input
-                  type="text"
-                  class="mail_text"
-                  placeholder="Your Phone"
-                  name="Your Phone"
-                />
-                <textarea
-                  class="massage-bt"
-                  placeholder="Your Massage"
-                  rows="5"
-                  id="comment"
-                  name="Your Massage"
-                ></textarea>
-                <button class="send_bt" type="submit">Send Now</button>
+      <div class="row g-4 animate-up" style="animation-delay: 0.2s;">
+        <!-- Relational Expertise -->
+        <div class="col-lg-12 mb-5">
+          <div class="glass-card p-lg-5">
+            <div class="row align-items-center">
+              <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="images/mysql.png" alt="Database" style="width: 120px; filter: drop-shadow(0 0 15px var(--accent-color));" class="mb-4">
+                <h2 style="color: #fff; font-weight: 800; margin-bottom: 1.5rem;">Relational (SQL) & Persistence</h2>
+                <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem;">
+                  I specialize in designing and optimizing relational schemas for complex data models using <strong style="color: #fff;">MySQL</strong> and <strong style="color: #fff;">Oracle</strong>. My approach focuses on schema normalization, indexing strategies, and high-performance ORM integration (Hibernate/Spring Data JPA) to ensure minimal latency.
+                </p>
+              </div>
+              <div class="col-lg-6">
+                <div class="p-4" style="background: rgba(255,255,255,0.02); border-radius: 20px; border: 1px solid var(--glass-border);">
+                  <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li class="mb-3 d-flex align-items-center"><i class="fa-solid fa-circle-check mr-3" style="color: var(--primary-color);"></i> <span style="color: #fff;">Complex Query Optimization & Tuning</span></li>
+                    <li class="mb-3 d-flex align-items-center"><i class="fa-solid fa-circle-check mr-3" style="color: var(--primary-color);"></i> <span style="color: #fff;">Stateless Hibernate Cache Implementation (L2)</span></li>
+                    <li class="mb-3 d-flex align-items-center"><i class="fa-solid fa-circle-check mr-3" style="color: var(--primary-color);"></i> <span style="color: #fff;">Schema Migration (Liquibase/Flyway) Integration</span></li>
+                    <li class="mb-3 d-flex align-items-center"><i class="fa-solid fa-circle-check mr-3" style="color: var(--primary-color);"></i> <span style="color: #fff;">Database Design with ER Diagrams</span></li>
+                    <li class="d-flex align-items-center"><i class="fa-solid fa-circle-check mr-3" style="color: var(--primary-color);"></i> <span style="color: #fff;">Stored Procedures & Custom Triggers</span></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- contact section end -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
-    <!-- project box section start -->
-    <div class="project_box">
-      <div class="container">
-        <div class="project_main">
-          <h1 class="hire_text">Hire me for your projects</h1>
-          <div class="callnow_bt"><a href="contact.html">Call Now</a></div>
+
+        <!-- NoSQL Expertise -->
+        <div class="col-md-6 mb-4">
+          <div class="glass-card h-100 p-4">
+            <h4 style="color: #fff; font-weight: 700; margin-bottom: 1.5rem;"><i class="fa-solid fa-cloud-bolt mr-3" style="color: var(--secondary-color);"></i> NoSQL Mastery</h4>
+            <p style="color: var(--text-secondary); font-size: 0.95rem;">Experience with unstructured data using <strong style="color: #fff;">MongoDB</strong> for high-availability storage, perfect for session management and real-time tracking apps like MyCap App.</p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="glass-card h-100 p-4">
+            <h4 style="color: #fff; font-weight: 700; margin-bottom: 1.5rem;"><i class="fa-solid fa-bolt mr-3" style="color: #fbbf24;"></i> Performance Tuning</h4>
+            <p style="color: var(--text-secondary); font-size: 0.95rem;">Implementation of indexing strategies and query profiling to optimize data access in production environments (currently applied at BerryBloomer Pvt Ltd).</p>
+          </div>
         </div>
       </div>
     </div>
-    <!-- project box section end -->
-    <!-- Header will be loaded here -->
-    <div id="header"></div>
+  </div>
 
-    <!-- Footer will be loaded here -->
-    <div id="footer"></div>
+  <div class="layout_padding pt-0">
+    <div class="container">
+      <div class="glass-card text-center py-5" style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(244, 63, 94, 0.1)); border-color: rgba(6, 182, 212, 0.2);">
+        <h2 class="modern-title" style="font-size: 2.2rem; margin-bottom: 2rem;">Optimizing your <span class="gradient-text">Data?</span></h2>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="contact.html" class="premium-btn">Hire Expertise</a>
+          <a href="portfolio.html" class="premium-btn-outline ml-3">Browse Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Script to import header and footer -->
-    <script>
-      // Load header
-      fetch("header.html")
-        .then((res) => res.text())
-        .then((data) => (document.getElementById("header").innerHTML = data));
+  <div id="footer"></div>
 
-      // Load footer
-      fetch("footer.html")
-        .then((res) => res.text())
-        .then((data) => (document.getElementById("footer").innerHTML = data));
-    </script>
-
-    <!-- copyright section end -->
-    <!-- Javascript files-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/plugin.js"></script>
-    <script src="js/js.common.js"></script>
-    <!-- sidebar -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/custom.js"></script>
-
-    <script>
-      // Add 'loaded' class to body after page has loaded
-      window.addEventListener("load", function () {
-        document.body.classList.add("loaded");
-      });
-    </script>
-  </body>
+  <!-- Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  <script src="js/modern-theme.js"></script>
+  <script>
+    fetch("header.html").then(r => r.text()).then(d => document.getElementById("header").innerHTML = d);
+    fetch("footer.html").then(r => r.text()).then(d => document.getElementById("footer").innerHTML = d);
+  </script>
+</body>
 </html>

@@ -1,370 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- basic -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- mobile metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
-    <!-- site metas -->
-    <title>Java | Dinkar</title>
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <!-- bootstrap css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <!-- style css -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <!-- Responsive-->
-    <link rel="stylesheet" href="css/responsive.css" />
-    <!-- fevicon -->
-    <link rel="icon" href="images/d.png" type="image/gif" />
-    <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
-    <!-- Tweaks for older IEs-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <!-- fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- font awesome css -->
-    <link
-      rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
-    />
-    <style>
-      /* Full-page overlay */
-      .loading-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(255, 255, 255, 0.8);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 9999;
-      }
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Core Java & J2EE Development | Dinkar Prasad</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/modern-3d.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="icon" href="images/d.png" type="image/gif" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="custom-cursor" id="cursor"></div>
+  <div class="loading-overlay">
+    <div style="font-size: 80px; font-weight: 900; background: linear-gradient(135deg, #6366f1, #06b6d4); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; animation: pulse 1.5s ease-in-out infinite;">DK</div>
+  </div>
 
-      /* Animation to rotate the D */
-      @keyframes rotateD {
-        0% {
-          transform: rotate(0deg);
-        }
-        50% {
-          transform: rotate(180deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      }
+  <div id="header"></div>
 
-      /* Animation to scale the D */
-      @keyframes scaleD {
-        0%,
-        100% {
-          transform: scale(2);
-        }
-        50% {
-          transform: scale(3.2);
-        }
-      }
-      header {
-        border-radius: 8px;
-        margin-bottom: 20px;
-        color: white;
-        padding: 20px;
-        text-align: center;
-      }
-      .benefits,
-      .services,
-      .why-choose {
-        background-color: #ecf0f1;
-        padding: 20px;
-        border-radius: 8px;
-        margin-bottom: 20px;
-      }
-
-      
-
-      header h1 {
-        font-size: 2.5rem;
-      }
-
-      header p {
-        font-size: 1.2rem;
-        margin-top: 10px;
-      }
-
-      section {
-        padding: 20px;
-        margin: 20px 0;
-        background-color: #fff;
-        border-radius: 8px;
-      }
-
-      h2 {
-        font-size: 2rem;
-        margin-bottom: 15px;
-      }
-
-      h3 {
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-      }
-
-      ul {
-        list-style-type: none;
-      }
-      p {
-        font-size: larger;
-      }
-      li {
-        font-size: 1.2rem;
-        margin-bottom: 10px;
-      }
-
-      .item {
-        margin-bottom: 20px;
-      }
-  .container {
-        width: 98%;
-        
-      }
-      /* Hide the loader after page has loaded */
-      body.loaded .loading-overlay {
-        display: none;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Loading overlay with the animated "D" logo -->
-    <div class="loading-overlay">
-      <div class="d-logo">DK</div>
-    </div>
-    <!-- Header will be loaded here -->
-    <div id="header"></div>
-    <section class="container benefitsa" >
-      <header >
-        <h1>Java</h1>
-      </header>
-    </section>
-    <section class="container benefits">
-      <h2>Introduction to Java Programming:</h2>
-      <h5>
-        Java is one of the most widely used programming languages in the world.
-        It is known for its platform independence, strong memory management,
-        object-oriented principles, and extensive libraries. Whether you're
-        developing web applications, mobile apps, or enterprise solutions, Java
-        remains a popular choice among developers.
-      </h5>
-    </section>
-
-    <section class="container benefits">
-      <h2>Object-Oriented Programming (OOP) Concepts in Java</h2>
-      <h5>
-        Java is an object-oriented language, meaning it follows the four pillars
-        of OOP:
-      </h5>
-      <h5>Encapsulation, Abstraction, Inheritance, and Polymorphism.</h5>
-      <div class="item">
-        <h3>a. Encapsulation</h3>
-        <h5>
-          Encapsulation is the process of wrapping data (variables) and methods
-          into a single unit known as a class. In Java, encapsulation is
-          achieved by using private variables and providing getter and setter
-          methods to access them.
-        </h5>
+  <div class="layout_padding">
+    <div class="container container-98">
+      <div class="row justify-content-center mb-5 text-center animate-up">
+        <div class="col-lg-8">
+          <h1 class="modern-title" style="font-size: 3.5rem;">Core <span class="gradient-text">Java</span> Development</h1>
+          <p style="color: var(--text-secondary); font-size: 1.15rem; line-height: 1.8;">Leveraging the power of Java 17+ and Spring framework ecosystems for bulletproof enterprise applications.</p>
+        </div>
       </div>
 
-      <div class="item">
-        <h3>b. Abstraction</h3>
-        <h5>
-          Abstraction hides the complexity of the system and only exposes the
-          essential features. Java uses abstract classes and interfaces to
-          achieve abstraction.
-        </h5>
-      </div>
-
-      <div class="item">
-        <h3>c. Inheritance</h3>
-        <h5>
-          Inheritance allows a class to inherit fields and methods from another
-          class. This promotes reusability and organization.
-        </h5>
-      </div>
-      <div class="item">
-        <h3>d. Polymorphism</h3>
-        <h5>
-          Polymorphism allows objects of different classes to be treated as
-          objects of a common superclass. It comes in two forms: method
-          overloading and method overriding.
-        </h5>
-      </div>
-    </section>
-
-   
-    <section class="container benefits">
-      <h2>Java Data Structures and Collections</h2>
-      <h5>Java provides a rich set of data structures and collections to store and manipulate data. Some commonly used collections are:</h5>
-      <ul>
-          <li><strong>List</strong> (e.g., <code>ArrayList</code>, <code>LinkedList</code>): An ordered collection.</li>
-          <li><strong>Set</strong> (e.g., <code>HashSet</code>, <code>TreeSet</code>): A collection with no duplicates.</li>
-          <li><strong>Map</strong> (e.g., <code>HashMap</code>, <code>TreeMap</code>): A collection of key-value pairs.</li>
-      </ul>
-  </section>
-  
-  <section class="container benefits">
-      <h2>Java Exception Handling</h2>
-      <h5>Java provides a robust exception handling mechanism to deal with runtime errors. This is done using <code>try-catch</code> blocks.</h5>
-  </section>
-  
-  <section class="container benefits">
-      <h2>Java Streams and Lambda Expressions</h2>
-      <h5>Java 8 introduced streams and lambda expressions for more concise and functional-style programming.</h5>
-     
-  </section>
-  
-  <section class="container benefits">
-      <h2>Java Memory Management</h2>
-      <h5>Java uses garbage collection to automatically manage memory. The Java Virtual Machine (JVM) is responsible for allocating and deallocating memory for objects during the execution of a program.</h5>
-      <ul>
-          <li><strong>Heap Memory:</strong> Stores objects created during the runtime of the application.</li>
-          <li><strong>Stack Memory:</strong> Stores method calls and local variables.</li>
-      </ul>
-  </section>
-  
-  <section class="container benefits">
-      <h2>Java Frameworks and Libraries</h2>
-      <h5>There are many frameworks and libraries available in Java for building enterprise applications, web applications, and mobile apps. Some popular ones include:</h5>
-      <ul>
-          <li><strong>Spring Framework</strong>: For building enterprise applications and microservices.</li>
-          <li><strong>Hibernate</strong>: For object-relational mapping (ORM) and database operations.</li>
-          <li><strong>JavaFX</strong>: For building rich graphical user interfaces (GUIs).</li>
-      </ul>
-  </section>
-
-  <section class="container benefits">
-    <h2>Java Development Tools</h2>
-    <h5>
-      Java developers typically use IDEs (Integrated Development Environments)
-      like IntelliJ IDEA, Eclipse, or NetBeans for development. These IDEs
-      provide features like code completion, debugging tools, and testing
-      frameworks.
-    </h5>
-  </section>
-    <!-- contact section start -->
-    <div class="contact_section layout_padding">
-      <div class="container">
-        <!-- <div class="row">
-          <div class="col-sm-12" style="padding-right:75%;">
-             <h1 class="contact_taital">My <span class="contact_taital_1">Contact</span></h1>
-          </div>
-       </div> -->
-        <div class="contact_section_2">
-          <div class="row">
-            <div class="col-md-6">
-              <h1>
-                The Best Time is Now. Let's Create Something Incredible
-                Together!
-              </h1>
-              <h3>
-                Let’s move forward together – your vision and our expertise can
-                create something extraordinary. Whether it’s a new project, a
-                fresh idea, or a unique challenge, we’re here to support you
-                every step of the way. Don’t wait for the perfect moment, the
-                time is now. Let's make it happen!
-              </h3>
-            </div>
-            <div class="col-md-6">
-              <div class="mail_section_1">
-                <input
-                  type="text"
-                  class="mail_text"
-                  placeholder="Your Name"
-                  name="Your Name"
-                />
-                <input
-                  type="text"
-                  class="mail_text"
-                  placeholder="Your Email"
-                  name="Your Email"
-                />
-                <input
-                  type="text"
-                  class="mail_text"
-                  placeholder="Your Phone"
-                  name="Your Phone"
-                />
-                <textarea
-                  class="massage-bt"
-                  placeholder="Your Massage"
-                  rows="5"
-                  id="comment"
-                  name="Your Massage"
-                ></textarea>
-                <button class="send_bt" type="submit">Send Now</button>
+      <div class="row g-4 animate-up" style="animation-delay: 0.2s;">
+        <!-- Core Language Expertise -->
+        <div class="col-lg-12 mb-5">
+          <div class="glass-card p-lg-5">
+            <div class="row align-items-center">
+              <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="images/java.png" alt="Java Language" style="width: 120px; filter: drop-shadow(0 0 15px var(--primary-color));" class="mb-4">
+                <h2 style="color: #fff; font-weight: 800; margin-bottom: 1.5rem;">Full Stack Java Mastery</h2>
+                <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem;">
+                  I specialize in modern Java development using the <strong style="color: #fff;">Spring Framework Ecosystem</strong>. My expertise covers Core Java (Collections, Streams, Multithreading), J2EE standards, and the full Spring stack (Boot, Security, Cloud, Data) for building high-performance backend systems.
+                </p>
+              </div>
+              <div class="col-lg-6">
+                <div class="p-4" style="background: rgba(255,255,255,0.02); border-radius: 20px; border: 1px solid var(--glass-border);">
+                  <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li class="mb-3 d-flex align-items-center"><i class="fa-solid fa-circle-check mr-3" style="color: var(--primary-color);"></i> <span style="color: #fff;">Java 17 Components & Functional Programming</span></li>
+                    <li class="mb-3 d-flex align-items-center"><i class="fa-solid fa-circle-check mr-3" style="color: var(--primary-color);"></i> <span style="color: #fff;">Spring Boot 3 for Rapid Multi-service apps</span></li>
+                    <li class="mb-3 d-flex align-items-center"><i class="fa-solid fa-circle-check mr-3" style="color: var(--primary-color);"></i> <span style="color: #fff;">Stateless Security & JWT Integration</span></li>
+                    <li class="mb-3 d-flex align-items-center"><i class="fa-solid fa-circle-check mr-3" style="color: var(--primary-color);"></i> <span style="color: #fff;">Enterprise-grade Testing with JUnit & Mockito</span></li>
+                    <li class="d-flex align-items-center"><i class="fa-solid fa-circle-check mr-3" style="color: var(--primary-color);"></i> <span style="color: #fff;">Maven-based Automated Dependency Management</span></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- contact section end -->
-    <!-- project box section start -->
-    <div class="project_box">
-      <div class="container">
-        <div class="project_main">
-          <h1 class="hire_text">Hire me for your projects</h1>
-          <div class="callnow_bt"><a href="contact.html">Call Now</a></div>
+
+        <!-- Specialized Topics -->
+        <div class="col-md-6 mb-4">
+          <div class="glass-card h-100 p-4">
+            <h4 style="color: #fff; font-weight: 700; margin-bottom: 1.5rem;"><i class="fa-solid fa-gears mr-3" style="color: var(--secondary-color);"></i> Multithreading & Performance</h4>
+            <p style="color: var(--text-secondary); font-size: 0.95rem;">Proficient in managing concurrent workloads using ExecutorFramework and optimizing garbage collection for production JVMs at <strong style="color: #fff;">BerryBloomer Pvt Ltd</strong>.</p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="glass-card h-100 p-4">
+            <h4 style="color: #fff; font-weight: 700; margin-bottom: 1.5rem;"><i class="fa-solid fa-shield-halved mr-3" style="color: #fbbf24;"></i> Secure Architectures</h4>
+            <p style="color: var(--text-secondary); font-size: 0.95rem;">Implementation of advanced Spring Security configurations and OWASP top-10 defensive coding practices in every server-side build.</p>
+          </div>
         </div>
       </div>
     </div>
-    <!-- project box section end -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
-   <!-- Header will be loaded here -->
-    <div id="header"></div>
+  </div>
 
-    <!-- Footer will be loaded here -->
-    <div id="footer"></div>
+  <div class="layout_padding pt-0">
+    <div class="container">
+      <div class="glass-card text-center py-5" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(6, 182, 212, 0.1)); border-color: rgba(99, 102, 241, 0.2);">
+        <h2 class="modern-title" style="font-size: 2.2rem; margin-bottom: 2rem;">Building <span class="gradient-text">Scalable Solutions?</span></h2>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="contact.html" class="premium-btn">Connect Today</a>
+          <a href="about.html" class="premium-btn-outline ml-3">About My Experience</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Script to import header and footer -->
-    <script>
-      // Load header
-      fetch("header.html")
-        .then((res) => res.text())
-        .then((data) => (document.getElementById("header").innerHTML = data));
+  <div id="footer"></div>
 
-      // Load footer
-      fetch("footer.html")
-        .then((res) => res.text())
-        .then((data) => (document.getElementById("footer").innerHTML = data));
-    </script>
-
-    <!-- copyright section end -->
-    <!-- Javascript files-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/plugin.js"></script>
-    <script src="js/js.common.js"></script>
-    <!-- sidebar -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/custom.js"></script>
-
-    <script>
-      // Add 'loaded' class to body after page has loaded
-      window.addEventListener("load", function () {
-        document.body.classList.add("loaded");
-      });
-    </script>
-  </body>
+  <!-- Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  <script src="js/modern-theme.js"></script>
+  <script>
+    fetch("header.html").then(r => r.text()).then(d => document.getElementById("header").innerHTML = d);
+    fetch("footer.html").then(r => r.text()).then(d => document.getElementById("footer").innerHTML = d);
+  </script>
+</body>
 </html>
