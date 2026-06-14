@@ -1,10 +1,60 @@
+<style>
+  /* Premium Nav link underline animation */
+  .navbar-nav .nav-link {
+    position: relative !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    padding: 0.6rem 1.25rem !important;
+    margin: 0 0.1rem;
+    font-size: 0.9rem !important;
+    letter-spacing: 0.5px;
+    border-radius: 8px !important;
+  }
+  .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateX(-50%);
+    border-radius: 2px;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #fff !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+  }
+  .navbar-nav .nav-link:hover::after,
+  .navbar-nav .nav-link.active::after {
+    width: 50%;
+  }
+  
+  /* Brand Logo Hover Glow */
+  .navbar-brand h2 {
+    transition: transform 0.3s ease;
+  }
+  .navbar-brand:hover h2 {
+    transform: scale(1.02);
+  }
+  .brand-dot {
+    display: inline-block;
+    color: var(--secondary-color);
+    animation: brandGlow 2s ease-in-out infinite alternate;
+  }
+  @keyframes brandGlow {
+    0% { text-shadow: 0 0 4px rgba(14, 165, 233, 0.2); }
+    100% { text-shadow: 0 0 12px rgba(14, 165, 233, 0.8), 0 0 20px rgba(14, 165, 233, 0.4); }
+  }
+</style>
+
 <!-- header section start -->
 <div class="header_bg">
   <div class="container-fluid px-lg-5">
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-0">
       <a class="navbar-brand" href="index.html">
         <h2 style="font-weight: 800; letter-spacing: -1px; margin: 0; color: #fff; font-size: 1.5rem;">
-          <span class="gradient-text">Dinkar</span><span style="color: rgba(255,255,255,0.85);"> Prasad</span>
+          <span class="gradient-text">Dinkar</span><span style="color: rgba(255,255,255,0.85);"> Prasad</span><span class="brand-dot">.</span>
           <span style="display: block; font-size: 0.55rem; font-weight: 500; letter-spacing: 3px; color: var(--text-muted); text-transform: uppercase; margin-top: 2px;">Java Backend Developer</span>
         </h2>
       </a>

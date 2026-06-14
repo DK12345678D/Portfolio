@@ -306,3 +306,352 @@ p, span, li, a, input, textarea, button {
 .animate-up {
     animation: fadeInUp 1s forwards;
 }
+
+/* ==========================================================================
+   PREMIUM PAGE LOADER
+   ========================================================================== */
+.loading-overlay {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: #020617 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    z-index: 100000 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    overflow: hidden;
+}
+
+body.loaded .loading-overlay {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    display: flex !important; /* Keep display: flex to allow transition to occur */
+}
+
+/* Pulsing backdrop glow */
+.loading-overlay::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.18) 0%, rgba(6, 182, 212, 0) 70%);
+    border-radius: 50%;
+    animation: loaderGlow 3s ease-in-out infinite;
+    filter: blur(20px);
+    z-index: 1;
+}
+
+/* Orbiting dual neon spinner */
+.loading-overlay::after {
+    content: '';
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border: 3px solid rgba(255, 255, 255, 0.03);
+    border-radius: 50%;
+    border-top: 3px solid var(--primary-color);
+    border-right: 3px solid var(--secondary-color);
+    animation: spinLoader 1.2s cubic-bezier(0.5, 0.1, 0.5, 0.9) infinite;
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.25);
+    z-index: 2;
+}
+
+/* Styled text logo inside loading overlay */
+.loading-overlay > div, 
+.loading-overlay .d-logo {
+    z-index: 3 !important;
+    font-size: 3.8rem !important;
+    font-weight: 900 !important;
+    letter-spacing: -2px !important;
+    text-shadow: 0 0 30px rgba(99, 102, 241, 0.5) !important;
+    background: linear-gradient(135deg, #a78bfa, #22d3ee, #fb7185) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    animation: textPulse 2s ease-in-out infinite !important;
+    position: relative;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+@keyframes spinLoader {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes loaderGlow {
+    0%, 100% { transform: scale(0.85); opacity: 0.5; }
+    50% { transform: scale(1.15); opacity: 0.9; }
+}
+
+@keyframes textPulse {
+    0%, 100% { transform: scale(0.96); filter: brightness(0.95) drop-shadow(0 0 10px rgba(99,102,241,0.2)); }
+    50% { transform: scale(1.05); filter: brightness(1.15) drop-shadow(0 0 25px rgba(6,182,212,0.4)); }
+}
+
+/* ==========================================================================
+   PREMIUM MODERN FOOTER
+   ========================================================================== */
+.footer-gradient-bar {
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+    box-shadow: 0 2px 10px rgba(139, 92, 246, 0.3);
+}
+
+.modern-footer {
+    background: linear-gradient(180deg, rgba(2, 6, 23, 0.75) 0%, rgba(2, 6, 23, 0.95) 100%) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 80px 0 40px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.modern-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.04) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.modern-footer::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(6, 182, 212, 0.03) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.availability-badge {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(34, 211, 238, 0.08);
+    border: 1px solid rgba(34, 211, 238, 0.2);
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #22d3ee;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.availability-badge .pulse-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #22d3ee;
+    border-radius: 50%;
+    margin-right: 8px;
+    display: inline-block;
+    box-shadow: 0 0 10px #22d3ee;
+    animation: greenPulse 2s infinite;
+}
+
+@keyframes greenPulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(34, 211, 238, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 8px rgba(34, 211, 238, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(34, 211, 238, 0);
+    }
+}
+
+.footer-link-item {
+    position: relative;
+    margin-bottom: 0.8rem;
+    display: block;
+}
+
+.footer-link-item a {
+    color: var(--text-muted) !important;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-link-item a::before {
+    content: '→';
+    margin-right: 8px;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+    color: var(--primary-color);
+}
+
+.footer-link-item a:hover {
+    color: #fff !important;
+    transform: translateX(5px);
+}
+
+.footer-link-item a:hover::before {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.footer-contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.2rem;
+}
+
+.footer-contact-item .contact-icon-box {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    color: var(--text-muted);
+    font-size: 14px;
+    transition: all 0.3s ease;
+    margin-top: 2px;
+}
+
+.footer-contact-item:hover .contact-icon-box {
+    background: rgba(99, 102, 241, 0.1);
+    border-color: rgba(99, 102, 241, 0.4);
+    color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.2);
+    transform: translateY(-2px);
+}
+
+.footer-contact-item p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.footer-contact-item a {
+    color: var(--text-secondary) !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact-item a:hover {
+    color: #fff !important;
+}
+
+.footer-badge-title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.15rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+    position: relative;
+    display: inline-block;
+}
+
+.footer-badge-title::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+.modern-copyright {
+    background: #01040f !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 24px 0;
+    position: relative;
+    z-index: 2;
+}
+
+/* ==========================================================================
+   SCROLL TO TOP BUTTON (SCROLL PROGRESS INDICATOR)
+   ========================================================================== */
+#myBtn {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    background: rgba(15, 23, 42, 0.8) !important;
+    background-image: none !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3) !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+}
+
+#myBtn.active-progress {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0);
+}
+
+#myBtn:hover {
+    transform: translateY(-5px);
+    border-color: rgba(139, 92, 246, 0.4) !important;
+    box-shadow: 0 15px 30px rgba(139, 92, 246, 0.2) !important;
+}
+
+#myBtn svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#myBtn svg path {
+    fill: none;
+    stroke: var(--primary-color) !important;
+    stroke-dasharray: 307.919;
+    stroke-dashoffset: 307.919;
+    stroke-width: 4;
+    transition: stroke-dashoffset 10ms linear;
+}
+
+#myBtn .scroll-arrow {
+    color: #fff !important;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+#myBtn:hover .scroll-arrow {
+    color: var(--secondary-color) !important;
+    transform: translateY(-2px);
+}

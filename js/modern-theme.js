@@ -30,26 +30,59 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 400); // Faster loader as refined previously
     });
 
-    // 4. Scroll to Top Logic
-    const mybutton = document.getElementById("myBtn");
-    if (mybutton) {
-        window.onscroll = function() {
-            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-                mybutton.style.display = "flex";
-                mybutton.style.opacity = "1";
-            } else {
-                mybutton.style.opacity = "0";
-                setTimeout(() => {
-                    if (mybutton.style.opacity === "0") mybutton.style.display = "none";
-                }, 300);
-            }
-        };
+    // 4. Scroll to Top / Progress Bar Logic
+    let progressPath = null;
+    let pathLength = 0;
+    let progressInitialized = false;
 
-        window.topFunction = function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        };
-    }
+    const initScrollProgress = (mybutton) => {
+        progressPath = mybutton.querySelector('svg path');
+        if (progressPath) {
+            pathLength = progressPath.getTotalLength();
+            progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+            progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+            progressPath.style.strokeDashoffset = pathLength;
+            progressPath.getBoundingClientRect();
+            progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+        }
+        progressInitialized = true;
+    };
+
+    window.topFunction = function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
+    const updateScrollProgress = () => {
+        const mybutton = document.getElementById("myBtn");
+        if (!mybutton) return;
+
+        if (!progressInitialized) {
+            initScrollProgress(mybutton);
+        }
+
+        const scroll = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Toggle active-progress class
+        if (scroll > 300) {
+            mybutton.classList.add("active-progress");
+        } else {
+            mybutton.classList.remove("active-progress");
+        }
+
+        // Update SVG progress stroke
+        if (progressPath) {
+            const height = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = pathLength - (scroll * pathLength / height);
+            progressPath.style.strokeDashoffset = progress;
+        }
+    };
+
+    window.addEventListener('scroll', updateScrollProgress);
+    // Periodically check/initialize progress state as footer loads asynchronously
+    setTimeout(updateScrollProgress, 400);
+    setTimeout(updateScrollProgress, 800);
+    setTimeout(updateScrollProgress, 1500);
 });
