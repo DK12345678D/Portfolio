@@ -129,7 +129,7 @@ p, span, li, a, input, textarea, button {
 
 /* Sections */
 .layout_padding {
-    padding: 50px 0;
+    padding: 0px 0;
 }
 
 .services_section, .portfolio_section, .blog_section_2, .contact_section {
@@ -627,7 +627,7 @@ body.loaded .loading-overlay {
     box-shadow: 0 15px 30px rgba(139, 92, 246, 0.2) !important;
 }
 
-#myBtn svg {
+#myBtn svg.progress-circle {
     position: absolute;
     left: 0;
     top: 0;
@@ -635,7 +635,7 @@ body.loaded .loading-overlay {
     height: 100%;
 }
 
-#myBtn svg path {
+#myBtn svg.progress-circle path {
     fill: none;
     stroke: var(--primary-color) !important;
     stroke-dasharray: 307.919;
@@ -645,13 +645,15 @@ body.loaded .loading-overlay {
 }
 
 #myBtn .scroll-arrow {
-    color: #fff !important;
-    font-size: 16px;
-    transition: all 0.3s ease;
+    width: 22px !important;
+    height: 22px !important;
+    object-fit: contain !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
     z-index: 2;
+    filter: brightness(1) drop-shadow(0 0 4px rgba(139, 92, 246, 0.3));
 }
 
 #myBtn:hover .scroll-arrow {
-    color: var(--secondary-color) !important;
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.1);
+    filter: brightness(1.2) drop-shadow(0 0 8px rgba(34, 165, 233, 0.5));
 }

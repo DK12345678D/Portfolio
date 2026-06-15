@@ -81,8 +81,39 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     window.addEventListener('scroll', updateScrollProgress);
-    // Periodically check/initialize progress state as footer loads asynchronously
-    setTimeout(updateScrollProgress, 400);
-    setTimeout(updateScrollProgress, 800);
+
+    // Use MutationObserver to reactively initialize scroll progress as soon as #myBtn is injected dynamically
+    const footerObserver = new MutationObserver((mutations, obs) => {
+        const mybutton = document.getElementById("myBtn");
+        if (mybutton) {
+            updateScrollProgress();
+            obs.disconnect();
+        }
+    });
+    footerObserver.observe(document.body, { childList: true, subtree: true });
+
+    // 5. Sticky Navbar Scroll Effect
+    const handleNavbarScroll = () => {
+        const header = document.querySelector('.header_bg');
+        if (header) {
+            if (window.scrollY > 50) {
+                header.style.background = 'rgba(2, 6, 23, 0.92)';
+                header.style.backdropFilter = 'blur(16px)';
+                header.style.boxShadow = '0 4px 30px rgba(0,0,0,0.4)';
+                header.style.borderBottom = '1px solid var(--glass-border)';
+            } else {
+                header.style.background = '';
+                header.style.backdropFilter = '';
+                header.style.boxShadow = 'none';
+                header.style.borderBottom = '';
+            }
+        }
+    };
+    window.addEventListener('scroll', handleNavbarScroll);
+    handleNavbarScroll(); // Initial check
+
+    // Fallbacks to guarantee execution
+    updateScrollProgress();
+    setTimeout(updateScrollProgress, 500);
     setTimeout(updateScrollProgress, 1500);
 });

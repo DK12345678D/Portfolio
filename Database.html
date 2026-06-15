@@ -14,6 +14,10 @@
   <link rel="icon" href="images/d.png" type="image/gif" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- DevIcons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <!-- Common -->
+  <link rel="stylesheet" href="css/common.css" />
 </head>
 <body>
   <div class="custom-cursor" id="cursor"></div>
@@ -38,7 +42,7 @@
           <div class="glass-card p-lg-5">
             <div class="row align-items-center">
               <div class="col-lg-6 mb-4 mb-lg-0">
-                <img src="images/mysql.png" alt="Database" style="width: 120px; filter: drop-shadow(0 0 15px var(--accent-color));" class="mb-4">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="Database" style="width: 120px; filter: drop-shadow(0 0 15px var(--accent-color));" class="mb-4">
                 <h2 style="color: #fff; font-weight: 800; margin-bottom: 1.5rem;">Relational (SQL) & Persistence</h2>
                 <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem;">
                   I specialize in designing and optimizing relational schemas for complex data models using <strong style="color: #fff;">MySQL</strong> and <strong style="color: #fff;">Oracle</strong>. My approach focuses on schema normalization, indexing strategies, and high-performance ORM integration (Hibernate/Spring Data JPA) to ensure minimal latency.
@@ -94,10 +98,7 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  <script src="js/common-init.js"></script>
   <script src="js/modern-theme.js"></script>
-  <script>
-    fetch("header.html").then(r => r.text()).then(d => document.getElementById("header").innerHTML = d);
-    fetch("footer.html").then(r => r.text()).then(d => document.getElementById("footer").innerHTML = d);
-  </script>
 </body>
 </html>

@@ -16,6 +16,10 @@
   <link rel="icon" href="images/d.png" type="image/gif" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- DevIcons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <!-- Common -->
+  <link rel="stylesheet" href="css/common.css" />
 </head>
 <body>
   <div class="custom-cursor" id="cursor"></div>
@@ -25,8 +29,8 @@
 
   <div id="header"></div>
 
-  <div class="layout_padding">
-    <div class="container text-center mb-5 mt-5">
+  <div class="layout_padding" style="padding-top: 30px;">
+    <div class="container text-center mb-5 mt-2">
       <h1 class="modern-title animate-up">My <span class="gradient-text">Services</span></h1>
       <p class="modern-subtitle mx-auto animate-up" style="animation-delay: 0.1s;">Expert engineering solutions for high-performance backend systems and modern frontend experiences.</p>
     </div>
@@ -37,7 +41,9 @@
         <div class="col-lg-4 col-md-6 mb-4">
           <a href="API.html" style="text-decoration: none;">
             <div class="box_main glass-card h-100 py-5">
-              <div class="app_icon"><img src="images/api-50.png" style="filter: brightness(0) invert(1);" /></div>
+              <div class="app_icon" style="display:flex; align-items:center; justify-content:center;">
+                <i class="fa-solid fa-plug" style="font-size:52px; color:#06b6d4; filter: drop-shadow(0 0 12px rgba(6,182,212,0.5));"></i>
+              </div>
               <h4 style="color: #fff; font-weight: 700; margin-top: 1.5rem;">API Design</h4>
               <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 15px;">Scalable RESTful services and robust microservice architectures.</p>
             </div>
@@ -47,7 +53,9 @@
         <div class="col-lg-4 col-md-6 mb-4">
           <a href="website.html" style="text-decoration: none;">
             <div class="box_main glass-card h-100 py-5">
-              <div class="app_icon"><img src="images/icon-2.png" /></div>
+              <div class="app_icon" style="display:flex; align-items:center; justify-content:center;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="Web" style="height:52px; filter: drop-shadow(0 0 12px rgba(227,79,38,0.5));" />
+              </div>
               <h4 style="color: #fff; font-weight: 700; margin-top: 1.5rem;">Web Design</h4>
               <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 15px;">Modern, interactive, and responsive user interfaces.</p>
             </div>
@@ -57,9 +65,11 @@
         <div class="col-lg-4 col-md-6 mb-4">
           <a href="angular.html" style="text-decoration: none;">
             <div class="box_main glass-card h-100 py-5">
-              <div class="app_icon"><i class="fa-brands fa-angular" style="font-size: 50px; color: #dd0031; filter: drop-shadow(0 0 8px rgba(221,0,49,0.4));"></i></div>
+              <div class="app_icon" style="display:flex; align-items:center; justify-content:center;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" alt="Angular" style="height:52px; filter: drop-shadow(0 0 12px rgba(221,0,49,0.5));" />
+              </div>
               <h4 style="color: #fff; font-weight: 700; margin-top: 1.5rem;">Angular Apps</h4>
-              <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 15px;">Enterprise-grade single page applications with Angular 14+.</p>
+              <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 15px;">Enterprise-grade single page applications with Angular 21/22.</p>
             </div>
           </a>
         </div>
@@ -67,9 +77,11 @@
         <div class="col-lg-4 col-md-6 mb-4">
           <a href="java.html" style="text-decoration: none;">
             <div class="box_main glass-card h-100 py-5">
-              <div class="app_icon"><img src="images/java-50.png" /></div>
+              <div class="app_icon" style="display:flex; align-items:center; justify-content:center;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" style="height:52px; filter: drop-shadow(0 0 12px rgba(248,152,32,0.5));" />
+              </div>
               <h4 style="color: #fff; font-weight: 700; margin-top: 1.5rem;">Java Mastery</h4>
-              <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 15px;">Secure enterprise logic using Java 17 and Spring Boot.</p>
+              <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 15px;">Secure enterprise logic using Java 17/21 and Spring Boot.</p>
             </div>
           </a>
         </div>
@@ -77,7 +89,9 @@
         <div class="col-lg-4 col-md-6 mb-4">
           <a href="Database.html" style="text-decoration: none;">
             <div class="box_main glass-card h-100 py-5">
-              <div class="app_icon"><img src="images/database.png" /></div>
+              <div class="app_icon" style="display:flex; align-items:center; justify-content:center;">
+                <i class="fa-solid fa-database mr-2" style="color: var(--accent-color);font-size: 48px; filter: drop-shadow(0 0 10px rgba(6,182,212,0.5));"></i>
+              </div>
               <h4 style="color: #fff; font-weight: 700; margin-top: 1.5rem;">DB Architecture</h4>
               <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 15px;">High-performance SQL/NoSQL data modeling and optimization.</p>
             </div>
@@ -104,11 +118,8 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  <script src="js/common-init.js"></script>
   <script src="js/modern-theme.js"></script>
-  <script>
-    fetch("header.html").then(r => r.text()).then(d => document.getElementById("header").innerHTML = d);
-    fetch("footer.html").then(r => r.text()).then(d => document.getElementById("footer").innerHTML = d);
-  </script>
 </body>
 </html>
 

@@ -14,6 +14,10 @@
   <link rel="icon" href="images/d.png" type="image/gif" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- DevIcons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <!-- Common -->
+  <link rel="stylesheet" href="css/common.css" />
 </head>
 <body>
   <div class="custom-cursor" id="cursor"></div>
@@ -38,10 +42,10 @@
           <div class="glass-card p-lg-5">
             <div class="row align-items-center">
               <div class="col-lg-6 mb-4 mb-lg-0">
-                <i class="fa-brands fa-angular mb-4" style="font-size: 100px; color: #dd0031; filter: drop-shadow(0 0 15px #dd0031);"></i>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" alt="Angular" class="mb-4" style="width: 100px; filter: drop-shadow(0 0 15px #dd0031);">
                 <h2 style="color: #fff; font-weight: 800; margin-bottom: 1.5rem;">Enterprise-Scale Frontends</h2>
                 <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem;">
-                  I specialize in building modular and decoupled frontend architectures using <strong style="color: #fff;">Angular 14+</strong>. My approach leverages TypeScript's static typing, RxJS observables for reactive data flow, and highly reusable components to deliver complex user interfaces for data-driven platforms.
+                  I specialize in building modular and decoupled frontend architectures using <strong style="color: #fff;">Angular 21/22</strong>. My approach leverages TypeScript's static typing, RxJS observables for reactive data flow, and highly reusable components to deliver complex user interfaces for data-driven platforms.
                 </p>
               </div>
               <div class="col-lg-6">
@@ -94,10 +98,7 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  <script src="js/common-init.js"></script>
   <script src="js/modern-theme.js"></script>
-  <script>
-    fetch("header.html").then(r => r.text()).then(d => document.getElementById("header").innerHTML = d);
-    fetch("footer.html").then(r => r.text()).then(d => document.getElementById("footer").innerHTML = d);
-  </script>
 </body>
 </html>

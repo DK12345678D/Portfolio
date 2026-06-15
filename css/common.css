@@ -1,0 +1,32 @@
+/* ═══════════════════════════════════════════
+   common.css  —  Shared across all pages
+   ═══════════════════════════════════════════ */
+
+/* Loading overlay DP spinner */
+.loading-overlay-text {
+  font-size: 80px;
+  font-weight: 900;
+  background: linear-gradient(135deg, #6366f1, #06b6d4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Page top spacing after navbar */
+.page-top {
+  padding-top: 30px;
+}
+
+/* Devicon SVG icon in service/detail cards */
+.detail-icon {
+  width: 120px;
+  filter: drop-shadow(0 0 15px var(--primary-color));
+}
+
+/* Section feature card icon */
+.feature-icon {
+  font-size: 50px;
+  display: block;
+  margin-bottom: 1rem;
+}
